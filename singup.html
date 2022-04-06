@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset= "utf-8">
+     <title>Sing-up</title>
+   </head>
+
+   <body>
+      <h1> Sing-up </h1>
+      <table>
+        <form action="/sendData" method="post">
+          <tr>
+            <td> <input type="text" name="usernsme" minlength="5" maxlength="15" placeholder="Username"></td> <td> <input type="email" name="email" placeholder="Email"></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="surname" minlength="3" maxlength="30" placeholder="First name"></td> <td> <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Surname"></td>
+          </tr>
+          <tr>
+            <td>Date birth:</td> <td> <input type="date"></td>
+          </tr>
+          <tr>
+            <td>Password:</td><td><input type="password" name="password" minlength="8" maxlength="16"></td>
+          </tr>
+          <tr>
+            <td>Password Verification:</td><td><input type="password " name="password Verification" minlength="8" maxlength="16"></td>
+          </tr>
+          <tr>
+            <td>Expert</td> <td>Yes:<input type='checkbox'> NO:<input type='checkbox'></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Text</td> <td> <input type="text" name="expert categories" minlength="5" maxlength="40"></td>
+          </tr>
+          <tr>
+            <td> <input type="text" name="expert categories" minlength="5" maxlength="40"></td>
+          </tr>
+          <tr>
+            <td></td><td>text:<input type='checkbox'> </td>
+          </tr>
+          <tr>
+            <td></td><td><input type="reset" value="Reset"> <input type="submit" value="Submit"> </td>
+          </tr>
+        </form>
+      </table>
+    </body>
+</html>
