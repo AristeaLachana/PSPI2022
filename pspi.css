@@ -1,7 +1,7 @@
 .fa {
   padding: 10px;
   font-size: 20px;
-  width: 20px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
   margin: 5px 3px;
@@ -26,6 +26,7 @@
   float: left;
   color:#125688;
 }
+
 /*menu*/
 .topnav {
   overflow: hidden;
