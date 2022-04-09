@@ -1,6 +1,6 @@
 /*header elements*/
 
-/* !!!!!RECOMMEND
+!!!!!RECOMMEND
 .text-underlined{
   position: relative;
   overflow: hidden;
@@ -22,7 +22,7 @@
   position: absolute;
   bottom: 0;
 }
-
+/*
 .text-underlined::before{
   left: 50%;
   transform: translateX(-50%);
@@ -38,8 +38,8 @@
   width: 100%;
   transition-duration: .2s;
 }
-*/
 
+*/
 .logo{
   float: left;
   color: #125688;
@@ -65,7 +65,7 @@ nav{
   float: left;
   color: white;
   text-align: center;
-  padding: 24px 100px;
+  padding: 24px 130px;
   text-decoration: none;
   font-size: 17px;
 }
