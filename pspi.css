@@ -1,33 +1,61 @@
-.fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 3px;
-  border-radius: 40%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.logo{
-  float: left;
-  color:#125688;
+/*header elements*/
+
+/* !!!!!RECOMMEND
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color .25s ease-out;
 }
 
-/*menu*/
+.text-underlined::before,
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-underlined:hover::before,
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+*/
+
+.logo{
+  float: left;
+  color: #125688;
+}
+
+nav{
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0px 0;
+  box-shadow: 0px 5px 0px #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #125688;
@@ -37,7 +65,7 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 24px 200px;
+  padding: 24px 100px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -47,8 +75,24 @@
   background-color: #ddd;
   color: black;
 }
-/*searchbar*/
 
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-underlined:hover::before,
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
+/*searchbar elements*/
 * {
   box-sizing: border-box;
 }
@@ -84,7 +128,9 @@ form.search::after {
   display: table;
 }
 
+/*firstPage elements*/
 
+/*button*/
 .btn {
   background-color: #125688;
   border: none;
@@ -104,17 +150,13 @@ form.search::after {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   /*opacity: 0.8*/
 }
+
+/*make button centered*/
 .centerButtons {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-}
-
-/*footer*/
-.footerCSS {
-  background-color: #B8E2F2;
-  max-width: 100%;
 }
 
 /*first page elements*/
@@ -132,6 +174,7 @@ form.search::after {
   height: auto;
 }
 
+/*centered paragraph (in photo ontainer) style*/
 .centered {
   position: absolute;
   top: 50%;
@@ -145,8 +188,52 @@ form.search::after {
   background-color: black;
 }
 
+/*space between buttons - firstPage*/
 .space {
   width: 350px;
   height: auto;
   display: inline-block;
+}
+
+/*footer elements*/
+
+.footerCSS {
+  background-color: #B8E2F2;
+  max-width: 100%;
+}
+
+/*left 30px space for p elements - footer*/
+.positioned{
+  left: 30px;
+  position: relative;
+}
+
+/*boxes for social media elements*/
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #cd486b;
+  color: white;
 }
