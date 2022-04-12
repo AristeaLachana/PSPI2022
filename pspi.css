@@ -243,8 +243,10 @@ form.search::after {
 }
 
 .login-style {
-    background: rgb(2,55,244);
-    background: linear-gradient(90deg, rgba(2,55,244,0.908000700280112) 0%, rgba(0,212,255,1) 100%);
+    /*/background: rgb(2,55,244);
+    background: linear-gradient(90deg, rgba(2,55,244,0.908000700280112) 0%, rgba(0,212,255,1) 100%);*/
+    background-image:url(img2.jpeg);
+    border-radius:7px;
     margin: 100px;
     padding: 30px;
     text-align: center;
@@ -265,6 +267,17 @@ form.search::after {
     outline:none;
     font-size:15px;
 }
+.login-style a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login-style a:hover {
+        text-decoration: underline;
+        color: darkblue;
+
+}
+
 .login-style-textbox:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
 }
