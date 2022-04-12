@@ -271,3 +271,57 @@ form.search::after {
 .login-style-textbox:focus {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
 }
+
+/*!contactpage*/
+.messenge {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.messenge input[type=email] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+.send {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.send textarea {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+/*addpage*/
+.add{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+
+}
+.add textarea {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 50%;
+  background: #f1f1f1;
+}
