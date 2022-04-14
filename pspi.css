@@ -178,7 +178,7 @@ form.search::after {
   height: auto;
 }
 
-/*centered paragraph (in photo ontainer) style*/
+/*centered paragraph (in photo container) style*/
 .container p {
   position: absolute;
   top: 50%;
@@ -200,7 +200,6 @@ form.search::after {
 }
 
 /*footer elements*/
-
 .footerCSS {
   background-color: #B8E2F2;
   max-width: 100%;
@@ -242,31 +241,34 @@ form.search::after {
   color: white;
 }
 
+/*login page*/
 .login-style {
-    /*/background: rgb(2,55,244);
+    /*background: rgb(2,55,244);
     background: linear-gradient(90deg, rgba(2,55,244,0.908000700280112) 0%, rgba(0,212,255,1) 100%);*/
     background-image:url(img2.jpeg);
+    background-repeat: no-repeat; 
     border-radius:7px;
     margin: 100px;
     padding: 30px;
     text-align: center;
-    color: darkblue;
+    color: white;
     clear: both;
-    opacity: 0.7;
-    font-family:'Comic Sans MS';
-    font-size:20px;
-    font-weight:800;
-    max-width:100%
+    font-size: 20px;
+    font-weight: 800;
+    max-width: 100%;
 }
+
 .login-style-textbox {
-    background-color: lightblue;
+    background-color: white;
     border: none;
     border-radius: 6px;
     margin: 8px 0;
     padding: 10px 8px;
-    outline:none;
-    font-size:15px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 15px;
 }
+
 .login-style a {
     text-decoration: none;
     color: blue;
@@ -274,8 +276,7 @@ form.search::after {
 
 .login-style a:hover {
     text-decoration: underline;
-    color: darkblue;
-
+    color: lightblue;
 }
 
 .login-style-textbox:hover {
@@ -285,7 +286,7 @@ form.search::after {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
-/*!contactpage*/
+/*contactpage*/
 .messenge {
   position: relative;
   text-align: center;
@@ -303,6 +304,7 @@ form.search::after {
   width: 80%;
   background: #f1f1f1;
 }
+
 .send {
   position: relative;
   text-align: center;
@@ -320,6 +322,7 @@ form.search::after {
   width: 80%;
   background: #f1f1f1;
 }
+
 /*addpage*/
 .add{
   position: relative;
