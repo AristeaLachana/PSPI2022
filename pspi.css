@@ -241,12 +241,86 @@ form.search::after {
   color: white;
 }
 
+/*all*/
+.containerBlog {
+  flex-wrap: wrap;
+  display: flex;
+  object-fit: contain;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: inherit;
+  color: #ffffff;
+  height: 200px;
+  width: 95%;
+}
+
+  .containerBlog a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .containerBlog h2 {
+    margin-top: auto;
+		font-weight: 300;
+	}
+
+  .containerBlog p{
+    margin-left: 330px;
+    color:blue;
+  }
+
+  .containerBlog .read_more {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+
+  img.containerBlog__img {
+    height: 170px;
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    border-radius: 3%;
+  }
+
+  .containerBlog .containerBlog__img_link {
+    display: contents;
+  }
+
+  .containerBlog .containerBlog__text {
+      padding: 0.8rem;
+      position:inherit;
+      flex-direction: column;
+    }
+
+/* might not need
+  .containerBlog .containerBlog__preview-txt {
+      overflow: hidden;
+      color:blue;
+      display: inline;
+      text-overflow: ellipsis;
+      text-align: justify;
+      height: 100%;
+    }
+*/
+
 /*login page*/
 .login-style {
     /*background: rgb(2,55,244);
     background: linear-gradient(90deg, rgba(2,55,244,0.908000700280112) 0%, rgba(0,212,255,1) 100%);*/
     background-image:url(img2.jpeg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     border-radius:7px;
     margin: 100px;
     padding: 30px;
@@ -333,6 +407,7 @@ form.search::after {
   margin: auto;
 
 }
+
 .add textarea {
   padding: 10px;
   font-size: 17px;
@@ -340,4 +415,30 @@ form.search::after {
   float: center;
   width: 50%;
   background: #f1f1f1;
+}
+
+/*pagination*/
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  margin-bottom: 20px;
+
+}
+
+.pagination a.active {
+  background-color: #125688;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.center {
+  text-align: center;
 }
