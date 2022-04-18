@@ -1,6 +1,93 @@
 /*header elements*/
+.logo{
+  float: left;
+  color: #125688;
+}
 
-!!!!!RECOMMEND
+
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+.r-link{
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-link[href]{
+  color: var(--rLinkColor) !important;
+  text-decoration: var(--rLinkTextDecoration, none) !important;
+}
+
+.r-list{
+  padding-left: var(--rListPaddingLeft, 0) !important;
+  margin-top: var(--rListMarginTop, 0) !important;
+  margin-bottom: var(--rListMarginBottom, 0) !important;
+  list-style: var(--rListListStyle, none) !important;
+}
+
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.menu{
+  --rLinkColor: var(--menuLinkColor, currentColor);
+}
+
+.menu__link{
+  display: var(--menuLinkDisplay, block);
+}
+
+/*
+focus state
+*/
+
+.menu__link:focus{
+  outline: var(--menuLinkOutlineWidth, 2px) solid var(--menuLinkOutlineColor, currentColor);
+  outline-offset: var(--menuLinkOutlineOffset);
+}
+
+/*
+fading siblings
+*/
+
+.menu:hover .menu__link:not(:hover){
+  --rLinkColor: var(--menuLinkColorUnactive, rgba(22, 22, 22, .35));
+}
+
+/*
+=====
+PRESENTATION STYLES
+=====
+*/
+
+.menu{
+   background-color: #125688;
+  box-shadow: var(--menuBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+}
+
+.menu__list{
+  justify-content: center;
+   align-items: center;
+  display: flex;
+}
+
+.menu__link{
+  padding: var(--menuLinkPadding, 1.5rem 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*
+=====
+TEXT UNDERLINED
+=====
+*/
+
 .text-underlined{
   position: relative;
   overflow: hidden;
@@ -8,9 +95,6 @@
   will-change: color;
   transition: color .25s ease-out;
 }
-
-
-
 
 .text-underlined::before,
 .text-underlined::after{
@@ -25,80 +109,37 @@
   position: absolute;
   bottom: 0;
 }
+
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-underlined:hover::before,
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
 /*
-.text-underlined::before{
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.text-underlined::after{
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.text-underlined:hover::before,
-.text-underlined:hover::after{
-  width: 100%;
-  transition-duration: .2s;
-}
-
+=====
+SETTINGS
+=====
 */
-.logo{
-  float: left;
-  color: #125688;
+
+.page__custom-settings{
+  --menuBackgroundColor: #6c5ce7;
+  --menuLinkColor: #fff;
+  --menuLinkColorUnactive: #241c69;
+  --menuLinkOutlineOffset: -.5rem;
 }
 
-nav{
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-  padding: 0px 0;
-  box-shadow: 0px 5px 0px #dedede;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #125688;
-}
-
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 24px 8%;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/*inactive buttons from menu*/
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.text-underlined::before{
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.text-underlined::after{
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.text-underlined:hover::before,
-.text-underlined:hover::after{
-  width: 100%;
-  transition-duration: .2s;
-}
-
-/*searchbar elements*/
-* {
-  box-sizing: border-box;
-}
 
 form.search input[type=text] {
   padding: 10px;
