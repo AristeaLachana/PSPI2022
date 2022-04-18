@@ -211,6 +211,40 @@ form.search::after {
   position: relative;
 }
 
+/*ALTERNATIVE SOCIAL MEDIA ICONS*/
+.icon{
+  display: inline-block;
+  font-size: 30px;
+  animation: float 5s ease-in-out infinite;
+}
+.ri-facebook-circle-line{
+    color: #1877f2;
+    animation-delay: 1s; /* Adds a animation delay of 1 seconds.*/
+}
+
+.ri-youtube-line{
+    color: #ff5252;
+    animation-delay: 2s; /* Adds a animation delay of 2 seconds.*/
+}
+.ri-instagram-line{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* This is the first item so no animation delay needed.*/
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
 /*boxes for social media elements*/
 .fa {
   padding: 10px;
@@ -255,7 +289,7 @@ form.search::after {
   overflow: hidden;
   position: inherit;
   color: #ffffff;
-  height: 200px;
+  height: 205px;
   width: 95%;
 }
 
@@ -270,9 +304,18 @@ form.search::after {
 	}
 
   .containerBlog p{
-    margin-left: 330px;
-    color:blue;
+    margin:auto;
+    margin-right: 10px;
+    font-size: 18px;
+    color:black;
   }
+
+/*
+  .containerBlog pre{
+    margin:auto;
+    color:black;
+  }
+  */
 
   .containerBlog .read_more {
     margin-left: auto;
@@ -282,14 +325,14 @@ form.search::after {
     position: relative;
   }
 
-
-  img.containerBlog__img {
+  img.containerBlog__img{
     height: 170px;
     width: 300px;
-    margin-right: 10px;
-    margin-left: 15px;
+    float: left;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 15px;
     position: relative;
     border-radius: 3%;
   }
