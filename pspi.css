@@ -331,9 +331,14 @@ form.search::after {
   position: inherit;
   color: #ffffff;
   height: 210px;
-  width: 95%;
+  width: 85%;
 }
 
+.containerBlog:hover{
+  transform: scale(1.005);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
   .containerBlog a{
     text-decoration: none;
     color: black;
@@ -346,10 +351,11 @@ form.search::after {
 
   .containerBlog p{
     margin:auto;
+    cursor:context-menu;
     margin-right: 10px;
     font-size: 18px;
     color:black;
-    margin-bottom: 20px;
+    margin: auto;
   }
 
 /*
@@ -359,6 +365,7 @@ form.search::after {
   }
   */
 
+/*
   .containerBlog .read_more {
     margin-left: auto;
     margin-top: auto;
@@ -366,13 +373,14 @@ form.search::after {
     margin-bottom: 20px;
     position: relative;
   }
+  */
 
   img.containerBlog__img{
     height: 170px;
     width: 300px;
     float: left;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 18px;
     margin-right: 10px;
     margin-left: 15px;
     position: relative;
