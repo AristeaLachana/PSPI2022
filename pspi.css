@@ -486,3 +486,202 @@ form.search::after {
 .center {
   text-align: center;
 }
+/*signuppage*/
+.name {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.name input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.email {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.email input[type=email] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.firstname {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.firstname input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.surname {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.surname input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.date {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.date input[type="date"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.password {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.password input[type="password"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.passwordverification {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.passwordverification input[type="password"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.passwordverification {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.passwordverification input[type="password"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+.experttitle {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.experttitle input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.expertcategories {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.expertcategories select {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.expert {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.expert input[type="radio"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 80%;
+  background: #f1f1f1;
+}
