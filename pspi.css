@@ -34,14 +34,6 @@ CORE STYLES
 =====
 */
 
-.menu{
-  --rLinkColor: var(--menuLinkColor, currentColor);
-}
-
-.menu__link{
-  display: var(--menuLinkDisplay, block);
-}
-
 /*
 focus state
 */
@@ -66,6 +58,7 @@ PRESENTATION STYLES
 */
 
 .menu{
+  --rLinkColor: var(--menuLinkColor, currentColor);
    background-color: #125688;
   box-shadow: var(--menuBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
 }
@@ -77,6 +70,7 @@ PRESENTATION STYLES
 }
 
 .menu__link{
+  display: var(--menuLinkDisplay, block);
   padding: var(--menuLinkPadding, 1.5rem 2.5rem);
   font-weight: 700;
   text-transform: uppercase;
@@ -733,4 +727,11 @@ form.search::after {
   float: center;
   width: 80%;
   background: #f1f1f1;
+}
+
+/* categories */
+.slideshow {
+  text-align: center;
+  font: Arial;
+  font-size: 30px;
 }
