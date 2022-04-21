@@ -43,7 +43,7 @@
 
 .menu{
   --rLinkColor: var(--menuLinkColor, currentColor);
-   background-color: #125688;
+   background-color: #6495ED;
   box-shadow: var(--menuBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
 }
 
@@ -105,7 +105,7 @@
 .page__custom-settings{
   --menuBackgroundColor: #6c5ce7;
   --menuLinkColor: #fff;
-  --menuLinkColorUnactive: #241c69;
+  --menuLinkColorUnactive: #black;
   --menuLinkOutlineOffset: -.5rem;
 }
 
@@ -694,5 +694,5 @@ form.search::after {
 
 .readmore p{
     font-size:20px;
-    
+
 }
