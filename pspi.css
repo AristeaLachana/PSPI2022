@@ -1,15 +1,11 @@
-/*header elements*/
+/* header elements */
 .logo{
   float: left;
   color: #125688;
 }
 
 
-/*
-=====
-DEPENDENCES
-=====
-*/
+/* DEPENDENCES */
 
 .r-link{
   display: var(--rLinkDisplay, inline-flex) !important;
@@ -28,34 +24,22 @@ DEPENDENCES
 }
 
 
-/*
-=====
-CORE STYLES
-=====
-*/
+/* CORE STYLES */
 
-/*
-focus state
-*/
+/* focus state */
 
 .menu__link:focus{
   outline: var(--menuLinkOutlineWidth, 2px) solid var(--menuLinkOutlineColor, currentColor);
   outline-offset: var(--menuLinkOutlineOffset);
 }
 
-/*
-fading siblings
-*/
+/* fading siblings */
 
 .menu:hover .menu__link:not(:hover){
   --rLinkColor: var(--menuLinkColorUnactive, rgba(22, 22, 22, .35));
 }
 
-/*
-=====
-PRESENTATION STYLES
-=====
-*/
+/* PRESENTATION STYLES */
 
 .menu{
   --rLinkColor: var(--menuLinkColor, currentColor);
@@ -76,11 +60,7 @@ PRESENTATION STYLES
   text-transform: uppercase;
 }
 
-/*
-=====
-TEXT UNDERLINED
-=====
-*/
+/* TEXT UNDERLINED */
 
 .text-underlined{
   position: relative;
@@ -120,11 +100,7 @@ TEXT UNDERLINED
   transition-duration: .2s;
 }
 
-/*
-=====
-SETTINGS
-=====
-*/
+/* SETTINGS */
 
 .page__custom-settings{
   --menuBackgroundColor: #6c5ce7;
@@ -132,8 +108,6 @@ SETTINGS
   --menuLinkColorUnactive: #241c69;
   --menuLinkOutlineOffset: -.5rem;
 }
-
-
 
 form.search input[type=text] {
   padding: 10px;
@@ -252,6 +226,7 @@ form.search::after {
   font-size: 30px;
   animation: float 5s ease-in-out infinite;
 }
+
 .ri-facebook-circle-line{
     color: #1877f2;
     animation-delay: 1s; /* Adds a animation delay of 1 seconds.*/
@@ -281,7 +256,7 @@ form.search::after {
 }
 
 /*boxes for social media elements*/
-.fa {
+/*.fa {
   padding: 10px;
   font-size: 20px;
   width: 40px;
@@ -308,7 +283,7 @@ form.search::after {
 .fa-instagram {
   background: #cd486b;
   color: white;
-}
+}*/
 
 /*all*/
 .containerBlog {
@@ -347,27 +322,10 @@ form.search::after {
     margin:auto;
     cursor:context-menu;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 16px;
     color:black;
     margin: auto;
   }
-
-/*
-  .containerBlog pre{
-    margin:auto;
-    color:black;
-  }
-  */
-
-/*
-  .containerBlog .read_more {
-    margin-left: auto;
-    margin-top: auto;
-    margin-right: 15px;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  */
 
   img.containerBlog__img{
     height: 170px;
@@ -390,17 +348,6 @@ form.search::after {
       position:inherit;
       flex-direction: column;
     }
-
-/* might not need
-  .containerBlog .containerBlog__preview-txt {
-      overflow: hidden;
-      color:blue;
-      display: inline;
-      text-overflow: ellipsis;
-      text-align: justify;
-      height: 100%;
-    }
-*/
 
 /*login page*/
 .login-style {
@@ -556,8 +503,6 @@ form.search::after {
   max-width: 1000px;
   margin: auto;
 }
-
-
 
 .email input[type=email] {
   padding: 10px;
