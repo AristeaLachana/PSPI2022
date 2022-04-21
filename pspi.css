@@ -680,3 +680,19 @@ form.search::after {
   font: Arial;
   font-size: 30px;
 }
+
+.readmore{
+    padding:7px;
+    text-align:center;
+    margin:14px;
+}
+
+.readmore h1{
+   font-size:40px;
+   text-align:center;
+}
+
+.readmore p{
+    font-size:20px;
+    
+}
