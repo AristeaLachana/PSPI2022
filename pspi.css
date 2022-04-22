@@ -723,9 +723,9 @@ form.search::after {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: black;
+  font-size: 30px;
+  padding: 15px 25px;
   position: absolute;
   bottom: 8px;
   width: 100%;
