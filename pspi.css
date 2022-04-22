@@ -467,7 +467,7 @@ form.search::after {
 }
 
 .pagination a.active {
-  background-color: #125688;
+  background-color: #6495ED;
   color: white;
 }
 
