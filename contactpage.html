@@ -3,6 +3,13 @@
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="pspi.css">
+    <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+   <!-- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 
     <title>Επικοινωνία</title>
     <style>
@@ -32,40 +39,51 @@
     </form>
 
 
-  <nav class="topnav"> <!-- class="text-underlined" recommendation -->
-    <a href="#text1">Text1</a>
-    <a href="#text2">Text2</a>
-    <a href="#text3">Text3</a>
-    <a href="contactpage.html">Επικοινωνία</a>
-  </nav>
+    <div class="page">
+      <nav class="page__menu page__custom-settings menu">
+
+        <ul class="menu__list r-list">
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Option #2</a></li>
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Option #3</a></li>
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Επικοινωνια</a></li>
+
+        </ul>
+
+      </nav>
+    </div>
   <br>
+
+  <div class="contact-style">
+    <div class="center" >
+
+     <br>
+     <h3 style="color:#6495ED; font-size: 40px"> ΕΠΙΚΟΙΝΩΝΙΑ </h3>
+
      <form action="/sendData" method="post">
-      <div class="messenge"
-         <h3 style="color: blue; font-size: 20px"> ΕΠΙΚΟΙΝΩΝΙΑ </h3>
          <br>
          <br>
          <input type="email" style="margin:auto;max-width:300px" name="email" placeholder="Email">
-       </div>
-       <br>
-       <br>
-       <div class="send">
-        <label for="txtComments"> </label>
-        <textarea id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Γράψτε το μηνυμά σας...."></textarea>
-        <br>
-        <br>
-        <a> <button class="btn">Αποστολή</button> </a>
-      </div>
+         <br>
+         <br>
+         <label for="txtComments"> </label>
+         <textarea id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Γράψτε το μηνυμά σας...."></textarea>
+         <br>
+         <br>
+         <a> <button class="btn">Αποστολή</button> </a>
       </form>
+     </div>
+  </div>
 </body>
- <footer class="footerCSS">
-    <br>
-    <p class="positioned" style="font-size:17px;">Social Media:
-    <a href="https://el-gr.facebook.com/" class="fa fa-facebook"></a>
-    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-    </p>
-    <p class="positioned" style="font-size:17px;">e-mail: <a href="mailto:hege@example.com">hege@example.com</a></p>
-    <p class="positioned" style="font-size:17px;">Phone: 2310-___-___</p>
-    <br>
-  </footer>
+<footer class="footerCSS">
+  <br><br>
+
+  <a href="https://www.instagram.com/" style="text-decoration:none;" class="positioned ri-instagram-line icon"></a>
+  <a href="https://el-gr.facebook.com/" style="text-decoration:none;" class="positioned ri-facebook-circle-line icon"></a>
+  <a href="https://www.youtube.com/" style="text-decoration:none;" class="positioned ri-youtube-line icon"></a>
+
+  <p class="positioned" style="font-size:17px;">e-mail: <a href="mailto:hege@example.com">hege@example.com</a></p>
+  <p class="positioned" style="font-size:17px;">Phone: 2310-___-___</p>
+  <br>
+</footer>
 </html>
