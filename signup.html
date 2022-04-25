@@ -7,133 +7,159 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="pspi.css">
+  <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+ <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+ <!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Sing-up</title>
   <style>
        body {background-color:white;}
-       h2 {color:#125688;}
-       tr {color:#125688;}
-       th {color:#125688;}
-
-
+       h2 {color:#white;}
+       tr {color:#white;}
+       th {color:#white;}
   </style>
 </head>
 
 <body>
+
   <div class="logo" >
       <a href="firstPage.html"> <img alt="Improve Your Health" src="logo.png"
          width="400" height="100"></a>
   </div>
 
+
   <br>
   <br>
   <br>
   <p></p>
   <p></p>
-  <table>
 
-    <tr>
-      <th  colspan="2">  <h2>Sing-up</h2> </th>
-    </tr>
-
-     <tr>
-        <td>
-         <form class="name" action="/sendData" method="post" style="margin:auto;max-width:300px">
-           <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username">
-         </form>
-        </td>
-        <td>
-          <form class="email" action="/sendData" method="post"  style="margin:auto;max-width:300px">
-             <input type="email" name="email" placeholder="Email">
+  <div class="login-style">
+   <div class="signup"
+    <table>
+      <tr>
+        <th  colspan="2">  <h2>Sing-up</h2> </th>
+      </tr>
+      <tr>
+          <td>
+           <form class="name" action="/sendData" method="post" style="margin:auto;max-width:300px">
+             <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username">
            </form>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <form class="firstname" action="/sendData" method="post" style="margin:auto;max-width:300px">
-            <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="First name">
+          </td>
+          <td>
+            <form class="email" action="/sendData" method="post"  style="margin:auto;max-width:300px">
+               <input type="email" name="email" placeholder="Email">
+             </form>
+          </td>
+       </tr>
+       <tr>
+          <td>
+            <form class="firstname" action="/sendData" method="post" style="margin:auto;max-width:300px">
+              <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="First name">
+            </form>
+          </td>
+          <td>
+           <form class="surname" action="/sendData" method="post" style="margin:auto;max-width:300px">
+            <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Surname">
+           </form>
+          </td>
+       </tr>
+       <tr>
+          <th>
+           <label for="date">Date birth: </label>
+          </th>
+          <td>
+           <form class="date" action="/sendData" method="post" style="margin:auto;max-width:300px">
+            <input type="date" id="date">
+           </form>
+          </td>
+       </tr>
+       <tr>
+         <th>
+           <label for="password">Password: </label>
+         </th>
+         <td>
+           <form class="password" action="/sendData" method="post" style="margin:auto;max-width:300px">
+             <input type="password" id="password" name="password" minlength="8" maxlength="16">
+           </form>
+         </td>
+       </tr>
+       <tr>
+         <th>
+           <label for="passwordverification">Password Verification: </label>
+         </th>
+         <td>
+           <form class="passwordverification" action="/sendData" method="post" style="margin:auto;max-width:300px">
+             <input type="password" id="passwordverification" name="password" minlength="8" maxlength="16">
+           </form>
+         </td>
+       </tr>
+       <tr>
+         <th>Expert</th>
+         <th>
+           <label for="rdchoiceyes">Yes</label> <input type='radio' id="rdchoiceyes" name="choice" value="yes">
+           <label for="rdchoiceno"> No</label> <input type='radio' id="rdchoiceno" name="choice" value="no">
+         </th>
+       </tr>
+       <br>
+       <br>
+       <tr>
+         <th><label for="categories">Expert Categories</label></th>
+         <td>
+          <form class="expertcategories" action="/sendData" method="post" style="margin:auto;max-width:300px">
+            <select id="categories" name="expertcategories">
+              <option value="nutritionist" selected>Nutritionist</option>
+              <option value="fitness specialist" >Fitness specialist</option>
+              <option value="mental health specialist" >Μental health specialist</option>
+            </select>
           </form>
-        </td>
-        <td>
-         <form class="surname" action="/sendData" method="post" style="margin:auto;max-width:300px">
-          <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Surname">
-         </form>
-        </td>
-      </tr>
-      <tr>
+
+         </td>
+       </tr>
+       <tr>
+          <th>
+           <label  for="experttitle">Expert Title</label>
+          </th>
+          <td>
+           <form class="experttitle"action="/sendData" method="post" style="margin:auto;max-width:300px">
+            <input type="text"id="experttitle" name="expert categories" minlength="5" maxlength="40">
+           </form
+          </td>
+       </tr>
+       <tr>
+         <td></td><th>text:<input type='checkbox' checked> </th>
+       </tr>
+       <tr>
         <th>
-         <label for="date">Date birth: </label>
+          <div class="submit"></div>
+          <a> <button class="btn">Reset</button> </a>
         </th>
-        <td>
-         <form class="date" action="/sendData" method="post" style="margin:auto;max-width:300px">
-          <input type="date" id="date">
-         </form>
-        </td>
-      </tr>
-      <tr>
-       <th>
-         <label for="password">Password: </label>
-       </th>
-       <td>
-         <form class="password" action="/sendData" method="post" style="margin:auto;max-width:300px">
-           <input type="password" id="password" name="password" minlength="8" maxlength="16">
-         </form>
-       </td>
-      </tr>
-      <tr>
-       <th>
-         <label for="passwordverification">Password Verification: </label>
-       </th>
-       <td>
-         <form class="passwordverification" action="/sendData" method="post" style="margin:auto;max-width:300px">
-           <input type="password" id="passwordverification" name="password" minlength="8" maxlength="16">
-         </form>
-       </td>
-      </tr>
-      <tr>
-       <th>Expert</th>
-       <th>
-         <label for="rdchoiceyes">Yes</label> <input type='radio' id="rdchoiceyes" name="choice" value="yes">
-         <label for="rdchoiceno"> No</label> <input type='radio' id="rdchoiceno" name="choice" value="no">
-       </th>
-      </tr>
-      <tr>
-       <th><label for="categories">Expert Categories</label></th>
-       <td>
-        <form class="expertcategories" action="/sendData" method="post" style="margin:auto;max-width:300px">
-          <select id="categories" name="expertcategories">
-            <option value="nutritionist" selected>Nutritionist</option>
-            <option value="fitness specialist" >Fitness specialist</option>
-            <option value="mental health specialist" >Μental health specialist</option>
-          </select>
-        </form>
-
-       </td>
-      </tr>
-      <tr>
         <th>
-         <label  for="experttitle">Expert Title</label>
+          <div class="submit"></div>
+          <a> <button class="btn">Submit</button> </a>
         </th>
-        <td>
-         <form class="experttitle"action="/sendData" method="post" style="margin:auto;max-width:300px">
-          <input type="text"id="experttitle" name="expert categories" minlength="5" maxlength="40">
-         </form
-        </td>
-      </tr>
-      <tr>
-       <td></td><th>text:<input type='checkbox' checked> </th>
-      </tr>
-      <tr>
-      <th>
-        <div class="submit"></div>
-        <a> <button class="btn">Reset</button> </a>
-      </th>
-      <th>
-        <div class="submit"></div>
-        <a> <button class="btn">Submit</button> </a>
-      </th>
+       </tr>
+    </table>
+  </div>
+
+</div>
+<footer class="footerCSS">
+  <br><br>
+
+  <a href="https://www.instagram.com/" style="text-decoration:none;" class="positioned ri-instagram-line icon"></a>
+  <a href="https://el-gr.facebook.com/" style="text-decoration:none;" class="positioned ri-facebook-circle-line icon"></a>
+  <a href="https://www.youtube.com/" style="text-decoration:none;" class="positioned ri-youtube-line icon"></a>
+
+  <p class="positioned" style="font-size:17px;">e-mail: <a href="mailto:hege@example.com">hege@example.com</a></p>
+  <p class="positioned" style="font-size:17px;">Phone: 2310-___-___</p>
+  <br>
+</footer>
 
 
 
-  </table>
+
+
 </body>
 </html>
