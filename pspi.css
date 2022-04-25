@@ -4,6 +4,11 @@
   color: #125688;
 }
 
+.logo img{
+  width: 400px;
+  height: 110px;
+}
+
 /* DEPENDENCES */
 
 .r-link{
@@ -191,7 +196,8 @@ form.search::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  color:white;
+  font-size: 20px;
+  color:black;
   font-weight:900;
   transform: translate(-50%, -50%);
 }
@@ -280,36 +286,6 @@ form.search::after {
     transform: translateY(0);
   }
 }
-
-/*boxes for social media elements*/
-/*.fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 3px;
-  border-radius: 40%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #cd486b;
-  color: white;
-}*/
 
 /*all*/
 /* style for h2 - title in AllArticles*/
@@ -461,7 +437,7 @@ h2 em {
 
 .login-style a {
     text-decoration: none;
-    color: blue;
+    color: #6495ED;
 }
 
 .login-style a:hover {
