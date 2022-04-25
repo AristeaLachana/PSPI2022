@@ -1,7 +1,6 @@
 /* header elements */
 .logo{
   float: left;
-  color: #125688;
 }
 
 .logo img{
@@ -116,7 +115,10 @@
 form.search input[type=text] {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 2px;
+  border-style: solid;/*
+  background: #BFD3F7;
+  border-color: #6495ED;*/
   float: left;
   width: 80%;
   background: #f1f1f1;
@@ -225,11 +227,31 @@ form.search::after {
   cursor: default;
 }
 
-/*new*/
+.footerCSS a{
+  text-decoration: none;
+}
+
+#footerHref {
+  color:black;
+  text-decoration: none;
+}
+
+#footerHref:hover{
+  color:gray;
+}
+
+
 .footerColumn{
-  float: left;
+  float:left;
   width: 33.33%;
   padding: 30px;
+}
+
+.footerCSS hr{
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
 }
 
 .footerRow:after{
@@ -242,14 +264,7 @@ form.search::after {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-}
-
-}
-
-/*left 30px space for p elements - footer*/
-.positioned{
-  left: 30px;
-  position: relative;
+  }
 }
 
 /*ALTERNATIVE SOCIAL MEDIA ICONS*/
