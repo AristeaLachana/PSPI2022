@@ -487,6 +487,21 @@ form.search::after {
   width: 50%;
   background: #f1f1f1;
 }
+.add-style {
+    /*background: rgb(2,55,244);
+    background: linear-gradient(90deg, rgba(2,55,244,0.908000700280112) 0%, rgba(0,212,255,1) 100%);*/
+    background-image:url(image4.jpg);
+    background-repeat: repeat;
+    border-radius:7px;
+    margin: 10px;
+    padding: 50px;
+    text-align:center;
+    color: white;
+    clear: both;
+    font-size: 20px;
+    font-weight: 800;
+    max-width: 100%;
+}
 
 /*pagination*/
 .pagination {
