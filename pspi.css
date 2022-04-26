@@ -545,6 +545,49 @@ h3{
   width: 80%;
   background: #f1f1f1;
 }
+.bg-img {
+  /* The image used */
+  background-image: url("image6.jpg");
+
+  min-height: 450px;
+  border-radius:7px;
+  margin: 10px;
+  padding: 50px;
+  text-align:center;
+  color: white;
+  clear: both;
+  font-size: 20px;
+  font-weight: 800;
+  max-width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size:  auto;
+  position: relative;
+}
+
+
+.container {
+  position: absolute;
+  left: 35%;
+  top: -6%;
+  margin: 40px;
+  max-width: 500px;
+  padding: 6px;
+  background-color: white;
+}
+
+.contact-style-textbox {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 6px;
+    margin: 8px 0;
+    padding: 10px 8px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+
 
 /*addpage*/
 .add{
