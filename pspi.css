@@ -100,41 +100,43 @@
   --menuLinkColorUnactive: #black;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
 form.search input[type=text] {
-  padding: 15px;
+  padding: 20px;
   font-size: 17px;
-  border: 2px;
-  border-style: solid;
-  background: #BFD3F7;
-  border-color: white;
-  border-radius: 18px;
+  border: 1px solid grey;
   float: left;
   width: 80%;
   background: #BFD3F7;
 }
 
+/* Style the submit button */
 form.search button {
   float: left;
   width: 20%;
-  padding: 10px;
-  background: #2196F3;
+  padding: 20px;
+  background: #90EE90 ;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-  border-left: none;
+  border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
 
 form.search button:hover {
-  background: #0b7dda;
+  background: #CD5C5C;
 }
 
+/* Clear floats */
 form.search::after {
   content: "";
   clear: both;
   display: table;
 }
-
 /*firstPage elements*/
 
 /*button*/
