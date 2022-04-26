@@ -23,15 +23,18 @@ body {
 </style>
 </head>
 <body>
+<div class="upperBackground">
   <div class="logo" >
       <a href="firstPage.html"> <img alt="Improve Your Health" src="logo.png"
          width="400" height="100"></a>
   </div>
-<br>
+<br><br>
+
   <form class="search" style="margin:auto;max-width:400px">
     <input type="text"  placeholder="Search.." name="search">
     <button type="submit"> <i class="fa fa-search"></i></button>
   </form>
+</div>
 
   <div class="page">
     <nav class="page__menu page__custom-settings menu">
@@ -53,6 +56,7 @@ body {
       </div>
     </div>
   </br>
+
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -94,6 +98,8 @@ body {
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 </body>
+<br>
+
 <footer class="footerCSS">
   <div class="footerRow">
     <br/>
@@ -132,6 +138,7 @@ body {
   <br>
 </div>
 </footer>
+
 <script>
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -162,7 +169,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
-
 
 </html>

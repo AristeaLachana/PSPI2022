@@ -1,4 +1,9 @@
 /* header elements */
+.upperBackground{
+  background-color: #F2FEF4;
+}
+
+
 .logo{
   float: left;
 }
@@ -93,8 +98,7 @@
   transition-duration: .2s;
 }
 
-/* SETTINGS */
-
+/* SETTINGS MENU*/
 .page__custom-settings{
   --menuLinkColor: #fff;
   --menuLinkColorUnactive: #black;
@@ -106,29 +110,31 @@
 
 /* Style the search field */
 form.search input[type=text] {
-  padding: 20px;
+  padding: 15px;
   font-size: 17px;
   border: 1px solid grey;
   float: left;
   width: 80%;
-  background: #BFD3F7;
+  background: white;
+  border-radius: 6px 0 0 6px;
 }
 
 /* Style the submit button */
 form.search button {
   float: left;
   width: 20%;
-  padding: 20px;
+  padding: 15px;
   background: #90EE90 ;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
+  border-radius: 0 6px 6px 0;
 }
 
 form.search button:hover {
-  background: #CD5C5C;
+  background: #ED6964;
 }
 
 /* Clear floats */
@@ -172,27 +178,25 @@ form.search::after {
 /*first page elements*/
 .container {
   position: relative;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  max-width: 1000px;
-  margin: auto;
+  font-family: Arial;
 }
 
 .container image1{
-  width: 100%;
   height: auto;
 }
 
-/*centered paragraph (in photo container) style*/
-.container p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 20px;
-  color:black;
-  font-weight:900;
-  transform: translate(-50%, -50%);
+.text-block {
+  position:absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 50%;
+  padding: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
 .container .btn:hover {
@@ -241,8 +245,7 @@ form.search::after {
 .footerCSS hr{
   height:2px;
   border-width:0;
-  color:gray;
-  background-color:gray
+  background-color:gray;
 }
 
 .footerRow:after{
@@ -294,7 +297,7 @@ form.search::after {
 }
 
 /*all*/
-/* style for h2 - title in AllArticles*/
+/* style for h2*/
 h2 {
   cursor: default;
   position: relative;
@@ -319,6 +322,7 @@ h2 em {
   font-weight: 600;
 }
 
+/*title in AllArticles*/
 .categoryTitle h2 {
   font-size:26px;
   font-weight:700;
@@ -332,21 +336,21 @@ h2 em {
 }
 
 .categoryTitle h2:before {
-    background-color: #6495ED;
+    background-color: #ED6964;
     content: '';
     display: block;
     height: 3px;
-    width: 75px;
+    width: 100px;
     margin-bottom: 5px;
 }
 
 .categoryTitle h2:after {
-    background-color: #6495ED;
+    background-color: #90EE90;
     content: '';
     display: block;
   position:absolute; right:0; bottom:0;
     height: 3px;
-    width: 75px;
+    width: 100px;
     margin-bottom: 0.25em;
 }
 
