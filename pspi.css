@@ -1055,3 +1055,8 @@ h3{
     text-align:center;
     margin:14px;
 }
+.content {
+   list-style-position: inside;
+  background: #def3f2;
+  padding: 20px;
+}
