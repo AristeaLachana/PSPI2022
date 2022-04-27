@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="pspi.css">
     <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -11,51 +13,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>Επικοινωνία</title>
+    <title>Προσθήκη Αρχείου</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
       img {
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        margin-right:  auto;
       }
       body {background-color:white;}
       h1 {color:#125688;}
       h2 {color:#125688;}
+      h5 {color:#ED6964;}
       p {color:black;}
+     
+
+     body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+     }
+
 
     </style>
   </head>
 
   <body>
 
+   <div class="upperBackground">
+  <div class="logo" >
+      <a href="firstPage.html"> <img alt="Improve Your Health" src="logo.png"
+         width="400" height="100"></a>
+  </div>
+  <br><br>
 
-    <div class="logo">
-        <a href="firstPage.html">
-            <img alt="Improve Your Health" src="logo.png">
-        </a>
-    </div>
-    <br>
-    <form class="search" style="margin:auto;max-width:400px">
-      <input type="text" placeholder="Search.." name="search">
-    </form>
+  <form class="search" style="margin:auto;max-width:400px">
+    <input type="text"  placeholder="Search.." name="search">
+    <button type="submit"> <i class="fa fa-search"></i></button>
+  </form>
+</div>
 
+  <div class="page">
+    <nav class="page__menu page__custom-settings menu">
 
-    <div class="page">
-      <nav class="page__menu page__custom-settings menu">
+      <ul class="menu__list r-list">
+        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
+        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
+        <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
 
-        <ul class="menu__list r-list">
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Option #2</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Option #3</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Επικοινωνια</a></li>
+      </ul>
 
-        </ul>
-
-      </nav>
-    </div>
-    <br>
-    <br>
+    </nav>
+  </div>
+  <br>
+  <br>
     <div class="center">
       <div class="categoryTitle">
 
@@ -82,7 +93,7 @@
 </body>
 <br>
 </br>
-<footer class="footerCSS">
+  <footer class="footerCSS">
   <div class="footerRow">
     <br/>
     <div class="footerColumn">
@@ -96,7 +107,7 @@
 </div>
 
 <div class="footerColumn">
-  <div class="center"><h2><a id="footerHref" href="categories.html">Κατηγορίες</a></h2>
+  <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
   <hr>
   <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
   <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
@@ -105,7 +116,7 @@
 </div>
 
 <div class="footerColumn">
-  <div class="center"><h2>Social Media</h2>
+  <div class="center"><h2 style="color:black;">Social Media</h2>
   <hr>
   <br>
   <p>
@@ -116,14 +127,9 @@
   </div>
 </div>
 
-
-  <br>
-</div>
-</footer>
-
 <script>
 let slideIndex = 1;
-showSlides(slideIndex); 
+showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -151,5 +157,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
-</html>
