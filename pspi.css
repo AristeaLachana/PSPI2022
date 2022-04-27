@@ -545,7 +545,7 @@ h3{
   width: 80%;
   background: #f1f1f1;
 }
-.bg-img {
+.bg-img1 {
   /* The image used */
   background-image: url("image6.jpg");
 
@@ -567,7 +567,7 @@ h3{
 }
 
 
-.container {
+.containercontact {
   position: absolute;
   left: 35%;
   top: -6%;

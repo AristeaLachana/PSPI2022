@@ -30,32 +30,35 @@
   </head>
 
   <body>
+   <div class="upperBackground">
+  <div class="logo" >
+      <a href="firstPage.html"> <img alt="Improve Your Health" src="logo.png"
+         width="400" height="100"></a>
+  </div>
+<br><br>
 
+  <form class="search" style="margin:auto;max-width:400px">
+    <input type="text"  placeholder="Search.." name="search">
+    <button type="submit"> <i class="fa fa-search"></i></button>
+  </form>
+</div>
 
-    <div class="logo">
-        <a href="firstPage.html">
-            <img alt="Improve Your Health" src="logo.png">
-        </a>
-    </div>
+  <div class="page">
+    <nav class="page__menu page__custom-settings menu">
+
+      <ul class="menu__list r-list">
+        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
+        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
+        <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+
+      </ul>
+
+    </nav>
+  </div>
   <br>
-    <form class="search" style="margin:auto;max-width:400px">
-      <input type="text" placeholder="Search.." name="search">
-    </form>
 
-
-    <div class="page">
-      <nav class="page__menu page__custom-settings menu">
-
-        <ul class="menu__list r-list">
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Option #2</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Option #3</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Επικοινωνια</a></li>
-
-        </ul>
-
-      </nav>
-    </div>
+    
   <br>
   <div class="center">
     <div class="categoryTitle">
@@ -84,74 +87,66 @@
   <br>
   </br>
   <footer class="footerCSS">
-    <div class="footerRow">
-      <br/>
-      <div class="footerColumn">
-    <div class="center"><h2><a id="footerHref" href="contactpage.html">Επικοινωνία</a></h2>
-    <hr>
-    <p><strong>e-mail:</strong><br/>
-    hege@example.com <br/></br>
-    <strong>Τηλέφωνο:</strong><br/>
-    2310-___-___<br/></p>
-  </div>
-  </div>
+  <div class="footerRow">
+    <br/>
+    <div class="footerColumn">
+  <div class="center"><h2><a id="footerHref" href="contactpage.html">Επικοινωνία</a></h2>
+  <hr>
+  <p><strong>e-mail:</strong><br/>
+  hege@example.com <br/></br>
+  <strong>Τηλέφωνο:</strong><br/>
+  2310-___-___<br/></p>
+</div>
+</div>
 
-  <div class="footerColumn">
-    <div class="center"><h2><a id="footerHref" href="categories.html">Κατηγορίες</a></h2>
-    <hr>
-    <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-    <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-    <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
+<div class="footerColumn">
+  <div class="center"><h2><a id="footerHref" href="categories.html">Κατηγορίες</a></h2>
+  <hr>
+  <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
+  <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
+  <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
+</div>
+</div>
+
+<div class="footerColumn">
+  <div class="center"><h2 style="color:black;">Social Media</h2>
+  <hr>
+  <br>
+  <p>
+    <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
+    <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
+    <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
+  </p>
   </div>
-  </div>
+</div>
 
-  <div class="footerColumn">
-    <div class="center"><h2>Social Media</h2>
-    <hr>
-    <br>
-    <p>
-      <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-      <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-      <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-    </p>
-    </div>
-  </div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    <br>
-  </div>
-  </footer>
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  <script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
-
-</html>
-
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
