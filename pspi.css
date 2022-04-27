@@ -690,12 +690,16 @@ h3{
 }
 
 .name input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .email {
@@ -708,12 +712,16 @@ h3{
 }
 
 .email input[type=email] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .firstname {
@@ -726,12 +734,16 @@ h3{
 }
 
 .firstname input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .surname {
@@ -744,12 +756,16 @@ h3{
 }
 
 .surname input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .date {
@@ -762,12 +778,16 @@ h3{
 }
 
 .date input[type="date"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .password {
@@ -780,12 +800,16 @@ h3{
 }
 
 .password input[type="password"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .passwordverification {
@@ -798,31 +822,19 @@ h3{
 }
 
 .passwordverification input[type="password"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
-}
-
-.passwordverification {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.passwordverification input[type="password"] {
-  padding: 10px;
-  font-size: 17px;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
   border: 1px solid grey;
-  float: center;
-  width: 80%;
-  background: #f1f1f1;
+  font-size: 15px;
 }
+
+
 .experttitle {
   position: relative;
   text-align: center;
@@ -833,12 +845,16 @@ h3{
 }
 
 .experttitle input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .expertcategories {
@@ -851,12 +867,16 @@ h3{
 }
 
 .expertcategories select {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
   float: center;
   width: 80%;
-  background: #f1f1f1;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 15px;
 }
 
 .expert {
@@ -876,6 +896,40 @@ h3{
   width: 80%;
   background: #f1f1f1;
 }
+.signup-img {
+  /* The image used */
+  background-image: url("img2.jpeg");
+
+  min-height: 650px;
+  border-radius:7px;
+  margin: 10px;
+  padding: 50px;
+  text-align:center;
+  color: white;
+  clear: both;
+  font-size: 20px;
+  font-weight: 800;
+  max-width: 1000%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size:  auto;
+  position: relative;
+}
+
+
+.signup-container {
+  position: absolute;
+  left: 35%;
+  top: -4%;
+  margin: 40px;
+  max-width: 500px;
+  padding: 6px;
+  background-color:#EDFFB5;
+  border-radius:5px
+}
+
+
 
 /* categories */
 .header {
