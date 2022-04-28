@@ -323,7 +323,7 @@ h2 em {
   font-style: normal;
   font-weight: 600;
 }
-
+/*
 .categoryTitle h2{
   text-decoration: underline;
   color:black;
@@ -332,9 +332,9 @@ h2 em {
   font-size:26px;
   font-weight:700;
 }
-
+*/
 /*title in AllArticles*/
-/*
+
 
 .categoryTitle h2 {
   font-size:26px;
@@ -367,7 +367,7 @@ h2 em {
     height: 3px;
     width: 100px;
     margin-bottom: 0.25em;
-}*/
+}
 
 .dropbtn {
   background-color:#32cd32;
