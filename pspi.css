@@ -335,39 +335,15 @@ h2 em {
 */
 /*title in AllArticles*/
 
-
+/*
 .categoryTitle h2 {
   font-size:26px;
-  font-weight:700;
+  font-weight:bold;
   letter-spacing:1px;
   text-transform:uppercase;
   width:160px;
-  display: inline-block;
   text-align:center;
-  margin:auto;
-  white-space:nowrap;
-  padding-bottom:13px;
-}
-
-.categoryTitle h2:before {
-    background-color: #ED6964;
-    content: '';
-    display: block;
-    height: 3px;
-    width: 100px;
-    margin-bottom: 5px;
-}
-
-
-.categoryTitle h2:after {
-    background-color: #90EE90;
-    content: '';
-    display: block;
-  position:absolute; right:0; bottom:0;
-    height: 3px;
-    width: 100px;
-    margin-bottom: 0.25em;
-}
+}*/
 
 .dropbtn {
   background-color:#32cd32;
@@ -1066,11 +1042,16 @@ h3{
     text-align:center;
     margin:14px;
 }
+
 .content {
    list-style-position: inside;
   background: #def3f2;
+  text-align: center;
   padding: 20px;
 }
+
+
+
 /*eidikoi.html*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1092,6 +1073,3 @@ a1 {
   font-size: 22px;
   color: black;
 }
-
-
-
