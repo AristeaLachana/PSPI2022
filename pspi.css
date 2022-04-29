@@ -1044,8 +1044,30 @@ h3{
   font-size: 18px;
 }
 
+
+
 a1 {
   text-decoration: none;
   font-size: 22px;
   color: black;
+}
+
+.column-eidikoi {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+.column-eidikoi img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column-eidikoi img:hover {
+  opacity: 1;
+}
+.row-eidikoi:after {
+  content: "";
+  display: table;
+  clear: both;
 }
