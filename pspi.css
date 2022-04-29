@@ -323,27 +323,6 @@ h2 em {
   font-style: normal;
   font-weight: 600;
 }
-/*
-.categoryTitle h2{
-  text-decoration: underline;
-  color:black;
-  text-decoration-color: #6495ED;
-  padding-bottom: 13px;
-  font-size:26px;
-  font-weight:700;
-}
-*/
-/*title in AllArticles*/
-
-/*
-.categoryTitle h2 {
-  font-size:26px;
-  font-weight:bold;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  width:160px;
-  text-align:center;
-}*/
 
 .dropbtn {
   background-color:#32cd32;
@@ -456,8 +435,6 @@ h3{
 
 /*login page*/
 .login-style {
-    /*background: rgb(2,55,244);
-    background: linear-gradient(90deg, rgba(2,55,244,0.908000700280112) 0%, rgba(0,212,255,1) 100%);*/
     background-image:url(img2.jpeg);
     background-repeat: no-repeat;
     border-radius:7px;
@@ -509,7 +486,7 @@ h3{
 .login-style-textbox:focus {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
 }
-/*contactpage*/
+
 /*contactpage*/
 .messenge {
   position: relative;
@@ -609,6 +586,7 @@ h3{
   width: 50%;
   background:#f1f1f1;
 }
+
 .add-style {
   /* The image used */
   background-image: url("image4.jpg");
@@ -630,6 +608,7 @@ h3{
   position: relative;
 
 }
+
 .containeradd {
   position: absolute;
   left: 35%;
@@ -652,8 +631,6 @@ h3{
     border: 1px solid grey;
     font-size: 15px;
 }
-
-
 
 /*pagination*/
 .pagination {
@@ -680,6 +657,7 @@ h3{
 .center {
   text-align: center;
 }
+
 /*sign up page*/
 .name {
   position: relative;
@@ -1065,8 +1043,6 @@ h3{
   color: grey;
   font-size: 18px;
 }
-
-
 
 a1 {
   text-decoration: none;
