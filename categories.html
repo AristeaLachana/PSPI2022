@@ -33,7 +33,14 @@ a{
          width="400" height="100"></a>
   </div>
 <br><br>
-
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Ο λογαριασμός μου</button>
+<div id="myDropdown" class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+</div>
   <form class="search" style="margin:auto;max-width:400px">
     <input type="text"  placeholder="Search.." name="search">
     <button type="submit"> <i class="fa fa-search"></i></button>
@@ -140,8 +147,30 @@ a{
   </div>
 </div>
 </footer>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 <script>
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
