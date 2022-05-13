@@ -1,0 +1,171 @@
+
+  <html>
+  <head>
+    <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="pspi.css">
+  <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>RECIPES</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="upperBackground">
+    <div class="logo" >
+        <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
+           width="400" height="100"></a>
+    </div>
+  <br><br>
+
+    <form class="search" style="margin:auto;max-width:400px">
+      <input type="text"  placeholder="Search.." name="search">
+      <button type="submit"> <i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+    <div class="page">
+      <nav class="page__menu page__custom-settings menu">
+
+        <ul class="menu__list r-list">
+          <li class="menu__group"><a href="mainpage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+          <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
+          <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
+          <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+
+        </ul>
+
+      </nav>
+    </div>
+    <br>
+
+
+    <div class="center">
+      <hr style="border-top:2px solid #90EE90">
+          <h2><strong>ΔΙΑΤΡΟΦΗ</strong></h2>
+    <hr style="border-top:2px solid  #ED6964">
+      </div><br>
+
+      <div class="dropdown">
+      <button class="dropbtn">Επιλογές</button>
+      <div class="dropdown-content">
+        <a href="recipes.html">Συνταγές</a>
+        <a href="allArticlesNutrition.html">Άρθρα</a>
+      </div>
+    </div>
+
+    <br>
+
+    <h3>ΣΥΝΤΑΓΕΣ</h3>
+
+        <!--first article-->
+        <div class="containerBlog">
+          <br>
+
+          <p>
+            <a class="containerBlog__img_link" href="readmorequinoapesto.html">
+              <img class="containerBlog__img" src="κινοα.jpg"/>
+            </a>
+    <a href="readmorequinoapesto.html"><strong>Quinoa Risotto με πέστο ρόκας-δυόσμου</strong></a><br><br>
+    Μία ιδέα για το πώς να εντάξετε τη κινόα στη διατροφή σας, που είναι μια εξαιρετική πηγή μαγνησίου, φυλλικού οξέος, καλίου, σιδήρου και ψευδαργύρου, ασβεστίου και φυτικών ινών.<a href="readmorequinoapesto.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+
+    </p>
+
+    </div>
+
+    <!--second article-->
+        <div class="containerBlog">
+          <br>
+
+          <p>
+            <a class="containerBlog__img_link" href="readmoregranola.html">
+              <img class="containerBlog__img" src="granola.jpg"/>
+            </a>
+
+            <a href="readmoregranola.html"><strong>Τραγανή granola με αποξηραμένα φρούτα και ξηρούς καρπούς</strong></a><br><br>
+            Τί θα λέγατε για ένα γευστικό συνδυασμό που μας κρατάει πλήρεις και μας προσφέρει απλόχερα όλα τα θρεπτικά συστατικά που χρειάζεται ο οργανισμός μας για να ξεκινήσει δυναμικά η μέρα μας;<a href="readmoregranola.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+        </p>
+
+        </div>
+        <br>
+
+
+  <footer class="footerCSS">
+    <div class="footerRow">
+      <br/>
+      <div class="footerColumn">
+    <div class="center" style="color:black" ><h2>Στοιχεία Επικοινωνίας</a></h2>
+    <hr>
+    <p><strong>e-mail:</strong><br/>
+    hege@example.com <br/></br>
+    <strong>Τηλέφωνο:</strong><br/>
+    2310-___-___<br/></p>
+  </div>
+  </div>
+
+  <div class="footerColumn">
+    <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
+    <hr>
+    <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
+    <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
+    <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
+  </div>
+  </div>
+
+  <div class="footerColumn">
+    <div class="center"><h2 style="color:black;">Social Media</h2>
+    <hr>
+    <br>
+    <p>
+      <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
+      <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
+      <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
+    </p>
+    </div>
+  </div>
+  </footer>
+
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  </html>

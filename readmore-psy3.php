@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@
             <hr style="border-top:2px solid #90EE90">
             <h2><strong>ΓΙΑΤΙ ΝΑ ΤΙΜΩΡΕΙΣ ΤΟΝ ΕΑΥΤΟ ΣΟΥ</strong></h2>
             <hr style="border-top:2px solid  #ED6964">
-           
+
         </div>
         <img alt="yourself" src="yourself.jpg" width="600" height="500">
         <p class="readmore_text">

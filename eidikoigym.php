@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
   <html>
   <head>
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
   <!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>RECIPES</title>
+  <title>Η ΟΜΑΔΑ ΜΑΣ</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
   body {
@@ -54,62 +54,90 @@
 
     <div class="center">
       <hr style="border-top:2px solid #90EE90">
-          <h2><strong>ΔΙΑΤΡΟΦΗ</strong></h2>
+          <h2><strong>Η ΟΜΑΔΑ ΜΑΣ</strong></h2>
     <hr style="border-top:2px solid  #ED6964">
       </div><br>
 
       <div class="dropdown">
       <button class="dropbtn">Επιλογές</button>
       <div class="dropdown-content">
-        <a href="recipes.html">Συνταγές</a>
-        <a href="allArticlesNutrition.html">Άρθρα</a>
+        <a href="eidikoi.html">ΔΙΑΤΡΟΦΟΛΟΓΟΙ</a>
+        <a href="eidikoigym.html">ΓΥΜΝΑΣΤΕΣ</a>
+        <a href="eidikoiph.html">ΨΥΧΟΛΟΓΟΙ</a>
       </div>
     </div>
 
     <br>
 
-    <h3>ΣΥΝΤΑΓΕΣ</h3>
+    <h3>ΓΥΜΝΑΣΤΕΣ</h3>
+    <div class="row-eidikoi">
+      <div class="column-eidikoi">
+        <div class="card">
+             <img src="eidikos.jpg" alt="Γιώργος" style="width:100%">
+             <h1>Γιώργος Κ.</h1>
+             <p class="title1">ΓΥΜΝΑΣΤΗΣ</p>
+             <p>Σχολή Επιστήμης Φυσικής Αγωγής και Αθλητισμού Α.Π.Θ.</p>
+             <div style="margin: 24px 0;">
+               <a1 href="#"><i class="fa fa-dribbble"></i></a1>
+               <a1 href="#"><i class="fa fa-twitter"></i></a1>
+               <a1 href="#"><i class="fa fa-linkedin"></i></a1>
+               <a1 href="#"><i class="fa fa-facebook"></i></a1>
+               <p></p>
+             </div>
+           </div>
+      </div>
+      <div class="column-eidikoi">
+        <div class="card">
+             <img src="eidikos.jpg" alt="Μαρία" style="width:100%">
+             <h1>Μαρία Μ.</h1>
+             <p class="title1">ΓΥΜΝΑΣΤΡΙΑ</p>
+             <p>Τμήμα Επιστήμης Φυσικής Αγωγής και Αθλητισμού Ε.Κ.Π.Α.</p>
+             <div style="margin: 24px 0;">
+               <a1 href="#"><i class="fa fa-dribbble"></i></a1>
+               <a1 href="#"><i class="fa fa-twitter"></i></a1>
+               <a1 href="#"><i class="fa fa-linkedin"></i></a1>
+               <a1 href="#"><i class="fa fa-facebook"></i></a1>
+               <p></p>
+             </div>
+           </div>
+      </div>
+      <div class="column-eidikoi">
+        <div class="card">
+             <img src="eidikos.jpg" alt="Γιάννης" style="width:100%">
+             <h1>Γιάννης Τ.</h1>
+             <p class="title1">ΓΥΜΝΑΣΤΗΣ</p>
+             <p>Σχολή Επιστήμης Φυσικής Αγωγής και Αθλητισμού Α.Π.Θ.</p>
+             <div style="margin: 24px 0;">
+               <a1 href="#"><i class="fa fa-dribbble"></i></a1>
+               <a1 href="#"><i class="fa fa-twitter"></i></a1>
+               <a1 href="#"><i class="fa fa-linkedin"></i></a1>
+               <a1 href="#"><i class="fa fa-facebook"></i></a1>
+               <p></p>
+             </div>
+            </div>
+      </div>
 
-        <!--first article-->
-        <div class="containerBlog">
-          <br>
+</div>
 
-          <p>
-            <a class="containerBlog__img_link" href="readmorequinoapesto.html">
-              <img class="containerBlog__img" src="κινοα.jpg"/>
-            </a>
-    <a href="readmorequinoapesto.html"><strong>Quinoa Risotto με πέστο ρόκας-δυόσμου</strong></a><br><br>
-    Μία ιδέα για το πώς να εντάξετε τη κινόα στη διατροφή σας, που είναι μια εξαιρετική πηγή μαγνησίου, φυλλικού οξέος, καλίου, σιδήρου και ψευδαργύρου, ασβεστίου και φυτικών ινών.<a href="readmorequinoapesto.html" style="color:grey;">...Διαβάστε περισσότερα</a>
 
-    </p>
 
-    </div>
 
-    <!--second article-->
-        <div class="containerBlog">
-          <br>
 
-          <p>
-            <a class="containerBlog__img_link" href="readmoregranola.html">
-              <img class="containerBlog__img" src="granola.jpg"/>
-            </a>
 
-            <a href="readmoregranola.html"><strong>Τραγανή granola με αποξηραμένα φρούτα και ξηρούς καρπούς</strong></a><br><br>
-            Τί θα λέγατε για ένα γευστικό συνδυασμό που μας κρατάει πλήρεις και μας προσφέρει απλόχερα όλα τα θρεπτικά συστατικά που χρειάζεται ο οργανισμός μας για να ξεκινήσει δυναμικά η μέρα μας;<a href="readmoregranola.html" style="color:grey;">...Διαβάστε περισσότερα</a>
-        </p>
 
-        </div>
-        <br>
 
+
+<br>
+<br>
 
   <footer class="footerCSS">
     <div class="footerRow">
       <br/>
       <div class="footerColumn">
-    <div class="center" style="color:black" ><h2>Στοιχεία Επικοινωνίας</a></h2>
+    <div class="center" style="color:black"><h2> Στοιχεία Επικοινωνίας</h2>
     <hr>
     <p><strong>e-mail:</strong><br/>
-    hege@example.com <br/></br>
+    hege@example.com <br></br>
     <strong>Τηλέφωνο:</strong><br/>
     2310-___-___<br/></p>
   </div>

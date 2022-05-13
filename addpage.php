@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>ΕΠΙΚΟΙΝΩΝΙΑ</title>
+    <title>Προσθήκη Αρχείου</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
       img {
@@ -23,7 +23,7 @@
       }
       body {background-color:white;}
       h1 {color:#125688;}
-      h2 {color:black;}
+      h2 {color:#125688;}
       h5 {color:#ED6964;}
       p {color:black;}
 
@@ -44,7 +44,7 @@
       <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
          width="400" height="100"></a>
   </div>
-  <br><br>
+<br><br>
 
   <form class="search" style="margin:auto;max-width:400px">
     <input type="text"  placeholder="Search.." name="search">
@@ -66,36 +66,40 @@
     </nav>
   </div>
   <br>
+
+
   <br>
-    <div class="center">
-      <hr style="border-top:2px solid #90EE90">
-            <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
-            <hr style="border-top:2px solid  #ED6964">
-    </div>
+  <hr style="border-top:2px solid #90EE90">
+           <div class="center">
+              <h2><strong>ΠΡΟΣΘΗΚΗ ΑΡΧΕΙΟΥ</strong></h2>
+           </div>
 
- <div class="bg-img1">
-   <form action="/sendData" method="post" class="containercontact">
-         <input class="contact-style-textbox" type="email" style="margin:auto;max-width:200733345px" name="email" placeholder="Email">
-         <br>
-         <br>
-         <label for="txtComments"> </label>
-         <textarea  class="contact-style-textbox" id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Γράψτε το μηνυμά σας...."></textarea>
-         <br>
-         <br>
-         <a> <button class="btn">Αποστολή</button> </a>
-    </form>
-    <br>
-    <br>
+
+    <hr style="border-top:2px solid  #ED6964">
+  <div class="add-style">
+
+    <form action="sendData" class="containeradd" method="post" enctype="multipart/form-data">
+     <div class="add">
+
+      <h5><label for='fc'> Επιλογή αρχείου </label>
+      <input  type='file' id='fc'name="file" ></h5>
+      <label for="txtComments"> </label>
+      <textarea class="add-style-textbox" id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Προσθήκη σχολίων..."></textarea>
+
+      <br>
+      <br>
+      <div class="submit"></div>
+      <a> <button class="btn">Υποβολή</button> </a>
+     </div>
+   </form>
   </div>
-
-</body>
-<br>
-</br>
+  <br>
+  </br>
   <footer class="footerCSS">
   <div class="footerRow">
     <br/>
     <div class="footerColumn">
-  <div class="center" style="color:black"><h2> Στοιχεία Επικοινωνίας</h2>
+  <div class="center" style="color:black"><h2>Στοιχεία Επικοινωνίας</h2>
   <hr>
   <p><strong>e-mail:</strong><br/>
   hege@example.com <br/></br>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,11 +61,11 @@
         </nav>
     </div>
     <div class="readmore">
-      
+
        <hr style="border-top:2px solid #90EE90">
             <h2><strong>Πως να μην τρώτε τα συναισθήματα σας</strong></h2>
        <hr style="border-top:2px solid  #ED6964">
-           
+
     </div>
         <img alt="image_eating_disorder" src="eating-disorder.png" width="50%" height="30%">
         <p class="readmore_text">

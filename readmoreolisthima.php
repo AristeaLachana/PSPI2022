@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@
             <hr style="border-top:2px solid #90EE90">
               <h2><strong>Τί να κάνεις μετά από ένα ολίσθημα</strong></h2>
             <hr style="border-top:2px solid  #ED6964">
-           
+
         </div>
         <img alt="junkfood" src="junkfood.jpg" width="70%" height="70%">
         <p class="readmore_text">
