@@ -28,7 +28,7 @@ a{
 <body>
 
   <?php
-  include 'header.php'
+  include 'header.php';
    ?>
   <br>
   <div class="center">
@@ -83,7 +83,7 @@ a{
 </body>
 <br>
 <?php
-include 'footer.php'
+include 'footer.php';
  ?>
 <script>
 /* When the user clicks on the button,

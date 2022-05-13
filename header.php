@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <div class="upperBackground">
   <div class="logo" >
       <a href="mainPage.php"> <img alt="Improve Your Health" src="logo.png"
@@ -31,3 +32,4 @@
 
     </nav>
   </div>
+</html>

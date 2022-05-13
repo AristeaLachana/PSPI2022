@@ -26,7 +26,7 @@
 
   <body>
     <?php
-    include 'header.php'
+    include 'header.php';
      ?>
     <br>
 
@@ -80,7 +80,7 @@
   </body>
 
   <?php
-  include 'footer.php'
+  include 'footer.php';
    ?>
     <br>
 </html>

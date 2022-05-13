@@ -31,7 +31,7 @@
 </head>
 <body>
   <?php
-  include 'header.php'
+  include 'header.php';
    ?>
     <div class="readmore">
 
@@ -63,6 +63,6 @@
     <br>
 </body>
 <?php
-include 'footer.php'
+include 'footer.php';
  ?>
 </html>

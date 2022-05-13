@@ -21,7 +21,7 @@
     }
     </style>
     <?php
-    include 'header.php'
+    include 'header.php';
      ?>
     <br>
 <div class="center">
@@ -154,7 +154,7 @@ Tip 2: Για όσους φοβούνται τους υδατάνθρακες κ
     </div>
   </body>
   <?php
-  include 'footer.php'
+  include 'footer.php';
    ?>
 
 

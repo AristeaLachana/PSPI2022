@@ -23,7 +23,7 @@
   </head>
   <body>
     <?php
-    include 'header.php'
+    include 'header.php';
      ?>
     <br>
 
@@ -77,7 +77,7 @@
         </div>
         <br>
         <?php
-        include 'footer.php'
+        include 'footer.php';
          ?>
 
 

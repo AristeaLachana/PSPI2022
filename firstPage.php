@@ -63,6 +63,6 @@
 <br>
 
 <?php
-include 'footer2.php'
+include 'footer2.php';
  ?>
 </html>

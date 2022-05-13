@@ -40,7 +40,7 @@
   <body>
 
     <?php
-    include 'header.php'
+    include 'header.php';
      ?>
   <br>
 
@@ -73,7 +73,7 @@
   <br>
   </br>
 <?php
-include 'footer.php'
+include 'footer.php';
  ?>
 <script>
 let slideIndex = 1;
