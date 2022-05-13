@@ -22,33 +22,9 @@
   </style>
   </head>
   <body>
-
-  <div class="upperBackground">
-    <div class="logo" >
-        <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
-           width="400" height="100"></a>
-    </div>
-  <br><br>
-
-    <form class="search" style="margin:auto;max-width:400px">
-      <input type="text"  placeholder="Search.." name="search">
-      <button type="submit"> <i class="fa fa-search"></i></button>
-    </form>
-  </div>
-
-    <div class="page">
-      <nav class="page__menu page__custom-settings menu">
-
-        <ul class="menu__list r-list">
-          <li class="menu__group"><a href="mainpage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-          <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-          <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-          <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
-        </ul>
-
-      </nav>
-    </div>
+    <?php
+    include 'header.php'
+     ?>
     <br>
 
 
@@ -61,8 +37,8 @@
       <div class="dropdown">
       <button class="dropbtn">Επιλογές</button>
       <div class="dropdown-content">
-        <a href="recipes.html">Συνταγές</a>
-        <a href="allArticlesNutrition.html">Άρθρα</a>
+        <a href="recipes.php">Συνταγές</a>
+        <a href="allArticlesNutrition.php">Άρθρα</a>
       </div>
     </div>
 
@@ -75,11 +51,11 @@
           <br>
 
           <p>
-            <a class="containerBlog__img_link" href="readmorequinoapesto.html">
+            <a class="containerBlog__img_link" href="readmorequinoapesto.php">
               <img class="containerBlog__img" src="κινοα.jpg"/>
             </a>
-    <a href="readmorequinoapesto.html"><strong>Quinoa Risotto με πέστο ρόκας-δυόσμου</strong></a><br><br>
-    Μία ιδέα για το πώς να εντάξετε τη κινόα στη διατροφή σας, που είναι μια εξαιρετική πηγή μαγνησίου, φυλλικού οξέος, καλίου, σιδήρου και ψευδαργύρου, ασβεστίου και φυτικών ινών.<a href="readmorequinoapesto.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+    <a href="readmorequinoapesto.php"><strong>Quinoa Risotto με πέστο ρόκας-δυόσμου</strong></a><br><br>
+    Μία ιδέα για το πώς να εντάξετε τη κινόα στη διατροφή σας, που είναι μια εξαιρετική πηγή μαγνησίου, φυλλικού οξέος, καλίου, σιδήρου και ψευδαργύρου, ασβεστίου και φυτικών ινών.<a href="readmorequinoapesto.php" style="color:grey;">...Διαβάστε περισσότερα</a>
 
     </p>
 
@@ -90,52 +66,20 @@
           <br>
 
           <p>
-            <a class="containerBlog__img_link" href="readmoregranola.html">
+            <a class="containerBlog__img_link" href="readmoregranola.php">
               <img class="containerBlog__img" src="granola.jpg"/>
             </a>
 
-            <a href="readmoregranola.html"><strong>Τραγανή granola με αποξηραμένα φρούτα και ξηρούς καρπούς</strong></a><br><br>
-            Τί θα λέγατε για ένα γευστικό συνδυασμό που μας κρατάει πλήρεις και μας προσφέρει απλόχερα όλα τα θρεπτικά συστατικά που χρειάζεται ο οργανισμός μας για να ξεκινήσει δυναμικά η μέρα μας;<a href="readmoregranola.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+            <a href="readmoregranola.php"><strong>Τραγανή granola με αποξηραμένα φρούτα και ξηρούς καρπούς</strong></a><br><br>
+            Τί θα λέγατε για ένα γευστικό συνδυασμό που μας κρατάει πλήρεις και μας προσφέρει απλόχερα όλα τα θρεπτικά συστατικά που χρειάζεται ο οργανισμός μας για να ξεκινήσει δυναμικά η μέρα μας;<a href="readmoregranola.php" style="color:grey;">...Διαβάστε περισσότερα</a>
         </p>
 
         </div>
         <br>
+        <?php
+        include 'footer.php'
+         ?>
 
-
-  <footer class="footerCSS">
-    <div class="footerRow">
-      <br/>
-      <div class="footerColumn">
-    <div class="center" style="color:black" ><h2>Στοιχεία Επικοινωνίας</a></h2>
-    <hr>
-    <p><strong>e-mail:</strong><br/>
-    hege@example.com <br/></br>
-    <strong>Τηλέφωνο:</strong><br/>
-    2310-___-___<br/></p>
-  </div>
-  </div>
-
-  <div class="footerColumn">
-    <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
-    <hr>
-    <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-    <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-    <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
-  </div>
-  </div>
-
-  <div class="footerColumn">
-    <div class="center"><h2 style="color:black;">Social Media</h2>
-    <hr>
-    <br>
-    <p>
-      <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-      <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-      <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-    </p>
-    </div>
-  </div>
-  </footer>
 
   <script>
   let slideIndex = 1;

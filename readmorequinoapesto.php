@@ -42,7 +42,7 @@
 
         </div>
         <br>
-        <img alt="image_readmore" src="κινοα.jpg" width="30%" height="100%">
+        <img alt="image_readmore" src="κινοα.jpg" width="30%" height="50%">
         <h2>ΥΛΙΚΑ</h2>
         <p class="readmore_text">
           1/2 φλ. φύλλα ρόκας

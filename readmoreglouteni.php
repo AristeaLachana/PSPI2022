@@ -46,7 +46,7 @@
 
 
         <br>
-        <img alt="image_readmore" src="glouteni.jpg" width="30%" height="100%">
+        <img alt="image_readmore" src="glouteni.jpg" width="30%">
 
         <p class="readmore_text">
           Γιατί άλλωστε να μας παχαίνει μια πρωτεΐνη; Γιατί αυτό είναι, το ξέρετε έτσι;<br>

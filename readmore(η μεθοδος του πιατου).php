@@ -47,7 +47,7 @@
 
 
         <br>
-        <img alt="image_readmore" src="methodos-tou-piatou.jpg" width="30%" height="100%">
+        <img alt="image_readmore" src="methodos-tou-piatou.jpg" width="30%">
 
         <p class="readmore_text">
           Η Μέθοδος του Πιάτου, τo λεγόμενο #healthyeatingplate που δημιούργησαν expert διατροφής στο Harvard με σκοπό να μας εξηγήσουν απλά, πώς πρέπει να χτίζουμε ισορροπημένα και υγιεινά το πιάτο μας στα βασικά μας γεύματα..

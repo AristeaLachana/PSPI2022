@@ -7,9 +7,8 @@
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Ο λογαριασμός μου</button>
 <div id="myDropdown" class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
+  <a href="#">Τα στοιχεία μου</a>
+  <a href="#">Αποσύνδεση</a>
 </div>
 </div>
   <form class="search" style="margin:auto;max-width:400px">

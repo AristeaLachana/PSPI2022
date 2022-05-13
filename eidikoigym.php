@@ -24,7 +24,7 @@
   <body>
 
     <?php
-    include 'header.php'
+    include 'header.php';
      ?>
     <br>
 
@@ -45,8 +45,8 @@
     </div>
 
     <br>
+    <h3 >ΓΥΜΝΑΣΤΕΣ</h3>
 
-    <h3>ΓΥΜΝΑΣΤΕΣ</h3>
     <div class="row-eidikoi">
       <div class="column-eidikoi">
         <div class="card">
@@ -96,19 +96,11 @@
 
 </div>
 
-
-
-
-
-
-
-
-
 <br>
 <br>
-
+</body>
 <?php
-include 'footer.php'
+ include 'footer.php';
  ?>
 
   <script>

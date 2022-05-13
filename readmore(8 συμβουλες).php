@@ -37,7 +37,7 @@
 
 
         <br>
-        <img alt="image_readmore" src="exercise2.jpg" width="30%" height="100%">
+        <img alt="image_readmore" src="exercise2.jpg" width="30%">
 
         <p class="readmore_text">
           Όταν είστε αρχάριος, μπορεί να είναι δύσκολο να ξεκινήσετε και να αφοσιωθείτε στο ταξίδι σας για την υγεία και τη φυσική κατάσταση.

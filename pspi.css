@@ -508,7 +508,6 @@ h3{
 .bg-img1 {
   /* The image used */
   background-image: url("image6.jpg");
-
   min-height: 450px;
   border-radius:7px;
   margin: 10px;

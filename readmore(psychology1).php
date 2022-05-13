@@ -42,7 +42,7 @@
        <hr style="border-top:2px solid  #ED6964">
 
     </div>
-        <img alt="image_eating_disorder" src="eating-disorder.png" width="50%" height="30%">
+        <img alt="image_eating_disorder" src="eating-disorder.png" width="30%" height="30%">
         <p class="readmore_text">
 
             Μια πολύ λογική διαπίστωση, που δεν βρίσκει καμία εφαρμογή στην καθημερινότητα των περισσότερων από εμάς. Αν φάμε λιγότερο ή περισσότερο η υγεία και η ποιότητα της ζωής μας επηρεάζεται -αρνητικά-  και κατά συνέπεια το ίδιο συμβαίνει και στην ψυχολογία μας.

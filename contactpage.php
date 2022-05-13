@@ -48,8 +48,8 @@
       <hr style="border-top:2px solid #90EE90">
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
             <hr style="border-top:2px solid  #ED6964">
-    </div>
 
+</div>
  <div class="bg-img1">
    <form action="/sendData" method="post" class="containercontact">
          <input class="contact-style-textbox" type="email" style="margin:auto;max-width:200733345px" name="email" placeholder="Email">
@@ -61,10 +61,11 @@
          <br>
          <a> <button class="btn">Αποστολή</button> </a>
     </form>
-    <br>
-    <br>
-  </div>
 
+    <br>
+    <br>
+
+</div>
 </body>
 <br>
 </br>
