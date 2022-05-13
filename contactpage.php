@@ -39,32 +39,9 @@
 
   <body>
 
-   <div class="upperBackground">
-  <div class="logo" >
-      <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
-         width="400" height="100"></a>
-  </div>
-  <br><br>
-
-  <form class="search" style="margin:auto;max-width:400px">
-    <input type="text"  placeholder="Search.." name="search">
-    <button type="submit"> <i class="fa fa-search"></i></button>
-  </form>
-</div>
-
-  <div class="page">
-    <nav class="page__menu page__custom-settings menu">
-
-      <ul class="menu__list r-list">
-        <li class="menu__group"><a href="mainPage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-        <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-        <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-        <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
-      </ul>
-
-    </nav>
-  </div>
+    <?php
+    include 'header.php'
+     ?>
   <br>
   <br>
     <div class="center">
@@ -91,39 +68,9 @@
 </body>
 <br>
 </br>
-  <footer class="footerCSS">
-  <div class="footerRow">
-    <br/>
-    <div class="footerColumn">
-  <div class="center" style="color:black"><h2> Στοιχεία Επικοινωνίας</h2>
-  <hr>
-  <p><strong>e-mail:</strong><br/>
-  hege@example.com <br/></br>
-  <strong>Τηλέφωνο:</strong><br/>
-  2310-___-___<br/></p>
-</div>
-</div>
-
-<div class="footerColumn">
-  <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
-  <hr>
-  <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-  <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-  <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
-</div>
-</div>
-
-<div class="footerColumn">
-  <div class="center"><h2 style="color:black;">Social Media</h2>
-  <hr>
-  <br>
-  <p>
-    <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-    <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-    <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-  </p>
-  </div>
-</div>
+<?php
+include 'footer.php'
+ ?>
 
 <script>
 let slideIndex = 1;

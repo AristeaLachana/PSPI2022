@@ -27,39 +27,9 @@ a{
 </head>
 <body>
 
-<div class="upperBackground">
-  <div class="logo" >
-      <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
-         width="400" height="100"></a>
-  </div>
-<br><br>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Ο λογαριασμός μου</button>
-<div id="myDropdown" class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-</div>
-</div>
-  <form class="search" style="margin:auto;max-width:400px">
-    <input type="text"  placeholder="Search.." name="search">
-    <button type="submit"> <i class="fa fa-search"></i></button>
-  </form>
-</div>
-
-  <div class="page">
-    <nav class="page__menu page__custom-settings menu">
-
-      <ul class="menu__list r-list">
-        <li class="menu__group"><a href="mainPage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-        <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-        <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-        <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
-      </ul>
-
-    </nav>
-  </div>
+  <?php
+  include 'header.php'
+   ?>
   <br>
   <div class="center">
     <hr style="border-top:2px solid #90EE90">
@@ -77,24 +47,24 @@ a{
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <div class="header">
-    <a href="allArticlesExercise.html"><img src="workout.jpg" style="width:100%"></a>
-    <div class="overlay"><a href="allArticlesExercise.html">ΣΩΜΑΤΙΚΗ ΑΣΚΗΣΗ</a></div>
+    <a href="allArticlesExercise.php"><img src="workout.jpg" style="width:100%"></a>
+    <div class="overlay"><a href="allArticlesExercise.php">ΣΩΜΑΤΙΚΗ ΑΣΚΗΣΗ</a></div>
   </div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <div class="header">
-    <a href="allArticlesNutrition.html"><img src="nutrition.jpg" style="width:100%"></a>
-    <div class="overlay"><a href="allArticlesNutrition.html">ΔΙΑΤΡΟΦΗ</a></div>
+    <a href="allArticlesNutrition.php"><img src="nutrition.jpg" style="width:100%"></a>
+    <div class="overlay"><a href="allArticlesNutrition.php">ΔΙΑΤΡΟΦΗ</a></div>
   </div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <div class="header">
-    <a href="allArticlesPsychology.html"><img src="psychology.jpg" style="width:100%"></a>
-    <div class="overlay"><a href="allArticlesPsychology.html">ΨΥΧΟΛΟΓΙΑ</a></div>
+    <a href="allArticlesPsychology.php"><img src="psychology.jpg" style="width:100%"></a>
+    <div class="overlay"><a href="allArticlesPsychology.php">ΨΥΧΟΛΟΓΙΑ</a></div>
   </div>
   </div>
 
@@ -112,41 +82,9 @@ a{
 </div>
 </body>
 <br>
-
-<footer class="footerCSS">
-  <div class="footerRow">
-    <br/>
-    <div class="footerColumn">
-  <div class="center" style="color:black"><h2> Στοιχεία Επικοινωνίας</h2>
-  <hr>
-  <p><strong>e-mail:</strong><br/>
-  hege@example.com <br/></br>
-  <strong>Τηλέφωνο:</strong><br/>
-  2310-___-___<br/></p>
-</div>
-</div>
-
-<div class="footerColumn">
-  <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
-  <hr>
-  <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-  <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-  <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
-</div>
-</div>
-
-<div class="footerColumn">
-  <div class="center"><h2 style="color:black;">Social Media</h2>
-  <hr>
-  <br>
-  <p>
-    <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-    <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-    <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-  </p>
-  </div>
-</div>
-</footer>
+<?php
+include 'footer.php'
+ ?>
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */

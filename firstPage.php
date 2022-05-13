@@ -28,7 +28,7 @@
 
   <body>
     <div class="logo">
-        <a href="firstPage.html">
+        <a href="firstPage.php">
             <img alt="Improve Your Health" src="logo.png">
         </a>
     </div>
@@ -51,44 +51,18 @@
 
     <!-- sign up and log in buttons -->
     <div class="centerButtons">
-      <a href="signup.html"> <!--change-->
+      <a href="signup.php"> <!--change-->
       <button class="btn">Εγγραφή</button>
     </a>
     <div class="space"></div>
-    <a href="login.html">
+    <a href="login.php">
       <button class="btn">Σύνδεση</button>
     </a>
     </div>
   </body>
 <br>
 
-<footer class="footerCSS">
-  <div class="footerRow">
-    <br/>
-    <div class="footerColumn" style="width:50%;">
-  <div class="center"><h2 style="color:black;">Στοιχεία Επικοινωνίας</h2>
-  <hr>
-  <p><strong>e-mail:</strong><br/>
-  hege@example.com <br/></br>
-  <strong>Τηλέφωνο:</strong><br/>
-  2310-___-___<br/></p>
-</div>
-</div>
-
-<div class="footerColumn" style="width:50%;">
-  <div class="center"><h2 style="color:black;">Social Media</h2>
-  <hr>
-  <br>
-  <p>
-    <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-    <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-    <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-  </p>
-  </div>
-</div>
-
-
-  <br>
-</div>
-</footer>
+<?php
+include 'footer.php'
+ ?>
 </html>

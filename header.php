@@ -1,6 +1,6 @@
 <div class="upperBackground">
   <div class="logo" >
-      <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
+      <a href="mainPage.php"> <img alt="Improve Your Health" src="logo.png"
          width="400" height="100"></a>
   </div>
 <br><br>
@@ -22,10 +22,10 @@
     <nav class="page__menu page__custom-settings menu">
 
       <ul class="menu__list r-list">
-        <li class="menu__group"><a href="mainPage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-        <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-        <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-        <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        <li class="menu__group"><a href="mainPage.php" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="categories.php" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
+        <li class="menu__group"><a href="eidikoi.php" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
+        <li class="menu__group"><a href="contactpage.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
 
       </ul>
 

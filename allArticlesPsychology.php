@@ -25,35 +25,9 @@
   </head>
 
   <body>
-    <div class="upperBackground">
-        <div class="logo">
-            <a href="mainPage.html">
-                <img alt="Improve Your Health" src="logo.png"
-                     width="400" height="100">
-            </a>
-        </div>
-        <br><br>
-
-        <form class="search" style="margin:auto;max-width:400px">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"> <i class="fa fa-search"></i></button>
-        </form>
-    </div>
-
-    <div class="page">
-        <nav class="page__menu page__custom-settings menu">
-
-            <ul class="menu__list r-list">
-                <li class="menu__group"><a href="mainPage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-                <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-                <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-                <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
-            </ul>
-
-        </nav>
-    </div>
-
+    <?php
+    include 'header.php'
+     ?>
 <br>
     <div class="center">
        <hr style="border-top:2px solid #90EE90">
@@ -66,13 +40,13 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmore(psychology1).html">
+        <a class="containerBlog__img_link" href="readmore(psychology1).php">
           <img class="containerBlog__img" src="eating-disorder.png"/>
         </a>
         <!--restart diet-->
-<a href="readmore(psychology1).html"><strong>Πως να μην τρώτε τα συναισθήματα σας</strong></a><br><br>Μα το φαγητό πρέπει να μας κάνει να αισθανόμαστε καλά! Έχει ωραία γεύση και γεμίζει το σώμα μας με θρεπτικά συστατικά και ενέργεια!
+<a href="readmore(psychology1).php"><strong>Πως να μην τρώτε τα συναισθήματα σας</strong></a><br><br>Μα το φαγητό πρέπει να μας κάνει να αισθανόμαστε καλά! Έχει ωραία γεύση και γεμίζει το σώμα μας με θρεπτικά συστατικά και ενέργεια!
 
-Μια πολύ λογική διαπίστωση, που δεν βρίσκει καμία εφαρμογή στην καθημερινότητα των περισσότερων από εμάς. Αν φάμε λιγότερο ή περισσότερο η υγεία και η ποιότητα της ζωής μας επηρεάζεται -αρνητικά-  και κατά συνέπεια το ίδιο συμβαίνει και στην ψυχολογία μας.<a href="readmore(psychology1).html" style="color:grey;">...Διαβάστε περισσότερα</a>
+Μια πολύ λογική διαπίστωση, που δεν βρίσκει καμία εφαρμογή στην καθημερινότητα των περισσότερων από εμάς. Αν φάμε λιγότερο ή περισσότερο η υγεία και η ποιότητα της ζωής μας επηρεάζεται -αρνητικά-  και κατά συνέπεια το ίδιο συμβαίνει και στην ψυχολογία μας.<a href="readmore(psychology1).php" style="color:grey;">...Διαβάστε περισσότερα</a>
 <!--Η σύνδεση φαγητού και ψυχολογίας είναι αδιαμφισβήτητη. Όλοι έχουμε «φάει» τα συναισθήματα μας, άγχος, λύπη, αγωνία, βαρεμάρα και πόσα ακόμα θετικά, αλλά κυρίως αρνητικά συναισθήματα και καταστάσεις. Όλοι έχουμε επιβραβεύσει ή τιμωρήσει τον εαυτό μας με φαγητό ή στέρηση φαγητού. Το δύσκολο κομμάτι έρχεται όταν οι παραπάνω καταστάσεις παγιώνονται και καθιστούν την καθημερινότητα μας δυσλειτουργική.
 
 Μικρές διατροφικές αλλαγές μπορούν να κάνουν τη μεγάλη διαφορά. Ευρήματα από σχετικές έρευνες έχουν αποδείξει ότι πολύ μικρές προσαρμογές όπως
@@ -94,14 +68,14 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmore(psy2).html">
+        <a class="containerBlog__img_link" href="readmore(psy2).php">
           <img class="containerBlog__img" src="junkfood.jpg"/>
         </a>
-        <a href="readmore(psy2).html"><strong>Τί να κάνεις μετά από ένα ολίσθημα</strong></a><br><br>
+        <a href="readmore(psy2).php"><strong>Τί να κάνεις μετά από ένα ολίσθημα</strong></a><br><br>
         Mετάβαση από την διατροφή των εορτών πίσω στο ισορροπημένο μεσογειακό πλάνο, μπορεί να φαντάζει πρόκληση.
 Κι αυτό γιατί πάνω που παίρνεις την απόφαση να σταματήσεις να τρως χαζομάρες όλο και κάτι γίνεται και καταλήγεις να πέφτεις σε ολίσθημα.
 
-Αυτό που ίσως δεν σου έχει πει κανένας μέχρι τώρα όμως, είναι ότι<a href="readmore(psy2).html" style="color:grey;">...Διαβάστε περισσότερα</a>
+Αυτό που ίσως δεν σου έχει πει κανένας μέχρι τώρα όμως, είναι ότι<a href="readmore(psy2).php" style="color:grey;">...Διαβάστε περισσότερα</a>
 <!--τα ολισθήματα είναι ένα αναπόσπαστο κομμάτι της διατροφής.
 
 Συμβαίνουν σε όλους μας και είναι αναμενόμενο να προκύπτουν όταν απαγορεύεις από μόνος σου τροφές επειδή είσαι συναισθηματικά φορτισμένος κ.α.
@@ -117,11 +91,11 @@
           <br>
 
           <p>
-            <a class="containerBlog__img_link" href="readmore-psy3.html">
+            <a class="containerBlog__img_link" href="readmore-psy3.php">
               <img class="containerBlog__img" src="yourself.jpg"/>
             </a>
-            <a href="readmore-psy3.html"><strong>Γιατί τιμωρείς τον εαυτό σου;</strong></a><br><br>
-            Ξεκινάει μια καινούρια ημέρα. Σήμερα θα προσέξεις την διατροφή σου περισσότερο γιατί εχθές ξέφυγες από το πρόγραμμα σου και έφαγες 2 κομμάτια πίτσα το βράδυ. Έτσι λοιπόν<a href="readmore-psy3.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+            <a href="readmore-psy3.php"><strong>Γιατί τιμωρείς τον εαυτό σου;</strong></a><br><br>
+            Ξεκινάει μια καινούρια ημέρα. Σήμερα θα προσέξεις την διατροφή σου περισσότερο γιατί εχθές ξέφυγες από το πρόγραμμα σου και έφαγες 2 κομμάτια πίτσα το βράδυ. Έτσι λοιπόν<a href="readmore-psy3.php" style="color:grey;">...Διαβάστε περισσότερα</a>
     <!--  ξεκινάς και τρως για πρωινό ένα γιαούρτι.
     Σκέτο. Νιώθεις περήφανος που δεν έβαλες δημητριακά αυτή τη φορά. Μετά από μισή ώρα όμως άρχισες να πεινάς.
     Κάνεις υπομονή. Έρχεται η ώρα του μεσημεριανού και επιλέγεις φυσικά μια σαλάτα ελπίζοντας αυτό το γεύμα
@@ -139,52 +113,10 @@
 -->
         </p>
         </div>
-
-    <div class="center">
-      <div class="pagination" style="align-items:center;">
-        <a href="#">&laquo;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">&raquo;</a>
-      </div>
-    </div>
-  </body>
-
-  <footer class="footerCSS">
-    <div class="footerRow">
-      <br/>
-      <div class="footerColumn">
-    <div class="center" style="color:black"><h2>Στοιχεία Επικοινωνίας</h2>
-    <hr>
-    <p><strong>e-mail:</strong><br/>
-    hege@example.com <br/><br>
-    <strong>Τηλέφωνο:</strong><br/>
-    2310-___-___<br/></p>
-  </div>
-</div>
-
-  <div class="footerColumn">
-    <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
-    <hr>
-    <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-    <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-    <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
-  </div>
-</div>
-
-  <div class="footerColumn">
-    <div class="center"><h2>Social Media</h2>
-    <hr>
-    <br>
-    <p>
-      <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-      <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-      <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-    </p>
-    </div>
-  </div>
-
+        <?php
+        include 'footer.php'
+         ?>
 
     <br>
   </div>
-  </footer>
 </html>

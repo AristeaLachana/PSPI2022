@@ -12,11 +12,11 @@
 </div>
 
 <div class="footerColumn">
-  <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
+  <div class="center"><h2><a id="footerHref" href="categories.php">Περιεχόμενο</a></h2>
   <hr>
-  <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-  <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-  <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
+  <p><a id="footerHref" href="allArticlesNutrition.php">Διατροφή</a></p>
+  <p><a id="footerHref" href="allArticlesExercise.php">Σωματική Άσκηση</a></p>
+  <p><a id="footerHref" href="allArticlesPsychology.php">Ψυχολογία</a></p>
 </div>
 </div>
 

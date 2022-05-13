@@ -24,35 +24,9 @@
   </head>
 
   <body>
-    <div class="upperBackground">
-        <div class="logo">
-            <a href="mainPage.html">
-                <img alt="Improve Your Health" src="logo.png"
-                     width="400" height="100">
-            </a>
-        </div>
-        <br><br>
-
-        <form class="search" style="margin:auto;max-width:400px">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"> <i class="fa fa-search"></i></button>
-        </form>
-    </div>
-
-    <div class="page">
-        <nav class="page__menu page__custom-settings menu">
-
-            <ul class="menu__list r-list">
-                <li class="menu__group"><a href="mainPage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-                <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-                <li class="menu__group"><a href="eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-                <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
-            </ul>
-
-        </nav>
-    </div>
-
+    <?php
+    include 'header.php'
+     ?>
 <br>
     <div class="center">
        <hr style="border-top:2px solid #90EE90">
@@ -65,10 +39,10 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmoreallantika.html">
+        <a class="containerBlog__img_link" href="readmoreallantika.php">
           <img class="containerBlog__img" src="allantika.jpg"/>
         </a>
-<a href="readmoreallantika.html"><strong>Κάνει να τρώμε αλλαντικά;</strong></a><br><br>
+<a href="readmoreallantika.php"><strong>Κάνει να τρώμε αλλαντικά;</strong></a><br><br>
 Άραγε κάνει να τρώμε αλλαντικά ή είναι επικίνδυνα; Τι είναι τα αλλαντικά;
 Όλα τα προϊόντα αλλαντοποιΐας ανήκουν στην κατηγορία του επεξεργασμένου κρέατος.
 
@@ -91,7 +65,7 @@
 Η γνώμη μου είναι επειδή όταν βγαίνουμε μπορεί να πάρουμε 1 πίτσα ή 1 μακαρονάδα με κάποιο αλλαντικό καλό είναι να μην τα αγοράζουμε στο σπίτι τουλάχιστον..
 
 Προτιμάμε πιο συχνά αυγό ή τυρί χαμηλών λιπαρών στο sandwich μας αντί για αλλαντικά. -->
-<a href="readmoreallantika.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+<a href="readmoreallantika.php" style="color:grey;">...Διαβάστε περισσότερα</a>
 
 </p>
 
@@ -102,10 +76,10 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmore(xamilos-glikem-deiktis).html">
+        <a class="containerBlog__img_link" href="readmore(xamilos-glikem-deiktis).php">
           <img class="containerBlog__img" src="xamilos-glikem-deiktis.jpg"/>
         </a>
-        <a href="readmore(xamilos-glikem-deiktis).html"><strong>Πρωινά χαμηλού γλυκαιμικού φορτίου</strong></a><br><br>
+        <a href="readmore(xamilos-glikem-deiktis).php"><strong>Πρωινά χαμηλού γλυκαιμικού φορτίου</strong></a><br><br>
         Πώς να φτιάξουμε ενα πρωινό χαμηλού γλυκαιμικού φορτίου; Σε κάθε περίπτωση επιλέγω υδατάνθρακες με υψηλή περιεκτικότητα σε διαιτητικές ίνες (π.χ. φρυγανιές 100% ολικής ή κριθαρένια παξιμάδια ή ψωμί 100% ολικής).
 
 Αν θέλω αλμυρό πρωινό, προσθέτω πρωτεΐνη και κάποιο φρούτο ολόκληρο για να μη χάσω τις ίνες του.
@@ -116,7 +90,7 @@
 
 Με την προσθήκη λιπαρών και πρωτεΐνης αλλά και με την επιλογή υδατανθράκων ολικής, καθυστερώ τη γαστρική κένωση. Οι υδατάνθρακες περνούν στο λεπτό έντερο με καθυστέρηση,
 απορροφώνται πιο αργά, ανεβάζουν πιο αργά το σάκχαρο μου, το σάκχαρο πέφτει και πιο αργά και χορταίνω για περισσότερη ώρα.-->
-<a href="readmore(xamilos-glikem-deiktis).html" style="color:grey;">...Διαβάστε περισσότερα</a>
+<a href="readmore(xamilos-glikem-deiktis).php" style="color:grey;">...Διαβάστε περισσότερα</a>
 
     </p>
 
@@ -124,50 +98,19 @@
 
     <div class="center">
       <div class="pagination" style="align-items:center;">
-        <a href="allArticlesNutrition.html">&laquo;</a>
-        <a href="allArticlesNutrition.html">1</a>
+        <a href="allArticlesNutrition.php">&laquo;</a>
+        <a href="allArticlesNutrition.php">1</a>
         <a href="#" class="active">2</a>
         <a href="#">&raquo;</a>
       </div>
     </div>
   </body>
-
-  <footer class="footerCSS">
-    <div class="footerRow">
-      <br/>
-      <div class="footerColumn">
-    <div class="center" style="color:black"><h2>Στοιχεία Επικοινωνίας</h2>
-    <hr>
-    <p><strong>e-mail:</strong><br/>
-    hege@example.com <br/><br>
-    <strong>Τηλέφωνο:</strong><br/>
-    2310-___-___<br/></p>
-  </div>
-</div>
-
-  <div class="footerColumn">
-    <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
-    <hr>
-    <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-    <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-    <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
-  </div>
-</div>
-
-  <div class="footerColumn">
-    <div class="center"><h2>Social Media</h2>
-    <hr>
-    <br>
-    <p>
-      <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-      <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-      <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-    </p>
-    </div>
-  </div>
+  <?php
+  include 'footer.php'
+   ?>
 
 
     <br>
   </div>
-  </footer>
+
   </html>

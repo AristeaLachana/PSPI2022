@@ -20,32 +20,9 @@
       font-family: Arial, Helvetica, sans-serif;
     }
     </style>
-  </head><div class="upperBackground">
-    <div class="logo" >
-        <a href="mainPage.html"> <img alt="Improve Your Health" src="logo.png"
-           width="400" height="100"></a>
-    </div>
-  <br><br>
-
-    <form class="search" style="margin:auto;max-width:400px">
-      <input type="text"  placeholder="Search.." name="search">
-      <button type="submit"> <i class="fa fa-search"></i></button>
-    </form>
-  </div>
-
-    <div class="page">
-      <nav class="page__menu page__custom-settings menu">
-
-        <ul class="menu__list r-list">
-          <li class="menu__group"><a href="mainPage.html" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-          <li class="menu__group"><a href="categories.html" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-          <li class="menu__group"><a href="#eidikoi.html" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-          <li class="menu__group"><a href="contactpage.html" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
-        </ul>
-
-      </nav>
-    </div>
+    <?php
+    include 'header.php'
+     ?>
     <br>
 <div class="center">
     <hr style="border-top:2px solid #90EE90">
@@ -56,8 +33,8 @@
   <div class="dropdown">
   <button class="dropbtn">Επιλογές</button>
   <div class="dropdown-content">
-    <a href="recipes.html">Συνταγές</a>
-    <a href="allArticlesNutrition.html">Άρθρα</a>
+    <a href="recipes.php">Συνταγές</a>
+    <a href="allArticlesNutrition.php">Άρθρα</a>
   </div>
 </div>
 
@@ -71,15 +48,15 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmoreproteinbreakfast.html">
+        <a class="containerBlog__img_link" href="readmoreproteinbreakfast.php">
           <img class="containerBlog__img" src="vale-proteini-sto-prwino-sou.jpg"/>
         </a>
-<a href="readmoreproteinbreakfast.html"><strong>Βάλε πρωτεΐνη στο πρωινό σου</strong></a><br><br>
+<a href="readmoreproteinbreakfast.php"><strong>Βάλε πρωτεΐνη στο πρωινό σου</strong></a><br><br>
 Και γιατί να μην τρώνε ψωμί με μέλι, γαλα αμυγδάλου με δημητριακά, κουλούρι Θεσσαλονίκης ή φρυγανιές με μαρμελάδα…
 Τους εξηγώ… Μπορείτε να φάτε και τα παραπάνω (σίγουρα μερικές φορές θα το κάνετε) όμως αν καταλάβετε το όφελος της
 πρωινής πρωτεΐνης τότε θα επιλέξετε εσεις για εσάς να την έχετε το πρωί (τις περισσότερες τουλάχιστον μέρες).
 Γιατί λοιπόν η πρωτεΐνη είναι απαραίτητη το πρωί;
-Για πάρα πολλούς λόγους (αναφέρω κάποιους παρακάτω):<a href="readmoreproteinbreakfast.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+Για πάρα πολλούς λόγους (αναφέρω κάποιους παρακάτω):<a href="readmoreproteinbreakfast.php" style="color:grey;">...Διαβάστε περισσότερα</a>
 <!--
 1) Κορεσμός! Βάλτε τυρί ή αυγό το πρωί και μετά συζητάμε αν θα πεινάτε σε 3 ώρες…
 2) Καθυστέρηση ανόδου σακχάρου αίματος και μεγαλύτερη παραγωγικότητα στην εργασία.
@@ -97,10 +74,10 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmoreglouteni.html">
+        <a class="containerBlog__img_link" href="readmoreglouteni.php">
           <img class="containerBlog__img" src="glouteni.jpg"/>
         </a>
-        <a href="readmoreglouteni.html"><strong>Παχαίνει η γλουτένη...;</strong></a><br><br>
+        <a href="readmoreglouteni.php"><strong>Παχαίνει η γλουτένη...;</strong></a><br><br>
           Γιατί άλλωστε να μας παχαίνει μια πρωτεΐνη; Γιατί αυτό είναι, το ξέρετε έτσι;
 
         Τι είναι η γλουτένη;
@@ -110,7 +87,7 @@
 
 Καμία επιστημονική μελέτη δεν συνδέει την κατανάλωση γλουτένης με Παχυσαρκία!
 
-Ξέρετε πότε παχαίνει;<a href="readmoreglouteni.html" style="color:grey;">...Διαβάστε περισσότερα</a>
+Ξέρετε πότε παχαίνει;<a href="readmoreglouteni.php" style="color:grey;">...Διαβάστε περισσότερα</a>
 <!--
 Όταν τρως πολύ ψωμί, μακαρόνια, αρτοσκευάσματα κλπ…
 
@@ -134,10 +111,10 @@
     <br>
 
     <p>
-      <a class="containerBlog__img_link" href="readmore(η μεθοδος του πιατου).html">
+      <a class="containerBlog__img_link" href="readmore(η μεθοδος του πιατου).php">
         <img class="containerBlog__img" src="methodos-tou-piatou.jpg"/>
       </a>
-      <a href="readmore(η μεθοδος του πιατου).html"><strong>Η μέθοδος του πιάτου</strong></a><br><br>
+      <a href="readmore(η μεθοδος του πιατου).php"><strong>Η μέθοδος του πιάτου</strong></a><br><br>
       Η Μέθοδος του Πιάτου, τo λεγόμενο #healthyeatingplate που δημιούργησαν expert διατροφής στο Harvard με σκοπό να μας εξηγήσουν απλά, πώς πρέπει να χτίζουμε ισορροπημένα και υγιεινά το πιάτο μας στα βασικά μας γεύματα..
       Η μέθοδος του πιάτου απαιτεί να το χωρίσουμε σε τρία μέρη ως εξής:
       <!--1/2 Λαχανικά και φρούτα
@@ -163,7 +140,7 @@ Tip 2: Για όσους φοβούνται τους υδατάνθρακες κ
 
 
 Προσπαθήστε τουλάχιστον στο κυρίως γεύμα (π.χ. Μεσημεριανό) να εφαρμόζετε τη μέθοδο του Πιάτου.-->
-      <a href="readmore(η μεθοδος του πιατου).html" style="color:grey;">...Διαβάστε περισσότερα</a>
+      <a href="readmore(η μεθοδος του πιατου).php" style="color:grey;">...Διαβάστε περισσότερα</a>
     </p>
   </div>
 
@@ -171,48 +148,16 @@ Tip 2: Για όσους φοβούνται τους υδατάνθρακες κ
       <div class="pagination" style="align-items:center;">
         <a href="#">&laquo;</a>
         <a href="#" class="active">1</a>
-        <a href="allArticlesNutrition2.html">2</a>
-        <a href="allArticlesNutrition2.html">&raquo;</a>
+        <a href="allArticlesNutrition2.php">2</a>
+        <a href="allArticlesNutrition2.php">&raquo;</a>
       </div>
     </div>
   </body>
-
-  <footer class="footerCSS">
-    <div class="footerRow">
-      <br/>
-      <div class="footerColumn">
-    <div class="center" style="color:black"><h2>Στοιχεία Επικοινωνίας</h2>
-    <hr>
-    <p><strong>e-mail:</strong><br/>
-    hege@example.com <br/><br>
-    <strong>Τηλέφωνο:</strong><br/>
-    2310-___-___<br/></p>
-  </div>
-</div>
-
-  <div class="footerColumn">
-    <div class="center"><h2><a id="footerHref" href="categories.html">Περιεχόμενο</a></h2>
-    <hr>
-    <p><a id="footerHref" href="allArticlesNutrition.html">Διατροφή</a></p>
-    <p><a id="footerHref" href="allArticlesExercise.html">Σωματική Άσκηση</a></p>
-    <p><a id="footerHref" href="allArticlesPsychology.html">Ψυχολογία</a></p>
-  </div>
-</div>
-
-  <div class="footerColumn">
-    <div class="center"><h2>Social Media</h2>
-    <hr>
-    <br>
-    <p>
-      <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
-      <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
-      <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
-    </p>
-    </div>
-  </div>
+  <?php
+  include 'footer.php'
+   ?>
 
 
     <br>
   </div>
-  </footer>
-  </html>
+</html>
