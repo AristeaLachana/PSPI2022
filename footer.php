@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <footer class="footerCSS">
   <div class="footerRow">
     <br/>
@@ -32,3 +34,4 @@
   </div>
 </div>
 </footer>
+</html>
