@@ -7,8 +7,8 @@
   </div>
 <br><br>
 <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Ο λογαριασμός μου</button>
-<div id="myDropdown" class="dropdown-content">
+<button  class="dropbtn">Ο λογαριασμός μου</button>
+<div class="dropdown-content">
   <a href="#">Τα στοιχεία μου</a>
   <a href="#">Αποσύνδεση</a>
 </div>
