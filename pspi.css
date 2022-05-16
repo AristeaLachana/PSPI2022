@@ -1,18 +1,32 @@
 /* header elements */
 .upperBackground{
   background-color: #F2FEF4;
+  width: 100%
 }
 
 
 .logo{
-  float: left;
+  float:left;
 }
+
 
 .logo img{
   width: 400px;
   height: 110px;
 }
 
+
+@media screen and (max-width:960px){
+  .logo img  {
+      width:95%;
+  }
+}
+
+@media screen and (max-width:780px){
+  .logo img  {
+      width:90%;
+  }
+}
 /* DEPENDENCES */
 
 .r-link{
@@ -59,6 +73,15 @@
   padding: var(--menuLinkPadding, 1.5rem 2.5rem);
   font-weight: 700;
   text-transform: uppercase;
+}
+@media screen and (max-width:785px) {
+  .menu__list
+  {
+    display: none
+  }
+  .smallScreenMenu{
+    background-color: #6495ED;
+  }
 }
 
 /* TEXT UNDERLINED */
@@ -108,6 +131,7 @@
   box-sizing: border-box;
 }
 
+
 /* Style the search field */
 form.search input[type=text] {
   padding: 15px;
@@ -143,6 +167,44 @@ form.search::after {
   clear: both;
   display: table;
 }
+
+@media screen and (max-width:1200px){
+  form.search input[type=text]  {
+      width:200px;
+      float: left;
+  }
+}
+
+@media screen and (max-width:780px){
+  form.search input[type=text]  {
+      width:20%;
+      float: left;
+  }
+}
+
+@media screen and (max-width:653px){
+  form.search input[type=text]  {
+      font-size: 14px;
+      float: left;
+  }
+}
+
+
+@media screen and (max-width:960px){
+  form.search button  {
+      width:15%;
+      float: left;
+  }
+}
+
+@media screen and (max-width:653px){
+  form.search button  {
+      font-size: 14px;
+      float: left;
+  }
+}
+
+
 /*firstPage elements*/
 
 /*button*/
@@ -1062,3 +1124,15 @@ a1 {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #90EE90;
+  }
+
+@media screen and (max-width:960px){
+      .dropbtn{
+        font-size: 17px;
+      }
+    }
+@media screen and (max-width:653px){
+        .dropbtn{
+          font-size: 13px;
+        }
+      }
