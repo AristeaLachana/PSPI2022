@@ -33,8 +33,7 @@
           <h2><strong>Η ΟΜΑΔΑ ΜΑΣ</strong></h2>
     <hr style="border-top:2px solid  #ED6964">
       </div><br>
-
-      <div class="dropdown">
+      <div class="dropdown" style="margin-left:10%">
       <button class="dropbtn">Επιλογές</button>
       <div class="dropdown-content">
         <a href="eidikoi.php">ΔΙΑΤΡΟΦΟΛΟΓΟΙ</a>

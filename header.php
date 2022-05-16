@@ -6,14 +6,14 @@
          width="400" height="100"></a>
   </div>
 <br><br>
-<div class="dropdown">
+<div class="dropdown" style="float:right;margin-right:5%">
 <button  class="dropbtn">Ο λογαριασμός μου</button>
-<div class="dropdown-content">
+<div  class="dropdown-content">
   <a href="#">Τα στοιχεία μου</a>
   <a href="#">Αποσύνδεση</a>
 </div>
 </div>
-  <form class="search" style="margin:auto;max-width:400px">
+  <form class="search" style="margin:auto;max-width:400px;">
     <input type="text"  placeholder="Search.." name="search">
     <button type="submit"> <i class="fa fa-search"></i></button>
   </form>
@@ -32,4 +32,5 @@
 
     </nav>
   </div>
+
 </html>

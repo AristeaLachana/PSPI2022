@@ -32,8 +32,14 @@
        <hr style="border-top:2px solid #90EE90">
             <h2><strong>ΔΙΑΤΡΟΦΗ</strong></h2>
             <hr style="border-top:2px solid  #ED6964">
+      </div><br>
+      <div class="dropdown" style="margin-left:10%">
+      <button class="dropbtn">Επιλογές</button>
+      <div class="dropdown-content">
+        <a href="recipes.php">Συνταγές</a>
+        <a href="allArticlesNutrition.php">Άρθρα</a>
       </div>
-
+    </div>
     <!--first article-->
     <div class="containerBlog">
       <br>
