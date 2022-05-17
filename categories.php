@@ -28,7 +28,7 @@ a{
 <body>
 
   <?php
-  include 'header.php';
+  include 'includes\header.php';
    ?>
   <br>
   <div class="center">
@@ -83,7 +83,7 @@ a{
 </body>
 <br>
 <?php
-include 'footer.php';
+include 'includes\footer.php';
  ?>
 
 

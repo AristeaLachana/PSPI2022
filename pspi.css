@@ -1017,8 +1017,7 @@ a1 {
 /* user settings click dropdown */
 
 /* Style The Dropdown Button */
-.dropbtn {
-
+.dropbtn button{
   background-color: #ED6964;
   color: white;
   padding: 18px;

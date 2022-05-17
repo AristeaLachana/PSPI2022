@@ -23,7 +23,7 @@
   </head>
   <body>
     <?php
-    include 'header.php';
+      include 'includes\header.php';
      ?>
     <br>
 
@@ -105,7 +105,7 @@
 <br>
 <br>
 <?php
-include 'footer.php';
+include 'includes\footer.php';
  ?>
   <script>
   let slideIndex = 1;

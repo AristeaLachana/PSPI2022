@@ -7,7 +7,7 @@
   </div>
 <br><br>
 <div class="dropdown" style="float:right;margin-right:5%">
-<button  class="dropbtn">Ο λογαριασμός μου</button>
+<button  class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
   <a href="#">Τα στοιχεία μου</a>
   <a href="#">Αποσύνδεση</a>
@@ -27,7 +27,7 @@
         <li class="menu__group"><a href="categories.php" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
         <li class="menu__group"><a href="eidikoi.php" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
         <li class="menu__group"><a href="contactpage.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
+        <li class="menu__group"><a href="addpage.php" class="menu__link r-link text-underlined">ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</a></li>
       </ul>
 
     </nav>

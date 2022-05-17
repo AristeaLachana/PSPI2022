@@ -21,6 +21,8 @@
     <a href="https://www.instagram.com/" class="positioned ri-instagram-line icon"></a>
     <a href="https://el-gr.facebook.com/" class="positioned ri-facebook-circle-line icon"></a>
     <a href="https://www.youtube.com/" class="positioned ri-youtube-line icon"></a>
+    <br>
+    <p>Improve Your Health &copy; <?php echo date('Y'); ?></p>
   </p>
   </div>
 </div>

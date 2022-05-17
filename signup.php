@@ -141,7 +141,7 @@
 
 
 <?php
-include 'footer2.php';
+include 'includes\footer2.php';
  ?>
 </body>
 </html>

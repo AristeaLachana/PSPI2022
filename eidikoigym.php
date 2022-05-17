@@ -24,7 +24,7 @@
   <body>
 
     <?php
-    include 'header.php';
+  include 'includes\header.php';
      ?>
     <br>
 
@@ -100,7 +100,7 @@
 <br>
 </body>
 <?php
- include 'footer.php';
+include 'includes\footer.php';
  ?>
 
   <script>

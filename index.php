@@ -9,7 +9,7 @@
    <!-- Link to your stylesheet -->
    <link rel="stylesheet" href="./styles.css">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+   
     <title>Improve Your Health</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
@@ -63,6 +63,6 @@
 <br>
 
 <?php
-include 'footer2.php';
+include 'includes\footer2.php';
  ?>
 </html>
