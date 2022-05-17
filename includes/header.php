@@ -52,7 +52,12 @@
         <li class="menu__group"><a href="contactpage.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
 
       </ul>
-
+      <ul class="smallScreenMenu">
+        <li class="menu__group"><a href="mainPage.php" class="">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="categories.php" class="">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
+        <li class="menu__group"><a href="eidikoi.php" class="">Η ΟΜΑΔΑ ΜΑΣ</a></li>
+        <li class="menu__group"><a href="contactpage.php" class="">TEST123</a></li>
+      </ul>
     </nav>
   </div>
 
