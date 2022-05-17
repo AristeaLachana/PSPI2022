@@ -51,7 +51,7 @@
 
           <td colspan="6">
            <form class="name" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username">
+             <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username" required>
            </form>
           </td>
 
@@ -60,10 +60,17 @@
 
            <td colspan="6">
              <form class="password" action="/sendData" method="post" style="margin:auto;max-width:300px">
-               <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password">
+               <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password" required>
              </form>
 
            </td>
+           <td>
+             <input type="checkbox" onclick="myFunction()">
+           </td>
+
+
+
+
        </tr>
        <tr>
 
@@ -93,6 +100,20 @@
 <<?php
 include 'includes\footer2.php';
  ?>
+ <script>
+function myFunction() {
+
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+
+
 
 </body>
 </html>
