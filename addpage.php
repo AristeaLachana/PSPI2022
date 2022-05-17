@@ -22,9 +22,6 @@
         margin-right:  auto;
       }
       body {background-color:white;}
-      h1 {color:#125688;}
-      h2 {color:#125688;}
-      h5 {color:#ED6964;}
       p {color:black;}
 
 
