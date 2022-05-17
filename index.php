@@ -9,7 +9,7 @@
    <!-- Link to your stylesheet -->
    <link rel="stylesheet" href="./styles.css">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   
+   <?php require_once('config.php') ?>
     <title>Improve Your Health</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>

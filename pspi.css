@@ -877,7 +877,8 @@ h3{
 .signup-container {
   position: absolute;
   bottom: 0;
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 60%;
   margin-bottom: 10%;
   max-width: 400px;

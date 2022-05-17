@@ -14,15 +14,15 @@
   <title>Improve Your Health | Εγγραφή</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-       body {background-color:white;}
-       h2 {color:white;}
-       tr {color:white;}
-       th {color:white;}
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    body {background-color:white;}
+    h2 {color:white;}
+    tr {color:white;}
+    th {color:white;}
   </style>
 </head>
 
@@ -36,7 +36,7 @@
 
   <div class="container">
     <img src="img2.jpeg" style="width:80%;border-radius:7px;">
-   <div class="signup-container" style="margin-top:200px;">
+   <div class="signup-container">
 
        <h2 style="text-align:center">Εγγραφή</h2>
      <table>
