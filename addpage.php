@@ -22,6 +22,7 @@
         margin-right:  auto;
       }
       body {background-color:white;}
+      h5 {color:black;}
       p {color:black;}
 
 

@@ -30,19 +30,10 @@
             <hr style="border-top:2px solid  #ED6964">
   </div><br>
 
-  <div class="dropdown" style="margin-left:10%">
-  <button class="dropbtn">Επιλογές</button>
-  <div class="dropdown-content">
+  <div class="pagination" style="margin-left:10%;align-items:center;">
+    <a href="allArticlesNutrition" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Άρθρα</a>
     <a href="recipes.php">Συνταγές</a>
-    <a href="allArticlesNutrition.php">Άρθρα</a>
   </div>
-</div>
-
-
-
-<br>
-
-<h3>ΆΡΘΡΑ</h3>
 
 
     <!--first article-->
