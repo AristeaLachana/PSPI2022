@@ -29,7 +29,7 @@
 <body>
 
   <div class="logo">
-      <a href="firstPage.php">
+      <a href="index.php">
           <img alt="Improve Your Health" src="logo.png">
       </a>
   </div>
