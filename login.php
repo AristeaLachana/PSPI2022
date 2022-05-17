@@ -20,9 +20,9 @@
           margin-right: auto;
         }
        body {background-color:white;}
-       h2 {color:black;}
-       tr {color:#white;}
-       th {color:black;}
+       h2 {color:white;}
+       tr {color:white;}
+       th {color:white;}
   </style>
 </head>
 
@@ -36,14 +36,14 @@
   <br>
   <br>
   <br>
-  <div class="container">
-    <img src="img2.jpeg" style="width:80%;border-radius:7px;">
+
+  <div class="login-img">
    <div class="login-container">
      <table>
       <tr>
 
         <td colspan="6">
-          <h2 style="text-align:center; color:white">Σύνδεση</h2>
+          <h2 style="text-align:center;">Σύνδεση</h2>
         </td>
 
       </tr>
@@ -67,10 +67,6 @@
            <td>
              <input type="checkbox" onclick="myFunction()">
            </td>
-
-
-
-
        </tr>
        <tr>
 

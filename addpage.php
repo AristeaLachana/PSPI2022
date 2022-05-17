@@ -43,15 +43,10 @@
 
 
   <br>
-  <hr style="border-top:2px solid #90EE90">
            <div class="center">
               <h2><strong>ΠΡΟΣΘΗΚΗ ΑΡΧΕΙΟΥ</strong></h2>
            </div>
-
-
-    <hr style="border-top:2px solid  #ED6964">
   <div class="add-style">
-
     <form action="sendData" class="containeradd" method="post" enctype="multipart/form-data">
      <div class="add">
 

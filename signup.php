@@ -21,6 +21,7 @@
     }
     body {background-color:white;}
     h2 {color:white;}
+    h3 {color:white;}
     tr {color:white;}
     th {color:white;}
   </style>
@@ -34,8 +35,7 @@
       </a>
   </div>
 
-  <div class="container">
-    <img src="img2.jpeg" style="width:80%;border-radius:7px;">
+  <div class="signup-img">
    <div class="signup-container">
 
        <h2 style="text-align:center">Εγγραφή</h2>
@@ -109,7 +109,7 @@
           <form class="expertcategories" action="/sendData" method="post" style="margin:auto;max-width:300px">
             <select id="categories" name="expertcategories">
               <option value="null" selected>  </option>
-              <option value="nutritionist" selected>ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
+              <option value="nutritionist">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
               <option value="fitness specialist" >ΓΥΜΝΑΣΤΙΚΗ</option>
               <option value="mental health specialist" >ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
             </select>
@@ -143,6 +143,20 @@
     </table>
   </div>
 
+  <div id="message">
+   <h3>Password must contain the following:</h3>
+   <p id="letter" class="invalid">Ένα <b>μικρό λατινικό</b> γράμμα</p>
+   <p id="capital" class="invalid">Ένα <b>κεφαλαίο λατινικό</b> γράμμα</p>
+   <p id="number" class="invalid">Έναν <b>αριθμό</b></p>
+   <p id="length" class="invalid">Τουλάχιστον <b>8 χαρακτήρες</b></p>
+   </div>
+   <div id="message1">
+   <h3>Password must contain the following:</h3>
+   <p id="letter1" class="invalid1">Ένα <b>μικρό λατινικό</b> γράμμα</p>
+   <p id="capital1" class="invalid1">Ένα <b>κεφαλαίο λατινικό</b> γράμμα</p>
+   <p id="number1" class="invalid1">Έναν <b>αριθμό</b></p>
+   <p id="length1" class="invalid1">Τουλάχιστον <b>8 χαρακτήρες</b></p>
+   </div>
 
 </div>
 <br>

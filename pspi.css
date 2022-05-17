@@ -399,7 +399,6 @@ h2 em {
 
 h3{
   color: black;
-
   text-align: center;
   font-size: 25px;
   font-style:oblique;
@@ -470,20 +469,40 @@ h3{
 
 /*login page*/
 
-.login-container {
-  position:absolute;
-  bottom: 0;
-  padding: 40px;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-bottom: 15%;
-  margin-top: 15%;
+.login-img {
+  /* The image used */
+  background-image: url("img2.jpeg");
 
+  min-height: 420px;
+  left: 18%;
+  border-radius:7px;
+  margin: 10px;
+  padding: 20px;
+  text-align:center;
+  color: white;
+  clear: both;
+  font-size: 100px;
+  font-weight: 80px;
+  max-width: 65%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size:  auto;
+  position: relative;
+}
+
+.login-container {
+  position: absolute;
+  left: 38%;
+  top: -1%;
+  margin: 10px;
   max-width: 500px;
+  padding: 6px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
-  border-radius:5px;
+  border-radius:5px
+  font-size: 5px;
 }
 
 /*contactpage*/
@@ -874,21 +893,114 @@ h3{
   background: #f1f1f1;
 }
 
+.signup-img {
+  /* The image used */
+  background-image: url("img2.jpeg");
+
+  min-height: 650px;
+  border-radius:7px;
+  margin: 10px;
+  padding: 50px;
+  text-align:center;
+  color: white;
+  clear: both;
+  font-size: 20px;
+  font-weight: 800;
+  max-width: 1000%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size:  auto;
+  position: relative;
+}
+
 .signup-container {
   position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60%;
-  margin-bottom: 10%;
-  max-width: 400px;
+  left: 35%;
+  top: -4%;
+  margin: 40px;
+  max-width: 500px;
+  padding: 6px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
-  border-radius:5px;
-  padding: 6px;
+  border-radius:5px
+}
 
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:  none;
+  color: #000;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  position:  absolute;
+  padding: 20px;
+  margin-top: 10px;
+}
 
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: #00FF00;
+ }
+
+.valid:before {
+   position: relative;
+   left: -35px;
+   content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+   color: #FF9696;
+}
+
+.invalid:before {
+   position: relative;
+   left: -35px;
+   content: "✖";
+}
+/* The message box is shown when the user clicks on the password field */
+#message1 {
+ display:none;
+ background: rgb(0, 0, 0); /* Fallback color */
+ background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+ color: #f1f1f1;
+ color: #000;
+ position: absolute;
+ padding: 20px;
+ margin-top: 10px;
+}
+
+#message1 p {
+ padding: 10px 35px;
+ font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid1 {
+ color: #00FF00;
+}
+
+.valid1:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid1 {
+ color: #ff69b4;
+}
+
+.invalid1:before {
+ position: relative;
+ left: -35px;
+ content: "✖";
 }
 
 /* categories */
