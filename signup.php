@@ -80,7 +80,7 @@
          </th>
          <td>
            <form class="password" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <input type="password" id="password" name="password" minlength="8" maxlength="16"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+             <input type="password" id="password" name="password" minlength="8" maxlength="16"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Πρέπει να περιέχει τουλάχιστον έναν αριθμό και ένα κεφαλαίο και πεζό γράμμα και τουλάχιστον 8 ή περισσότερους χαρακτήρες " required>
            </form>
          </td>
        </tr>
@@ -90,7 +90,7 @@
          </th>
          <td>
            <form class="passwordverification" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <input type="password" id="passwordverification" name="password" minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+             <input type="password" id="passwordverification" name="password" minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Πρέπει να περιέχει τουλάχιστον έναν αριθμό και ένα κεφαλαίο και πεζό γράμμα και τουλάχιστον 8 ή περισσότερους χαρακτήρες" required>
            </form>
          </td>
        </tr>
@@ -142,20 +142,7 @@
        </tr>
     </table>
   </div>
-  <div id="message">
-  <h3>Password must contain the following:</h3>
-  <p id="letter" class="invalid">Ένα <b>μικρό λατινικό</b> γράμμα</p>
-  <p id="capital" class="invalid">Ένα <b>κεφαλαίο λατινικό</b> γράμμα</p>
-  <p id="number" class="invalid">Έναν <b>αριθμό</b></p>
-  <p id="length" class="invalid">Τουλάχιστον <b>8 χαρακτήρες</b></p>
-  </div>
-  <div id="message1">
-  <h3>Password must contain the following:</h3>
-  <p id="letter1" class="invalid1">Ένα <b>μικρό λατινικό</b> γράμμα</p>
-  <p id="capital1" class="invalid1">Ένα <b>κεφαλαίο λατινικό</b> γράμμα</p>
-  <p id="number1" class="invalid1">Έναν <b>αριθμό</b></p>
-  <p id="length1" class="invalid1">Τουλάχιστον <b>8 χαρακτήρες</b></p>
-  </div>
+
 
 </div>
 <br>
