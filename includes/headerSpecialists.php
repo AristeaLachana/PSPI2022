@@ -9,7 +9,7 @@
 <div class="dropdown" style="float:right;margin-right:5%">
 <button  class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
-  <a href="#">Τα στοιχεία μου</a>
+  <a href="#">username</a>
   <a href="#">Αποσύνδεση</a>
 </div>
 </div>
