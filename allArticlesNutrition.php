@@ -11,7 +11,7 @@
    <!-- -->
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Nutrition</title>
+    <title>Improve Your Health | Διατροφή</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <style>

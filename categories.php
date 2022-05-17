@@ -12,7 +12,7 @@
 <!-- -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Choose Category</title>
+<title>Improve Your Health | Περιεχόμενο</title>
 <link rel="icon" type="image/x-icon" href="favicon.png">
 <style>
 body {

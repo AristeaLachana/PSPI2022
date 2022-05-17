@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>ΕΠΙΚΟΙΝΩΝΙΑ</title>
+    <title>Improve Your Health | Επικοινωνία</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
       img {

@@ -11,7 +11,7 @@
    <!-- -->
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Psychology</title>
+    <title>Improve Your Health | Ψυχολογία</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <style>

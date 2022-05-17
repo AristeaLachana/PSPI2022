@@ -12,7 +12,7 @@
   <!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Η ΟΜΑΔΑ ΜΑΣ</title>
+  <title>Improve Your Health | Η Ομάδα μας</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
   body {
