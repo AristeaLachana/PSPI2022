@@ -14,6 +14,11 @@
   <title>Εγγραφή</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
+      img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
        body {background-color:white;}
        h2 {color:black;}
        tr {color:#white;}
@@ -31,15 +36,14 @@
   <br>
   <br>
   <br>
-  <div class="login-img">
+  <div class="container">
+    <img src="img2.jpeg" style="width:80%;border-radius:7px;">
    <div class="login-container">
-
-
      <table>
       <tr>
 
         <td colspan="6">
-          <h2 color:#6495ED;>Σύνδεση</h2>
+          <h2 style="text-align:center; color:white">Σύνδεση</h2>
         </td>
 
       </tr>
@@ -78,7 +82,6 @@
 
 
   </div>
-
 </div>
 <br>
 <br>

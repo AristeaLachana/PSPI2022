@@ -14,10 +14,15 @@
   <title>Εγγραφή</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
        body {background-color:white;}
-       h2 {color:black;}
-       tr {color:#white;}
-       th {color:black;}
+       h2 {color:white;}
+       tr {color:white;}
+       th {color:white;}
   </style>
 </head>
 
@@ -28,10 +33,12 @@
           <img alt="Improve Your Health" src="logo.png">
       </a>
   </div>
-  <div class="signup-img">
-   <div class="signup-container">
 
-       <h2 color:#6495ED;>Εγγραφή</h2>
+  <div class="container">
+    <img src="img2.jpeg" style="width:80%;border-radius:7px;">
+   <div class="signup-container" style="margin-top:200px;">
+
+       <h2 style="text-align:center">Εγγραφή</h2>
      <table>
       <tr>
           <td>
