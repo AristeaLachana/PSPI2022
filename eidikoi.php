@@ -27,25 +27,13 @@
      ?>
     <br>
 
-
-    <div class="center">
-      <hr style="border-top:2px solid #90EE90">
-          <h2><strong>Η ΟΜΑΔΑ ΜΑΣ</strong></h2>
-    <hr style="border-top:2px solid  #ED6964">
-      </div><br>
-
-      <div class="dropdown" style="margin-left:10%">
-      <button class="dropbtn">Επιλογές</button>
-      <div class="dropdown-content">
-        <a href="eidikoi.php">ΔΙΑΤΡΟΦΟΛΟΓΟΙ</a>
-        <a href="eidikoigym.php">ΓΥΜΝΑΣΤΕΣ</a>
-        <a href="eidikoiph.php">ΨΥΧΟΛΟΓΟΙ</a>
+      <div class="pagination" style="margin-left:10%;align-items:center;">
+        <a href="eidikoi.php" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Διατροφολόγοι</a>
+        <a href="eidikoigym.php">Γυμναστές</a>
+        <a href="eidikoiph.php">Ψυχολόγοι</a>
       </div>
-    </div>
 
-    <br>
 
-    <h3>ΔΙΑΤΡΟΦΟΛΟΓΟΙ</h3>
     <div class="row-eidikoi">
       <div class="column-eidikoi">
         <div class="card">

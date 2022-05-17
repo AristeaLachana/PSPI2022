@@ -4,6 +4,6 @@
 	// connect to database
        // coming soon...
 
-	define ('ROOT_PATH', realpath(dirname(__FILE__)));
+	define ('ROOT_PATH', realpath(dirname(__FILE__))); //PSPI2022 ?
 	define('BASE_URL', 'http://localhost/github/PSPI2022');
 ?>
