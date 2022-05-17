@@ -29,11 +29,9 @@
      ?>
 <br>
     <div class="center">
-       <hr style="border-top:2px solid #90EE90">
             <h2><strong>ΔΙΑΤΡΟΦΗ</strong></h2>
-            <hr style="border-top:2px solid  #ED6964">
       </div><br>
-      
+
       <div class="pagination" style="margin-left:10%;align-items:center;">
         <a href="allArticlesNutrition" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Άρθρα</a>
         <a href="recipes.php">Συνταγές</a>

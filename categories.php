@@ -32,11 +32,7 @@ a{
    ?>
   <br>
   <div class="center">
-    <hr style="border-top:2px solid #90EE90">
             <h2><strong>ΚΑΤΗΓΟΡΙΕΣ</strong></h2>
-            <hr style="border-top:2px solid  #ED6964">
-
-
   </div>
   </br>
 
