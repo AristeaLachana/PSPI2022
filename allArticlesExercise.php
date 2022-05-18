@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="./styles.css">
    <!-- -->
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+<?php require_once('config.php') ?>
     <title>Improve Your Health | Σωματική Άσκηση</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
@@ -33,52 +33,25 @@
     <div class="center">
             <h2><strong>ΣΩΜΑΤΙΚΗ ΑΣΚΗΣΗ</strong></h2>
     </div>
+    <body>
+      <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
+      <?php $posts = getPublishedPostsExercise(); ?>
+  <br>
+  <?php foreach ($posts as $post): ?>
+      <div class="containerBlog">
+        <br>
 
-    <!--first article-->
-    <div class="containerBlog">
-      <br>
+        <p>
+          <a class="containerBlog__img_link" href="readmoreExercise.php?post-slug=<?php echo $post['slug'];?>">
+            <img class="containerBlog__img" src="<?php echo $post['image']; ?>"/>
+          </a>
+  <a href="readmoreExercise.php?post-slug=<?php echo $post['slug']; ?>"><strong><?php echo $post['title'] ?></strong></a><br><br><?php echo $post['description']?><a href="readmoreExercise.php?post-slug=<?php echo $post['slug']; ?>" style="color:grey;">...Διαβάστε περισσότερα</a>
+  </div>
+  <?php endforeach ?>
 
-      <p>
-        <a class="containerBlog__img_link" href="readmore(7 συμβουλες).php">
-          <img class="containerBlog__img" src="exercise1.jpg"/>
-        </a>
-<a href="readmore(7 συμβουλες).php"><strong>7 Συμβουλές για την άσκηση χωρίς να πηγαίνετε στο γυμναστήριο</strong></a><br><br>
-Έχεις βάλει στόχο να είσαι σε φόρμα και υγιής; Φοβερο! Ανεξάρτητα από το πού βρίσκεστε στο ταξίδι σας, μπορείτε να προπονηθείτε στο σπίτι με τις προπονήσεις μου στην εφαρμογή εάν δεν έχετε πρόσβαση σε γυμναστήριο ή απλώς προτιμάτε να ασκηθείτε στο σπίτι. Για να σας βοηθήσω να κινηθείτε, ακολουθούν μερικές από τις
-κορυφαίες συμβουλές μου για να ξεκινήσετε<a href="readmore(7 συμβουλες).php" style="color:grey;">...Διαβάστε περισσότερα</a>
-</p>
+          <?php
+          include 'includes\footer.php';
+           ?>
 
-</div>
-
-<!--second article-->
-    <div class="containerBlog">
-      <br>
-
-      <p>
-        <a class="containerBlog__img_link" href="readmore(8 συμβουλες).php">
-          <img class="containerBlog__img" src="exercise2.jpg"/>
-        </a>
-        <a href="readmore(8 συμβουλες).php"><strong>8 Συμβουλές γυμναστικής για να ξεπεράσετε τα εμπόδια σας στο ξεκίνημα</strong></a><br><br>
-        Όταν είστε αρχάριος, μπορεί να είναι δύσκολο να ξεκινήσετε και να αφοσιωθείτε στο ταξίδι σας για την υγεία και
-        τη φυσική κατάσταση. Είτε είναι η πρώτη σας φορά που γυμνάζεστε, είτε επιστρέφετε στην άσκηση μετά από τραυματισμό ή παίρνετε λίγο χρόνο, ξέρω πόσο συντριπτικό μπορεί να είναι.
-
-Ίσως έχετε προσπαθήσει<a href="readmore(8 συμβουλες).php" style="color:grey;">...Διαβάστε περισσότερα</a>
-    </p>
-
-
-    </div>
-
-
-    <div class="center">
-      <div class="pagination" style="align-items:center;">
-        <a href="#">&laquo;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">&raquo;</a>
-      </div>
-    </div>
-  </body>
-
-  <?php
-include 'includes\footer.php';
-   ?>
     <br>
 </html>
