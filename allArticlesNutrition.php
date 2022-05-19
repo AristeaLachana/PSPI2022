@@ -30,7 +30,7 @@
 
   <div class="pagination" style="margin-left:10%;align-items:center;">
     <a href="allArticlesNutrition" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Άρθρα</a>
-    <a href="recipes.php">Συνταγές</a>
+    <a href="AllRecipesNutrition.php">Συνταγές</a>
   </div>
 
   <body>
@@ -42,10 +42,10 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmoreNutrition.php?post-slug=<?php echo $post['slug'];?>">
+        <a class="containerBlog__img_link" href="readmore.php?post-slug=<?php echo $post['slug'];?>">
           <img class="containerBlog__img" src="<?php echo $post['image']; ?>"/>
         </a>
-<a href="readmoreNutrition.php?post-slug=<?php echo $post['slug']; ?>"><strong><?php echo $post['title'] ?></strong></a><br><br><?php echo $post['description']?><a href="readmoreNutrition.php?post-slug=<?php echo $post['slug']; ?>" style="color:grey;">...Διαβάστε περισσότερα</a>
+<a href="readmore.php?post-slug=<?php echo $post['slug']; ?>"><strong><?php echo $post['title'] ?></strong></a><br><br><?php echo $post['description']?><a href="readmore.php?post-slug=<?php echo $post['slug']; ?>" style="color:grey;">...Διαβάστε περισσότερα</a>
 </div>
 <?php endforeach ?>
 

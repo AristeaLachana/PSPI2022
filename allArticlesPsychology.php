@@ -40,12 +40,12 @@
       <br>
 
       <p>
-        <a class="containerBlog__img_link" href="readmorePsychology.php?post-slug=<?php echo $post['slug'];?>">
+        <a class="containerBlog__img_link" href="readmore.php?post-slug=<?php echo $post['slug'];?>">
           <img class="containerBlog__img" src="<?php echo $post['image']; ?>"/>
         </a>
         <!--restart diet-->
-<a href="readmorePsychology.php?post-slug=<?php echo $post['slug']; ?>"><strong><?php echo $post['title'] ?></strong></a><br><br><?php echo $post['description']?>
-<a href="readmorePsychology.php?post-slug=<?php echo $post['slug']; ?>" style="color:grey;">...Διαβάστε περισσότερα</a>
+<a href="readmore.php?post-slug=<?php echo $post['slug']; ?>"><strong><?php echo $post['title'] ?></strong></a><br><br><?php echo $post['description']?>
+<a href="readmore.php?post-slug=<?php echo $post['slug']; ?>" style="color:grey;">...Διαβάστε περισσότερα</a>
 
 </div>
 <?php endforeach ?>
