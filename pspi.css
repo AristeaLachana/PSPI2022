@@ -570,7 +570,7 @@ h3{
   max-width: 500px;
   padding: 6px;
   background-color:#EDFFB5;
-  border-radius:5px
+  border-radius:5px;
 }
 
 .contact-style-textbox {
@@ -1126,8 +1126,9 @@ h3{
 /*eidikoi.html*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
+  float: center;
   text-align: center;
   font-family: arial;
 }
@@ -1137,23 +1138,14 @@ h3{
   font-size: 18px;
 }
 
-
-
-a1 {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
 .column-eidikoi {
-  float: left;
-  width: 33%;
+  width: 40%;
   padding: 10px;
 }
 
 .column-eidikoi img {
   opacity: 0.8;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .column-eidikoi img:hover {

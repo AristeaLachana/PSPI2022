@@ -13,6 +13,7 @@ function getPublishedPostsPsychology() {
 
 	return $posts;
 }
+
 function getPublishedPostsNutrition() {
 	// use global $conn object in function
 	global $conn;
@@ -24,6 +25,7 @@ function getPublishedPostsNutrition() {
 
 	return $posts;
 }
+
 function getPublishedPostsExercise() {
 	// use global $conn object in function
 	global $conn;
@@ -47,5 +49,40 @@ function getPost($slug){
 	$post = mysqli_fetch_assoc($result);
 	return $post;
 }
-// more functions to come here ...
+
+function getNutritionExperts() {
+	// use global $conn object in function
+	global $conn;
+	$sql = "SELECT * FROM experts WHERE (expert_category=1)";
+	$result = mysqli_query($conn, $sql);
+
+	// fetch all nutrition experts as an associative array called $experts
+	$experts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $experts;
+}
+
+function getExerciseExperts() {
+	// use global $conn object in function
+	global $conn;
+	$sql = "SELECT * FROM experts WHERE (expert_category=2)";
+	$result = mysqli_query($conn, $sql);
+
+	// fetch all exercise experts as an associative array called $experts
+	$experts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $experts;
+}
+
+function getPsychologyExperts() {
+	// use global $conn object in function
+	global $conn;
+	$sql = "SELECT * FROM experts WHERE (expert_category=3)";
+	$result = mysqli_query($conn, $sql);
+
+	// fetch all psychologists as an associative array called $experts
+	$experts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $experts;
+}
 ?>

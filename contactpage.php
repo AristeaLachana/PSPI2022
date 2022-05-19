@@ -45,9 +45,7 @@
   <br>
   <br>
     <div class="center">
-      <hr style="border-top:2px solid #90EE90">
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
-            <hr style="border-top:2px solid  #ED6964">
 
 </div>
  <div class="bg-img1">
@@ -56,7 +54,7 @@
          <br>
          <br>
          <label for="txtComments"> </label>
-         <textarea  class="contact-style-textbox" id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Γράψτε το μηνυμά σας...."></textarea>
+         <textarea  class="contact-style-textbox" id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Γράψτε το μήνυμά σας...."></textarea>
          <br>
          <br>
          <a> <button class="btn">Αποστολή</button> </a>

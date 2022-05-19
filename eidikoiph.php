@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./styles.css">
   <!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <?php require_once('config.php') ?>
   <title>Improve Your Health | Η Ομάδα μας</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
@@ -22,6 +22,7 @@
   </style>
   </head>
   <body>
+    <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
     <?php
       include 'includes\header.php';
      ?>
