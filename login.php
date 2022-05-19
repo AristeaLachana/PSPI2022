@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,8 +51,9 @@
       <tr>
 
           <td colspan="6">
-           <form class="name" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username" required>
+           <form class="name" action="login.php" method="post" style="margin:auto;max-width:300px">
+             <?php include('errors.php'); ?>
+             <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username" value="<?php echo $username; ?>">
            </form>
           </td>
 
@@ -59,8 +61,9 @@
        <tr>
 
            <td colspan="6">
-             <form class="password" action="/sendData" method="post" style="margin:auto;max-width:300px">
-               <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password" required>
+             <form class="password" action="login.php" method="post" style="margin:auto;max-width:300px">
+               <?php include('errors.php'); ?>
+               <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password">
              </form>
 
            </td>
@@ -73,7 +76,7 @@
         <th>
 
           <div class="submit"></div>
-          <a href="mainPage.php"> <button class="btn">Σύνδεση</button> </a>
+          <a href="mainPage.php"> <button class="btn" name="login">Σύνδεση</button> </a>
 
         </th>
 
@@ -93,7 +96,7 @@
 
 
 
-<<?php
+<?php
 include 'includes\footer2.php';
  ?>
  <script>
