@@ -569,7 +569,9 @@ h3{
   margin: 40px;
   max-width: 500px;
   padding: 6px;
-  background-color:#EDFFB5;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
   border-radius:5px;
 }
 
