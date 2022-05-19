@@ -15,6 +15,10 @@
   <title>Improve Your Health | Η Ομάδα μας</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
+  a{
+    text-decoration: none;
+    color: black;
+  }
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +27,7 @@
   </head>
   <body>
     <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
+    <?php $experts = getPsychologyExperts(); ?>
     <?php
       include 'includes\header.php';
      ?>
@@ -36,52 +41,25 @@
 
     <br>
 
-    <div class="row-eidikoi">
-      <div class="column-eidikoi">
-        <div class="card">
-             <img src="eidikos.jpg" alt="Βάσω" style="width:100%">
-             <h1>Βάσω Λ.</h1>
-             <p class="title1">Ψυχολόγος</p>
-             <p>Τμήμα Ψυχολογίας Α.Π.Θ.</p>
-             <div style="margin: 24px 0;">
-               <a1 href="#"><i class="fa fa-dribbble"></i></a1>
-               <a1 href="#"><i class="fa fa-twitter"></i></a1>
-               <a1 href="#"><i class="fa fa-linkedin"></i></a1>
-               <a1 href="#"><i class="fa fa-facebook"></i></a1>
-               <p></p>
-             </div>
-           </div>
-      </div>
-      <div class="column-eidikoi">
-        <div class="card">
-             <img src="eidikos.jpg" alt="Μαρία" style="width:100%">
-             <h1>Μαρία Χ.</h1>
-             <p class="title1">Ψυχολόγος</p>
-             <p>Τμήμα Ψυχολογίας Α.Π.Θ</p>
-             <div style="margin: 24px 0;">
-               <a1 href="#"><i class="fa fa-dribbble"></i></a1>
-               <a1 href="#"><i class="fa fa-twitter"></i></a1>
-               <a1 href="#"><i class="fa fa-linkedin"></i></a1>
-               <a1 href="#"><i class="fa fa-facebook"></i></a1>
-               <p></p>
-             </div>
-           </div>
-      </div>
-      <div class="column-eidikoi">
-        <div class="card">
-             <img src="eidikos.jpg" alt="Χαρούλα" style="width:100%">
-             <h1>Χαρούλα Κ.</h1>
-             <p class="title1">ΓΥΜΝΑΣΤΗΣ</p>
-             <p>Τμήμα Ψυχολογίας Α.Π.Θ.</p>
-             <div style="margin: 24px 0;">
-               <a1 href="#"><i class="fa fa-dribbble"></i></a1>
-               <a1 href="#"><i class="fa fa-twitter"></i></a1>
-               <a1 href="#"><i class="fa fa-linkedin"></i></a1>
-               <a1 href="#"><i class="fa fa-facebook"></i></a1>
-               <p></p>
-             </div>
-            </div>
-      </div>
+    <?php foreach ($experts as $expert): ?>
+        <div class="row-eidikoi">
+          <div class="column-eidikoi">
+            <div class="card">
+                 <img src="eidikos.jpg" alt="<?php echo $expert['name']?>" style="width:100%;cursor:auto">
+                 <h1><?php echo $expert['name']?> <?php echo $expert['surname']?></h1>
+                 <p class="title1"><?php echo $expert['title']?> </p>
+                 <p><?php echo $expert['studies']?></p>
+                 <p class="title1"><?php echo $expert['email']?></p>
+                 <div style="margin: 24px 0;padding:6px">
+                   <a href="https://twitter.com/?lang=el"><i class="fa fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                   <a href="https://el-gr.facebook.com/"><i class="fa fa-facebook"></i></a>
+                 </div>
+               </div>
+          </div>
+        </div>
+    <?php endforeach ?>
+
 
 </div>
 

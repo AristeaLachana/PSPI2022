@@ -42,7 +42,6 @@
 
 
 <?php foreach ($experts as $expert): ?>
-
     <div class="row-eidikoi">
       <div class="column-eidikoi">
         <div class="card">
@@ -58,8 +57,8 @@
              </div>
            </div>
       </div>
-      </div>
-    <?php endforeach ?>
+    </div>
+  <?php endforeach ?>
 
 <br>
 
