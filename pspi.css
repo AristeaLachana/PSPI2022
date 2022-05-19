@@ -675,6 +675,7 @@ h3{
   text-align: center;
 }
 
+
 /*sign up page*/
 .name {
   position: relative;
@@ -1122,15 +1123,22 @@ h3{
 }
 
 
-
 /*eidikoi.html*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
+  max-width: 450px;
   margin: auto;
   float: center;
+  background-color: white;
   text-align: center;
   font-family: arial;
+}
+
+.content-experts {
+  list-style-position: inside;
+  background: #e9f7f7;
+  text-align: center;
+  padding: 25px;
 }
 
 .title1 {
@@ -1138,24 +1146,8 @@ h3{
   font-size: 18px;
 }
 
-.column-eidikoi {
-  width: 40%;
-  padding: 10px;
-}
 
-.column-eidikoi img {
-  opacity: 0.8;
-  cursor: auto;
-}
 
-.column-eidikoi img:hover {
-  opacity: 1;
-}
-.row-eidikoi:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /* user settings click dropdown */
 
 /* Style The Dropdown Button */

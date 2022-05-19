@@ -32,18 +32,20 @@
     <?php
     include 'includes\header.php';
      ?>
-    <br>
 
-      <div class="pagination" style="margin-left:10%;align-items:center;">
+
+    <div class="content-experts">
+      <div class="pagination" style="align-items:center;">
         <a href="eidikoi.php" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Διατροφολόγοι</a>
         <a href="eidikoigym.php">Γυμναστές</a>
         <a href="eidikoiph.php">Ψυχολόγοι</a>
       </div>
 
 
+
+<?php $i=0?>
 <?php foreach ($experts as $expert): ?>
-    <div class="row-eidikoi">
-      <div class="column-eidikoi">
+  <?php if($i%3===0) echo "\n" ?>
         <div class="card">
              <img src="eidikos.jpg" alt="<?php echo $expert['name']?>" style="width:100%;cursor:auto">
              <h1><?php echo $expert['name']?> <?php echo $expert['surname']?></h1>
@@ -56,9 +58,9 @@
                <a href="https://el-gr.facebook.com/"><i class="fa fa-facebook"></i></a>
              </div>
            </div>
-      </div>
-    </div>
+        <?php $i++;?>
   <?php endforeach ?>
+</div>
 
 <br>
 

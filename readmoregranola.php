@@ -35,9 +35,7 @@ include 'includes\header.php';
    ?>
     <br>
     <div class="readmore">
-          <hr style="border-top:2px solid #90EE90">
             <h2><strong>Τραγανή granola με αποξηραμένα φρούτα και ξηρούς καρπούς</strong></h2>
-          <hr style="border-top:2px solid  #ED6964">
         <br>
         <img alt="image_readmore" src="granola.jpg" width="30%">
     </div>

@@ -31,9 +31,9 @@
     <?php
       include 'includes\header.php';
      ?>
-     <br>
 
-    <div class="pagination" style="margin-left:10%;align-items:center;">
+<div class="content-experts">
+    <div class="pagination" style="align-items:center;">
       <a href="eidikoi.php">Διατροφολόγοι</a>
       <a href="eidikoigym.php">Γυμναστές</a>
       <a href="eidikoiph.php" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Ψυχολόγοι</a>
@@ -59,13 +59,10 @@
           </div>
         </div>
     <?php endforeach ?>
-
-
-</div>
-
+  </div>
 
 <br>
-<br>
+
 <?php
 include 'includes\footer.php';
  ?>
