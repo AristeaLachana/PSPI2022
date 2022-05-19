@@ -58,17 +58,9 @@
 <p class="readmore_text">
         <?php echo html_entity_decode($post['body']); ?>
         <br>
-        <br> <?php if ($post['categorie']=="exercise"): ?>
-        <a class="btn"  href="allArticlesExercise.php">&laquo;</a>
-      <?php elseif ($post['categorie']=="nutrition"): ?>
-        <?php if ($post['recipe']!=null): ?>
-          <a class="btn" href="AllRecipesNutrition.php">&laquo;</a>
-        <?php else: ?>
-          <a class="btn" href="allArticlesNutrition.php">&laquo;</a>
-        <?php endif; ?>
-        <?php else: ?>
-        <a class="btn" href="allArticlesPsychology.php">&laquo;</a>
-        <?php endif; ?>
+        <br>
+        <button class="btn"  onclick="history.back()">&laquo;
+    
     </div>
     <br>
 </body>
