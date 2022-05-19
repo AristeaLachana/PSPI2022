@@ -32,7 +32,7 @@
   include 'includes\header.php';
      ?>
 
-    
+
 
 <div class="content-experts">
     <div class="pagination" style="align-items:center;">
@@ -62,10 +62,9 @@
           </div>
         </div>
     <?php endforeach ?>
+    <br>
 </div>
 
-
-<br>
 
 </body>
 <?php

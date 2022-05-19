@@ -59,9 +59,10 @@
           </div>
         </div>
     <?php endforeach ?>
-  </div>
+  <br>
+</div>
 
-<br>
+
 
 <?php
 include 'includes\footer.php';

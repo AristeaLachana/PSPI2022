@@ -60,9 +60,11 @@
            </div>
         <?php $i++;?>
   <?php endforeach ?>
+
+  <br>
 </div>
 
-<br>
+
 
 <?php
 include 'includes\footer.php';
