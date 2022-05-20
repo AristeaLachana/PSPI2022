@@ -1,4 +1,4 @@
-<?php include('server.php') ?>
+<?php include('admin\server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +53,7 @@
 
           <td colspan="6">
            <form class="name" action="login.php" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+             <?php include('admin\errors.php'); ?>
              <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username" value="<?php echo $username; ?>">
            </form>
           </td>
@@ -63,7 +63,7 @@
 
            <td colspan="6">
              <form class="password" action="login.php" method="post" style="margin:auto;max-width:300px">
-               <?php include('errors.php'); ?>
+              <?php include('admin\errors.php'); ?>
                <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password">
              </form>
 

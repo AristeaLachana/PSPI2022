@@ -1,4 +1,4 @@
-<?php include('server.php') ?>
+<?php include('admin\server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,13 +45,13 @@
       <tr>
           <td>
            <form class="name" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+             <?php include('admin\errors.php'); ?>
              <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username"  value="<?php echo $username; ?>" >
            </form>
           </td>
           <td>
             <form class="email" action="/sendData" method="post"  style="margin:auto;max-width:300px">
-              <?php include('errors.php'); ?>
+              <?php include('admin\errors.php'); ?>
                <input type="email" name="email" placeholder="Email" value="<?php echo $email; ?>">
              </form>
           </td>
@@ -59,13 +59,13 @@
        <tr>
           <td>
             <form class="firstname" action="/sendData" method="post" style="margin:auto;max-width:300px">
-              <?php include('errors.php'); ?>
+              <?php include('admin\errors.php'); ?>
               <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="First name"  value="<?php echo $firstname; ?>">
             </form>
           </td>
           <td>
            <form class="surname" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+             <?php include('admin\errors.php'); ?>
              <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Surname" value="<?php echo $surname; ?>">
 
            </form>
@@ -77,7 +77,7 @@
           </th>
           <td>
            <form class="date" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+            <?php include('admin\errors.php'); ?>
             <input type="date" id="date" value="<?php echo $date; ?>">
            </form>
           </td>
@@ -88,7 +88,7 @@
          </th>
          <td>
            <form class="password" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+             <?php include('admin\errors.php'); ?>
              <input type="password" id="password" name="password" minlength="8" maxlength="16"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Πρέπει να περιέχει τουλάχιστον έναν αριθμό και ένα κεφαλαίο και πεζό γράμμα και τουλάχιστον 8 ή περισσότερους χαρακτήρες " value="<?php echo $password; ?>">
            </form>
          </td>
@@ -99,7 +99,7 @@
          </th>
          <td>
            <form class="passwordverification" action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+             <<?php include('admin\errors.php'); ?>
              <input type="password" id="passwordverification" name="password" minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Πρέπει να περιέχει τουλάχιστον έναν αριθμό και ένα κεφαλαίο και πεζό γράμμα και τουλάχιστον 8 ή περισσότερους χαρακτήρες" value="<?php echo $passwordverification; ?>">
            </form>
          </td>
@@ -117,7 +117,7 @@
          <th><label for="categories">Expert Categories</label></th>
          <td>
           <form class="expertcategories" action="/sendData" method="post" style="margin:auto;max-width:300px">
-            <?php include('errors.php'); ?>
+          <?php include('admin\errors.php'); ?>
             <select id="categories" name="expertcategories">
               <option value="null" selected>  </option>
               <option value="nutritionist">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
@@ -134,7 +134,7 @@
           </th>
           <td>
            <form class="experttitle"action="/sendData" method="post" style="margin:auto;max-width:300px">
-             <?php include('errors.php'); ?>
+             <?php include('admin\errors.php'); ?>
             <input type="text"id="experttitle" name="expert categories" minlength="5" maxlength="40">
            </form
           </td>
