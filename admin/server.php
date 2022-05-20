@@ -1,33 +1,11 @@
 
 <?php
-session_start();
-if (isset($_POST['login'])) {
-  $username = mysqli_real_escape_string($db, $_POST['username']);
-  $password = mysqli_real_escape_string($db, $_POST['password']);
+    if(!isset($_SESSION))
+    {
+        session_start();
+    }
 
-  if (empty($username)) {
-  	array_push($errors, "Username απαιτείται");
-  }
-  if (empty($password)) {
-  	array_push($errors, "Password απαιτείται");
-  }
-
-  if (count($errors) == 0) {
-  //	$password = md5($password);
-  	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-  	$results = mysqli_query($db, $query);
-  	if (mysqli_num_rows($results) == 1) {
-  	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
-  	  header('location: mainPage.php');
-  	}else {
-  		array_push($errors, "Λανθασμένος συνδυασμός ονόματος χρήστη/κωδικού πρόσβασης");
-  	}
-  }
-}
-?>
-<?php
-
+$db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
 //αρχικοποίηση μεταβλητών
 $username = "";
 $email    = "";
@@ -37,7 +15,7 @@ $date1     = "";
 $errors = array();
 
 //συνδεθείτε στη βάση δεδομένων
-$db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
+
 
 // ΕΓΓΡΑΦΗ ΧΡΗΣΤΗ
 if (isset($_POST['signup'])) {
@@ -82,7 +60,7 @@ if (isset($_POST['signup'])) {
 // Τέλος, εγγραφείτε χρήστη εάν δεν υπάρχουν σφάλματα στη φόρμα
   /*if (count($errors) == 0) {
   	$password = md5($password); *///κρυπτογραφήστε τον κωδικό πρόσβασης πριν τον αποθηκεύσετε στη βάση δεδομένων
-
+if (count($errors) == 0) {
   	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password)
   			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password')";
   	mysqli_query($db, $query);
@@ -90,3 +68,30 @@ if (isset($_POST['signup'])) {
   	$_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	header('location: mainPage.php');
   }
+}
+
+if (isset($_POST['login'])) {
+  $username = mysqli_real_escape_string($db, $_POST['username']);
+  $password = mysqli_real_escape_string($db, $_POST['password']);
+
+  if (empty($username)) {
+  	array_push($errors, "Username απαιτείται");
+  }
+  if (empty($password)) {
+  	array_push($errors, "Password απαιτείται");
+  }
+
+  if (count($errors) == 0) {
+  //	$password = md5($password);
+  	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+  	$results = mysqli_query($db, $query);
+  	if (mysqli_num_rows($results) == 1) {
+  	  $_SESSION['username'] = $username;
+  	  $_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
+  	  header('location: mainPage.php');
+  	}else {
+  		array_push($errors, "Λανθασμένος συνδυασμός ονόματος χρήστη/κωδικού πρόσβασης");
+  	}
+  }
+}
+?>

@@ -1,3 +1,4 @@
+<?php include ('config.php')?>
 <?php include('admin\server.php') ?>
 <!DOCTYPE html>
 <html>
@@ -63,7 +64,7 @@
 
            <td colspan="6">
                 <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password">
-             
+
 
            </td>
            <td>
@@ -73,7 +74,7 @@
        <tr>
 
         <th>
-          <button type="submit" class="btn" name="login_btn">Login</button>
+          <button type="submit" class="btn" name="login">Login</button>
 </form>
         </th>
 

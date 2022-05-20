@@ -44,7 +44,7 @@
       <tr>
           <td>
            <form  action="signup.php" method="post" style="margin:auto;max-width:300px">
-             <?php include('admin\errors.php'); ?>
+<?php include('admin\errors.php'); ?>
              <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username">
 
           </td>
@@ -140,7 +140,8 @@
        </tr>
        <tr>
         <th>
-          <div class="submit"></div>
+
+
            <button type="submit" class="btn" name="signup">Εγγραφή</button>
         </th>
        </tr>
