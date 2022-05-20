@@ -1,4 +1,5 @@
 <?php include('mustLogin.php')?>
+<?php include('cookies.php')?>
 <!DOCTYPE html>
 <html>
 <head>

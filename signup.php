@@ -126,23 +126,23 @@
        </tr>
        <tr>
           <th>
-           <label  for="experttitle">Expert Title</label>
+           <label for="experttitle">Expert Title</label>
           </th>
           <td>
 
 
-            <input type="text"id="experttitle" name="expert categories" minlength="5" maxlength="40">
+            <input type="text" id="experttitle" name="expert categories" minlength="5" maxlength="40">
 
           </td>
        </tr>
        <tr>
-         <td></td><th>Όροι συμμετοχής:<input type='checkbox'> </th>
+         <td></td><th>Όροι συμμετοχής:<input type='checkbox' id="checkme" unchecked="unchecked"> </th>
        </tr>
        <tr>
         <th>
 
 
-           <button type="submit" class="btn" name="signup">Εγγραφή</button>
+           <button type="submit" class="signupbtn" disabled="disabled" name="signup" id="submit">Sign Up</button>
         </th>
        </tr>
          </form>
@@ -173,6 +173,32 @@
 include 'includes\footer2.php';
  ?>
  <script>
+
+/*
+ var expertYes = document.getElementById('rdchoiceyes');
+ var expCategories = document.getElementById('submit');
+ var expTitle = document.getElementById('experttitle')
+ // when unchecked or checked, run the function
+ function enableExperts(){
+    if(expertYes.checked){
+      expCategories.disabled = false;
+      expTitle.disabled = false;
+    }else {
+      expCategories.disabled = true;
+      expTitle.disabled = true;
+    }
+}*/
+
+ var checker = document.getElementById('checkme');
+ var submitbtn = document.getElementById('submit');
+ // when unchecked or checked, run the function
+checker.onchange = function(){
+    if(this.checked){
+      submitbtn.disabled = false;
+    }else {
+      submitbtn.disabled = true;
+    }
+}
 
 function myFunction1() {
   var x = document.getElementById("password");

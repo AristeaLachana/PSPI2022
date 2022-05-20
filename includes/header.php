@@ -11,7 +11,6 @@
  <!-- -->
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Exercise</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
 
   <style>
@@ -34,7 +33,7 @@
 <button class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
 
-  <a href="#"><?php echo $_SESSION['username']?></a>
+  <a href="#" style="cursor:default;"><?php echo $_SESSION['username']?></a>
   <a href="logout.php">Αποσύνδεση</a>
 
 </div>

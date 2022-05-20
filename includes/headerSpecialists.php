@@ -9,8 +9,8 @@
 <div class="dropdown" style="float:right;margin-right:5%">
 <button  class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
-  <a href="#">username</a>
-  <a href="#">Αποσύνδεση</a>
+  <a href="#" style="cursor:default;">username</a>
+  <a href="logout.php">Αποσύνδεση</a>
 </div>
 </div>
   <form class="search" style="margin:auto;max-width:400px;">
