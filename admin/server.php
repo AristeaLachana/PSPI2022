@@ -37,7 +37,7 @@ $surname  = "";
 $errors = array();
 
 //συνδεθείτε στη βάση δεδομένων
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
 
 // ΕΓΓΡΑΦΗ ΧΡΗΣΤΗ
 if (isset($_POST['signup'])) {
