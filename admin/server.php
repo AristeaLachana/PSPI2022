@@ -1,6 +1,6 @@
 
-// LOGIN USER
 <?php
+session_start();
 if (isset($_POST['login'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
@@ -13,7 +13,7 @@ if (isset($_POST['login'])) {
   }
 
   if (count($errors) == 0) {
-  	$password = md5($password);
+  //	$password = md5($password);
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
@@ -27,13 +27,13 @@ if (isset($_POST['login'])) {
 }
 ?>
 <?php
-session_start();
 
 //αρχικοποίηση μεταβλητών
 $username = "";
 $email    = "";
 $firstname= "";
 $surname  = "";
+$date1     = "";
 $errors = array();
 
 //συνδεθείτε στη βάση δεδομένων
@@ -46,6 +46,7 @@ if (isset($_POST['signup'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $firstname = mysqli_real_escape_string($db, $_POST['firstname']);
   $surname = mysqli_real_escape_string($db, $_POST['surname']);
+  $date1 = mysqli_real_escape_string($db, $_POST['date1']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
   $passwordverification= mysqli_real_escape_string($db, $_POST['passwordverification']);
 
@@ -55,6 +56,7 @@ if (isset($_POST['signup'])) {
   if (empty($email)) { array_push($errors, "Email απαιτείται"); }
   if (empty($firstname)) { array_push($errors, "Firstname απαιτείται"); }
   if (empty($surname)) { array_push($errors, "Surname απαιτείται"); }
+  if (empty($date1)) { array_push($errors, "Date απαιτείται"); }
   if (empty($password)) { array_push($errors, "Password απαιτείται"); }
   if (empty($passwordverification)) { array_push($errors, "Password Verification απαιτείται"); }
   if ($password != $passwordverification) {
@@ -78,14 +80,13 @@ if (isset($_POST['signup'])) {
   }
 
 // Τέλος, εγγραφείτε χρήστη εάν δεν υπάρχουν σφάλματα στη φόρμα
-  if (count($errors) == 0) {
-  	$password = md5($password);//κρυπτογραφήστε τον κωδικό πρόσβασης πριν τον αποθηκεύσετε στη βάση δεδομένων
+  /*if (count($errors) == 0) {
+  	$password = md5($password); *///κρυπτογραφήστε τον κωδικό πρόσβασης πριν τον αποθηκεύσετε στη βάση δεδομένων
 
-  	$query = "INSERT INTO users (username, email, firstname, surname, password)
-  			  VALUES('$username', '$email', '$firstname', '$surname', '$date' '$password')";
+  	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password)
+  			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	header('location: mainPage.php');
   }
-}

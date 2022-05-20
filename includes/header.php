@@ -29,13 +29,18 @@
          width="400" height="100"></a>
   </div>
 <br><br>
+  <?php if (isset($_SESSION['username'])) : ?>
 <div class="dropdown" style="float:right;margin-right:5%">
 <button class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
-  <a href="#">username</a>
+
+  <a href="#"><?php $_SESSION['username']?></a>
   <a href="#">Αποσύνδεση</a>
+
 </div>
+
 </div>
+<?php endif; ?>
   <form class="search" style="margin:auto;max-width:400px;">
     <input type="text"  placeholder="Search.." name="search">
     <button type="submit"> <i class="fa fa-search"></i></button>

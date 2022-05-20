@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 
     // connect to database
     $conn = mysqli_connect("localhost", "root", "", "improveyourhealth");
