@@ -100,13 +100,13 @@
          <th>
            <label for="passwordverification">Password Verification: </label>
          </th>
-         <td>
-           <input type="checkbox" onclick="myFunction2()">
-         </td>
-         <td>
+          <td>
             <div class="passwordverification" style="margin:auto;max-width:300px">
              <input type="password" id="passwordverification" name="passwordverification"  >
             </div>
+         </td>
+         <td>
+           <input type="checkbox" onclick="myFunction2()">
          </td>
        </tr>
        <tr>

@@ -76,10 +76,9 @@
        <tr>
 
         <th>
-           <div class="btn"  style="margin:auto;max-width:300px">
+
             <button type="submit" class="btn" name="login">Login</button>
-          </div>
-</form>
+      
         </th>
 
 
