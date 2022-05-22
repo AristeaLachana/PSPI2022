@@ -45,28 +45,29 @@
           <td>
            <form  action="signup.php" method="post" style="margin:auto;max-width:300px">
 <?php include('admin\errors.php'); ?>
-             <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username">
-
+            <div class="name" style="margin:auto;max-width:300px">
+              <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username">
+            </div>
           </td>
           <td>
 
-
+           <div class="email" style="margin:auto;max-width:300px">
               <input type="email" name="email" value="<?php echo $email ?>" placeholder="Email">
-
+           </div>
           </td>
        </tr>
        <tr>
           <td>
 
-
+             <div class="firstname" style="margin:auto;max-width:300px">
               <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="First name"  value="<?php echo $firstname; ?>">
-
+             </div>
           </td>
           <td>
 
-
+            <div class="surname" style="margin:auto;max-width:300px">
              <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Surname" value="<?php echo $surname; ?>">
-
+            </div>
 
           </td>
        </tr>
@@ -76,9 +77,9 @@
           </th>
           <td>
 
-
+           <div class="date" style="margin:auto;max-width:300px">
             <input  class=date type="date" id="date" name=date1 value="<?php echo $date1; ?>">
-
+           </div>
           </td>
        </tr>
        <tr>
@@ -87,8 +88,9 @@
          </th>
          <td>
 
-
+            <div class="password" style="margin:auto;max-width:300px">
              <input type="password" id=password name="password" placeholder="Password">
+            </div>
          </td>
        </tr>
        <tr>
@@ -96,9 +98,9 @@
            <label for="passwordverification">Password Verification: </label>
          </th>
          <td>
-
+            <div class="passwordverification" style="margin:auto;max-width:300px">
              <input type="password" id="passwordverification" name="passwordverification"  >
-
+            </div>
          </td>
        </tr>
        <tr>
@@ -113,14 +115,14 @@
        <tr>
          <th><label for="categories">Expert Categories</label></th>
          <td>
-
+           <div class="expertcategories" style="margin:auto;max-width:300px">
             <select id="categories" name="expertcategories">
               <option value="null" selected>  </option>
               <option value="nutritionist">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
               <option value="fitness specialist" >ΓΥΜΝΑΣΤΙΚΗ</option>
               <option value="mental health specialist" >ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
             </select>
-
+           </div>
 
          </td>
        </tr>
@@ -129,10 +131,10 @@
            <label for="experttitle">Expert Title</label>
           </th>
           <td>
-
+           <div class="experttitle" style="margin:auto;max-width:300px">
 
             <input type="text" id="experttitle" name="expert categories" minlength="5" maxlength="40">
-
+           </div>
           </td>
        </tr>
        <tr>
@@ -141,8 +143,9 @@
        <tr>
         <th>
 
-
+          <div class="btn"  style="margin:auto;max-width:300px">
            <button type="submit" class="signupbtn" disabled="disabled" name="signup" id="submit">Sign Up</button>
+         </div>
         </th>
        </tr>
          </form>
