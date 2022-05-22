@@ -55,16 +55,18 @@
           <td colspan="6">
            <form  action="login.php" method="post" style="margin:auto;max-width:300px">
              <?php include('admin\errors.php'); ?>
+            <div class="name" style="margin:auto;max-width:300px">
              <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username" value="<?php echo $username; ?>">
-
+           </div>
           </td>
 
        </tr>
        <tr>
 
            <td colspan="6">
+               <div class="password" style="margin:auto;max-width:300px">
                 <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password">
-
+               </div>
 
            </td>
            <td>
@@ -74,7 +76,9 @@
        <tr>
 
         <th>
-          <button type="submit" class="btn" name="login">Login</button>
+           <div class="btn"  style="margin:auto;max-width:300px">
+            <button type="submit" class="btn" name="login">Login</button>
+          </div>
 </form>
         </th>
 

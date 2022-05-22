@@ -92,11 +92,17 @@
              <input type="password" id=password name="password" placeholder="Password">
             </div>
          </td>
+         <td>
+           <input type="checkbox" onclick="myFunction1()">
+         </td>
        </tr>
        <tr>
          <th>
            <label for="passwordverification">Password Verification: </label>
          </th>
+         <td>
+           <input type="checkbox" onclick="myFunction2()">
+         </td>
          <td>
             <div class="passwordverification" style="margin:auto;max-width:300px">
              <input type="password" id="passwordverification" name="passwordverification"  >
@@ -141,7 +147,7 @@
          <td></td><th>Όροι συμμετοχής:<input type='checkbox' id="checkme" unchecked="unchecked"> </th>
        </tr>
        <tr>
-        <th>
+        <th colspan="2">
 
           <div class="btn"  style="margin:auto;max-width:300px">
            <button type="submit" class="signupbtn" disabled="disabled" name="signup" id="submit">Sign Up</button>
