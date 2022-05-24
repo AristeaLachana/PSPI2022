@@ -65,7 +65,7 @@
 
            <td colspan="6">
                <div class="password" style="margin:auto;max-width:300px">
-                <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password">
+                <input type="password" id="password" name="password" maxlength="16" placeholder="Password">
                </div>
 
            </td>
@@ -74,14 +74,9 @@
            </td>
        </tr>
        <tr>
-
         <th>
-
             <button type="submit" class="btn" name="login">Login</button>
-      
         </th>
-
-
        </tr>
 
 

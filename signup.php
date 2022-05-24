@@ -148,10 +148,7 @@
        </tr>
        <tr>
         <th colspan="2">
-
-          <div class="btn"  style="margin:auto;max-width:300px">
            <button type="submit" class="signupbtn" disabled="disabled" name="signup" id="submit">Sign Up</button>
-         </div>
         </th>
        </tr>
          </form>
@@ -185,14 +182,16 @@ include 'includes\footer2.php';
 
 /*
  var expertYes = document.getElementById('rdchoiceyes');
+ var expertNo = document.getElementById('rdchoiceno')
  var expCategories = document.getElementById('submit');
- var expTitle = document.getElementById('experttitle')
+ var expTitle = document.getElementById('experttitle');
+
  // when unchecked or checked, run the function
  function enableExperts(){
     if(expertYes.checked){
       expCategories.disabled = false;
       expTitle.disabled = false;
-    }else {
+    }else if(expertNo.checked){
       expCategories.disabled = true;
       expTitle.disabled = true;
     }

@@ -1,6 +1,3 @@
-<?php
-print_r($_COOKIE);
-?>
 <!DOCTYPE html>
 <html>
   <head>
