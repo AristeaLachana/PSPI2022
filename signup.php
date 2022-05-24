@@ -102,7 +102,7 @@
          </th>
           <td>
             <div class="passwordverification" style="margin:auto;max-width:300px">
-             <input type="password" id="passwordverification" name="passwordverification"  >
+             <input type="password" id="passwordverification" name="passwordverification" placeholder="Password Verification" >
             </div>
          </td>
          <td>
@@ -112,8 +112,8 @@
        <tr>
          <th>Expert</th>
          <th>
-           <label for="rdchoiceyes">Yes</label> <input type='radio' id="rdchoiceyes" name="choice" value="yes">
-           <label for="rdchoiceno"> No</label> <input type='radio' id="rdchoiceno" name="choice" value="no">
+           <label for="rdchoiceyes">Yes</label> <input type='radio' id="rdchoiceyes" name="choice" value="1">
+           <label for="rdchoiceno"> No</label> <input type='radio' id="rdchoiceno" name="choice" value="0">
          </th>
        </tr>
        <br>
@@ -124,9 +124,9 @@
            <div class="expertcategories" style="margin:auto;max-width:300px">
             <select id="categories" name="expertcategories">
               <option value="null" selected>  </option>
-              <option value="nutritionist">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
-              <option value="fitness specialist" >ΓΥΜΝΑΣΤΙΚΗ</option>
-              <option value="mental health specialist" >ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
+              <option value="1">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
+              <option value="2">ΓΥΜΝΑΣΤΙΚΗ</option>
+              <option value="3">ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
             </select>
            </div>
 
@@ -138,8 +138,7 @@
           </th>
           <td>
            <div class="experttitle" style="margin:auto;max-width:300px">
-
-            <input type="text" id="experttitle" name="expert categories" minlength="5" maxlength="40">
+            <input type="text" id="experttitle" name="experttitle" minlength="5" maxlength="255" value="<?php echo $experttitle; ?>">
            </div>
           </td>
        </tr>
@@ -155,15 +154,16 @@
     </table>
   </div>
 
+<!-- must-contain box instructions -->
   <div id="message">
-   <h3>Password must contain the following:</h3>
+   <h3>Ο κωδικός πρέπει να περιλαμβάνει:</h3>
    <p id="letter" class="invalid">Ένα <b>μικρό λατινικό</b> γράμμα</p>
    <p id="capital" class="invalid">Ένα <b>κεφαλαίο λατινικό</b> γράμμα</p>
    <p id="number" class="invalid">Έναν <b>αριθμό</b></p>
    <p id="length" class="invalid">Τουλάχιστον <b>8 χαρακτήρες</b></p>
    </div>
    <div id="message1">
-   <h3>Password must contain the following:</h3>
+   <h3>Ο κωδικός πρέπει να περιλαμβάνει:</h3>
    <p id="letter1" class="invalid1">Ένα <b>μικρό λατινικό</b> γράμμα</p>
    <p id="capital1" class="invalid1">Ένα <b>κεφαλαίο λατινικό</b> γράμμα</p>
    <p id="number1" class="invalid1">Έναν <b>αριθμό</b></p>
@@ -208,6 +208,7 @@ checker.onchange = function(){
     }
 }
 
+//print password
 function myFunction1() {
   var x = document.getElementById("password");
   if (x.type === "password") {
@@ -217,6 +218,7 @@ function myFunction1() {
   }
 }
 
+//print password - Verification
 function myFunction2() {
   var x = document.getElementById("passwordverification");
   if (x.type === "password") {

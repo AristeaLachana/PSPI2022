@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +54,12 @@
         <li class="menu__group"><a href="eidikoi.php" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
         <li class="menu__group"><a href="contactpage.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
 
+        <?php if ($_SESSION['expert']==='1') : ?>
+          <li class="menu__group"><a href="addpage.php" class="menu__link r-link text-underlined">ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</a></li>
+        <?php endif ?>
+
       </ul>
+
       <ul class="smallScreenMenu">
         <li class="menu__group"><a href="mainPage.php" class="">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
         <li class="menu__group"><a href="categories.php" class="">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>

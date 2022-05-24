@@ -12,6 +12,9 @@ $email    = "";
 $firstname= "";
 $surname  = "";
 $date1     = "";
+$isExpert = "";
+$experttitle = "";
+$expertcategories = "";
 $errors = array();
 
 //συνδεθείτε στη βάση δεδομένων
@@ -27,6 +30,9 @@ if (isset($_POST['signup'])) {
   $date1 = mysqli_real_escape_string($db, $_POST['date1']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
   $passwordverification= mysqli_real_escape_string($db, $_POST['passwordverification']);
+  $isExpert = mysqli_real_escape_string($db, $_POST['choice']);
+  $experttitle = mysqli_real_escape_string($db, $_POST['experttitle']);
+  $expertcategories = mysqli_real_escape_string($db, $_POST['expertcategories']);
 
   /* επικύρωση φόρμας: βεβαιωθείτε ότι η φόρμα έχει συμπληρωθεί σωστά ...
    προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors*/
@@ -61,8 +67,8 @@ if (isset($_POST['signup'])) {
   /*if (count($errors) == 0) {
   	$password = md5($password); *///κρυπτογραφήστε τον κωδικό πρόσβασης πριν τον αποθηκεύσετε στη βάση δεδομένων
 if (count($errors) == 0) {
-  	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password)
-  			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password')";
+  	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password, expert, expert_title, expert_category)
+  			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password', '$isExpert', '$experttitle', '$expertcategories')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";

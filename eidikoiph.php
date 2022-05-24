@@ -48,8 +48,7 @@
             <div class="card">
                  <img src="eidikos.jpg" alt="<?php echo $expert['name']?>" style="width:100%;cursor:auto">
                  <h1><?php echo $expert['name']?> <?php echo $expert['surname']?></h1>
-                 <p class="title1"><?php echo $expert['title']?> </p>
-                 <p><?php echo $expert['studies']?></p>
+                 <p><?php echo $expert['title']?> </p>
                  <p class="title1"><?php echo $expert['email']?></p>
                  <div style="margin: 24px 0;padding:6px">
                    <a href="https://twitter.com/?lang=el"><i class="fa fa-twitter"></i></a>

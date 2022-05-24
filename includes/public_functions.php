@@ -65,7 +65,7 @@ function getNutritionExperts() {
 function getExerciseExperts() {
 	// use global $conn object in function
 	global $conn;
-	$sql = "SELECT * FROM experts WHERE (expert_category=2 && expert=1)";
+	$sql = "SELECT * FROM users WHERE (expert_category=2 && expert=1)";
 	$result = mysqli_query($conn, $sql);
 
 	// fetch all exercise experts as an associative array called $experts
@@ -77,7 +77,7 @@ function getExerciseExperts() {
 function getPsychologyExperts() {
 	// use global $conn object in function
 	global $conn;
-	$sql = "SELECT * FROM experts WHERE (expert_category=3 && expert=1)";
+	$sql = "SELECT * FROM users WHERE (expert_category=3 && expert=1)";
 	$result = mysqli_query($conn, $sql);
 
 	// fetch all psychologists as an associative array called $experts
