@@ -4,9 +4,9 @@ if (isset($_POST['send_message_btn'])) {
   $subject = $_POST['subject'];
   $msg = $_POST['comments'];
   /*Το Content-Type βοηθά το πρόγραμμα-πελάτη email να αναλύει το αρχείο ως HTML
-   επομένως διατήρηση στυλ
+   επομένως διατήρηση στυλ*/
   $headers = "MIME-Version: 1.0" . "\r\n";
-  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";*/
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
   $message = "<html>
   <head>
   	<title>New message from website contact form</title>
