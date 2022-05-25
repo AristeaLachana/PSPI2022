@@ -7,8 +7,8 @@ if (isset($_POST['send_message_btn'])) {
   $to = "katerinasaiti01@gmail.com"
   // Content-Type helps email client to parse file as HTML
   // therefore retaining styles
-  $headers = "MIME-Version: 1.0" . "\r\n";
-  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $headers = 'MIME-Version: 1.0' ;
+  $headers .= 'Content-type:text/html;charset=UTF-8' ;
   $headers[] = "To: $to";
   $headers[] = "From: $email";
   $header = implode('\r\n', $headers);
