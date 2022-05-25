@@ -12,6 +12,8 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.png">
 
+  <?php require_once('config.php') ?>
+
   <style>
 
   body {
@@ -39,9 +41,9 @@
 
 </div>
 <?php endif; ?>
-  <form class="search" style="margin:auto;max-width:400px;">
+  <form class="search" style="margin:auto;max-width:400px;" action="search.php" method="post">
     <input type="text"  placeholder="Search.." name="search">
-    <button type="submit"> <i class="fa fa-search"></i></button>
+    <button type="submit" name="submit-search"> <i class="fa fa-search"></i></button>
   </form>
 </div>
 
