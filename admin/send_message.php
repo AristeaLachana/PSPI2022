@@ -1,12 +1,17 @@
 <?php
 if (isset($_POST['send_message_btn'])) {
+
   $email = $_POST['email'];
   $subject = $_POST['subject'];
-  $msg = $_POST['comments'];
-  /*Το Content-Type βοηθά το πρόγραμμα-πελάτη email να αναλύει το αρχείο ως HTML
-   επομένως διατήρηση στυλ*/
+  $msg = $_POST['msg'];
+  $to = "katerinasaiti01@gmail.com"
+  // Content-Type helps email client to parse file as HTML
+  // therefore retaining styles
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $headers[] = "To: $to";
+  $headers[] = "From: $email";
+  $header = implode('\r\n', $headers);
   $message = "<html>
   <head>
   	<title>New message from website contact form</title>
@@ -16,7 +21,7 @@ if (isset($_POST['send_message_btn'])) {
   	<p>".$msg."</p>
   </body>
   </html>";
-  if (mail('katerinasaiti01@gmail.com', $subject, $message, $headers)) {
+  if (mail($to, $subject, $message, $headers)) {
    echo "Email sent";
   }else{
    echo "Failed to send email. Please try again later";
