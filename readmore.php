@@ -50,7 +50,6 @@
     </div>
     <div class="center">
 
-
         <br>
         <img alt="image_readmore" src="<?php echo $post['image']; ?>" width="30%" height="50%">
 

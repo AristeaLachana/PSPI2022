@@ -38,16 +38,25 @@
 
   <br>
       <div class="center">
-        <h2><strong>ΠΡΟΣΘΗΚΗ ΑΡΧΕΙΟΥ</strong></h2>
+        <h2><strong>ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</strong></h2>
      </div>
      <div class="add-style">
     <form action="/sendData" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
      <div class="container">
-       <input class="contact-style-textbox" type="text" style="margin:auto;max-width:400px" name="article_title"  placeholder="Τίτλος Άρθρου">
-      <h5 style="color:white;"><label for='fc'> Επιλογή αρχείου </label>
-      <input  type='file' id='fc'name="file" ></h5>
+       <input class="contact-style-textbox" type="text" style="margin:auto;width:400px" name="article_title"  placeholder="Τίτλος Άρθρου">
+       <div class="expertcategories" style="margin:auto;width:300px">
+        <select id="article-category" name="article_categoy" style="background-color:#f1f1f1">
+          <option value="null" selected>Κατηγορία Άρθρου</option>
+          <option value="1">Διατροφή - Άρθρο</option>
+          <option value="2">Διατροφή - Συνταγές</option>
+          <option value="3">Σωματική Άσκηση</option>
+          <option value="4">Ψυχολογία</option>
+        </select>
+       </div>
+      <h5 style="color:white;"><label for='fc'> Εικόνα</label>
+      <input type='file' id='fc'name="file" ></h5>
       <label for="txtComments"> </label>
-      <textarea class="add-style-textbox" id="txtComments" style="margin:auto;width:500px" name="comments" rows="15" cols="40" placeholder="Γράψτε το άρθρο σας..."></textarea>
+      <textarea class="add-style-textbox" id="article_body" style="margin:auto;width:500px" name="article_body" rows="15" cols="40" placeholder="Γράψτε το άρθρο σας..."></textarea>
       <br><br>
       <input class="contact-style-textbox" type="text" style="margin:auto;max-width:400px" name="author"  placeholder="Ποιος γράφει το άρθρο;">
       <br><br>
