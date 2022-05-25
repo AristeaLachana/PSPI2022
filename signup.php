@@ -40,13 +40,12 @@
 
   <div class="signup-img">
    <div class="signup-container">
-
        <h2 style="text-align:center">Εγγραφή</h2>
      <table>
       <tr>
           <td>
            <form  action="signup.php" method="post" style="margin:auto;max-width:300px">
-<?php include('admin\errors.php'); ?>
+            <?php include('admin\errors.php'); ?>
             <div class="name" style="margin:auto;max-width:300px">
               <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username">
             </div>
@@ -91,7 +90,7 @@
          <td>
 
             <div class="password" style="margin:auto;max-width:300px">
-              <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+              <input type="password" name="password" autocomplete="current-password" required="" id="id_password" placeholder="Κωδικός">
               <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
             </div>
          </td>
@@ -120,7 +119,7 @@
          <td>
            <div class="expertcategories" style="margin:auto;max-width:300px">
             <select id="categories" name="expertcategories">
-              <option value="null" selected>  </option>
+              <option value="null" selected>* για ειδικούς *</option>
               <option value="1">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
               <option value="2">ΓΥΜΝΑΣΤΙΚΗ</option>
               <option value="3">ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
@@ -135,7 +134,7 @@
           </th>
           <td>
            <div class="experttitle" style="margin:auto;max-width:300px">
-            <input type="text" id="experttitle" name="experttitle" minlength="5" maxlength="255" value="<?php echo $experttitle; ?>">
+            <input type="text" id="experttitle" name="experttitle" minlength="5" placeholder="* για ειδικούς *" maxlength="255" value="<?php echo $experttitle; ?>">
            </div>
           </td>
        </tr>
@@ -178,22 +177,6 @@ include 'includes\footer2.php';
  <script>
 
 
- var expertYes = document.getElementById('rdchoiceyes');
- var expertNo = document.getElementById('rdchoiceno')
- var expCategories = document.getElementById('submit');
- var expTitle = document.getElementById('experttitle');
-
- // when unchecked or checked, run the function
- function enableExperts(){
-    if(expertYes.checked){
-      expCategories.disabled = false;
-      expTitle.disabled =false;
-    }else{
-      expCategories.disabled = true;
-      expTitle.disabled = true;
-    }
-}
-
  var checker = document.getElementById('checkme');
  var submitbtn = document.getElementById('submit');
  // when unchecked or checked, run the function
@@ -205,25 +188,6 @@ checker.onchange = function(){
     }
 }
 
-//print password
-function myFunction1() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-
-//print password - Verification
-/*function myFunction2() {
-  var x = document.getElementById("passwordverification");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}*/
 
 const togglePassword = document.querySelector('#togglePassword');
   const password = document.querySelector('#id_password');
@@ -362,9 +326,6 @@ function Validate() {
 
 
 </script>
-
-
-
 
 </body>
 </html>

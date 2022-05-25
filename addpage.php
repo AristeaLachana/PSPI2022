@@ -58,7 +58,7 @@
       <label for="txtComments"> </label>
       <textarea class="add-style-textbox" id="article_body" style="margin:auto;width:500px" name="article_body" rows="15" cols="40" placeholder="Γράψτε το άρθρο σας..."></textarea>
       <br><br>
-      <input class="contact-style-textbox" type="text" style="margin:auto;max-width:400px" name="author"  placeholder="Ποιος γράφει το άρθρο;">
+      <input class="contact-style-textbox" type="text" style="margin:auto;max-width:400px;" name="author"  placeholder="Ποιος γράφει το άρθρο;">
       <br><br>
       <a> <button class="btn">Υποβολή</button> </a>
      </div>

@@ -947,7 +947,7 @@ h3{
   /* The image used */
   background-image: url("img2.jpeg");
 
-  min-height: 650px;
+  min-height: 750px;
   border-radius:7px;
   margin: 10px;
   padding: 50px;
@@ -959,7 +959,6 @@ h3{
   max-width: 1000%;
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: repeat;
   background-size:  auto;
   position: relative;
 }
