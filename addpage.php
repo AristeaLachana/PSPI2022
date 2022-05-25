@@ -1,3 +1,4 @@
+<?php include('mustLogin.php')?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -43,21 +44,18 @@
 
 
   <br>
-           <div class="center">
-              <h2><strong>ΠΡΟΣΘΗΚΗ ΑΡΧΕΙΟΥ</strong></h2>
-           </div>
+          <div class="center">
+            <h2><strong>ΠΡΟΣΘΗΚΗ ΑΡΧΕΙΟΥ</strong></h2>
+         </div>
   <div class="add-style">
-    <form action="sendData" class="containeradd" method="post" enctype="multipart/form-data">
+    <form action="/sendData" method="post" class="containercontact">
      <div class="add">
-
-      <h5><label for='fc'> Επιλογή αρχείου </label>
+      <h5 style="color:white;"><label for='fc'> Επιλογή αρχείου </label>
       <input  type='file' id='fc'name="file" ></h5>
       <label for="txtComments"> </label>
-      <textarea class="add-style-textbox" id="txtComments" style="margin:auto;max-width:400px" name="comments" rows="15" cols="40" placeholder="Προσθήκη σχολίων..."></textarea>
-
+      <textarea class="add-style-textbox" id="txtComments" style="margin:auto;width:500px" name="comments" rows="15" cols="40" placeholder="Γράψτε το άρθρο σας..."></textarea>
       <br>
       <br>
-      <div class="submit"></div>
       <a> <button class="btn">Υποβολή</button> </a>
      </div>
    </form>

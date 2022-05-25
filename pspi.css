@@ -509,6 +509,47 @@ h3{
 }
 
 /*contactpage*/
+
+.sumbit-and-send {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  font-size: 10px;
+  background-color: #6495ED;
+  color:white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: width 5s, border-radius 5s;
+}
+
+.submit-and-send *{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .25s;
+}
+
+.icon2{
+  opacity: 0;
+}
+
+.submit-and-send:focus{
+  width:30px;
+  background-color: #44c08a;
+  border-radius: 50%;
+}
+
+.submit-and-send:focus .text2{
+  opacity: 0;
+}
+
+.submit-and-send:focus .icon2{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
 .messenge {
   position: relative;
   text-align: center;
@@ -636,11 +677,8 @@ h3{
   left: 35%;
   top: 1%;
   margin: 40px;
-  max-width: 500px;
   padding: 6px;
-  background-color:#E5F5B6;
   border-radius:5px
-
 }
 
 .add-style-textbox {
@@ -1143,14 +1181,14 @@ h3{
 }
 
 .content {
-   list-style-position: inside;
+  list-style-position: inside;
   background: #def3f2;
   text-align: center;
   padding: 20px;
 }
 
 
-/*eidikoi.html*/
+/*experts card*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 450px;
@@ -1172,7 +1210,6 @@ h3{
   color: grey;
   font-size: 18px;
 }
-
 
 
 /* user settings click dropdown */
