@@ -21,7 +21,7 @@ if (isset($_POST['send_message_btn'])) {
   	<p>".$msg."</p>
   </body>
   </html>";
-  if (mail($to, $subject, $message, $headers)) {
+  if (mail($to, $subject, $message, $header)) {
    echo "Email sent";
   }else{
    echo "Failed to send email. Please try again later";
