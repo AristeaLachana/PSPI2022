@@ -10,6 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <!-- Link to your stylesheet -->
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Improve Your Health | Εγγραφή</title>
@@ -60,20 +62,20 @@
           <td>
 
              <div class="firstname" style="margin:auto;max-width:300px">
-              <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="First name"  value="<?php echo $firstname; ?>">
+              <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="Όνομα"  value="<?php echo $firstname; ?>">
              </div>
           </td>
           <td>
 
             <div class="surname" style="margin:auto;max-width:300px">
-             <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Surname" value="<?php echo $surname; ?>">
+             <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Επώνυμο" value="<?php echo $surname; ?>">
             </div>
 
           </td>
        </tr>
        <tr>
           <th>
-           <label for="date">Date birth: </label>
+           <label for="date">Ημερομηνία Γέννησης: </label>
           </th>
           <td>
 
@@ -84,42 +86,37 @@
        </tr>
        <tr>
          <th>
-           <label for="password">Password: </label>
+           <label for="password">Κωδικός: </label>
          </th>
          <td>
 
             <div class="password" style="margin:auto;max-width:300px">
-             <input type="password" id=password name="password" placeholder="Password">
+              <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
             </div>
-         </td>
-         <td>
-           <input type="checkbox" onclick="myFunction1()">
          </td>
        </tr>
        <tr>
          <th>
-           <label for="passwordverification">Password Verification: </label>
+           <label for="passwordverification">Επιβεβαίωση Κωδικού: </label>
          </th>
           <td>
             <div class="passwordverification" style="margin:auto;max-width:300px">
-             <input type="password" id="passwordverification" name="passwordverification" placeholder="Password Verification" >
+             <input type="password" id="passwordverification" name="passwordverification" placeholder="Κωδικός" >
             </div>
-         </td>
-         <td>
-           <input type="checkbox" onclick="myFunction2()">
          </td>
        </tr>
        <tr>
-         <th>Expert</th>
+         <th>Είσαι ειδικός;</th>
          <th>
-           <label for="rdchoiceyes">Yes</label> <input type='radio' id="rdchoiceyes" name="choice" value="1">
-           <label for="rdchoiceno"> No</label> <input type='radio' id="rdchoiceno" name="choice" value="0">
+           <label for="rdchoiceyes">Ναι</label> <input type='radio' id="rdchoiceyes" name="choice" value="1">
+           <label for="rdchoiceno"> Όχι</label> <input type='radio' id="rdchoiceno" name="choice" value="0">
          </th>
        </tr>
        <br>
        <br>
        <tr>
-         <th><label for="categories">Expert Categories</label></th>
+         <th><label for="categories">Ειδικότητα:</label></th>
          <td>
            <div class="expertcategories" style="margin:auto;max-width:300px">
             <select id="categories" name="expertcategories">
@@ -134,7 +131,7 @@
        </tr>
        <tr>
           <th>
-           <label for="experttitle">Expert Title</label>
+           <label for="experttitle">Τίτλος:</label>
           </th>
           <td>
            <div class="experttitle" style="margin:auto;max-width:300px">
@@ -143,7 +140,7 @@
           </td>
        </tr>
        <tr>
-         <td></td><th>Όροι συμμετοχής:<input type='checkbox' id="checkme" unchecked="unchecked"> </th>
+         <td></td><th>Αποδοχή όρων<br> συμμετοχής:<input type='checkbox' id="checkme" unchecked="unchecked"> </th>
        </tr>
        <tr>
         <th colspan="2">
@@ -180,7 +177,7 @@ include 'includes\footer2.php';
  ?>
  <script>
 
-/*
+
  var expertYes = document.getElementById('rdchoiceyes');
  var expertNo = document.getElementById('rdchoiceno')
  var expCategories = document.getElementById('submit');
@@ -190,12 +187,12 @@ include 'includes\footer2.php';
  function enableExperts(){
     if(expertYes.checked){
       expCategories.disabled = false;
-      expTitle.disabled = false;
-    }else if(expertNo.checked){
+      expTitle.disabled =false;
+    }else{
       expCategories.disabled = true;
       expTitle.disabled = true;
     }
-}*/
+}
 
  var checker = document.getElementById('checkme');
  var submitbtn = document.getElementById('submit');
@@ -219,14 +216,25 @@ function myFunction1() {
 }
 
 //print password - Verification
-function myFunction2() {
+/*function myFunction2() {
   var x = document.getElementById("passwordverification");
   if (x.type === "password") {
     x.type = "text";
   } else {
     x.type = "password";
   }
-}
+}*/
+
+const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
 
 var myInput = document.getElementById("passwordverification");
 var letter = document.getElementById("letter");

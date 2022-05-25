@@ -100,4 +100,12 @@ if (isset($_POST['login'])) {
   	}
   }
 }
+
+// upload post - experts
+$post_title = "";
+$post_text = "";
+$uploaded_by = "";
+$image_path = "";
+
+
 ?>
