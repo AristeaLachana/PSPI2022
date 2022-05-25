@@ -39,6 +39,7 @@
     <?php $posts = getPublishedPostsNutrition(); ?>
 <br>
 <?php foreach ($posts as $post): ?>
+  <?php if($post['recipe']!=null)  continue ?>
     <div class="containerBlog">
       <br>
 
