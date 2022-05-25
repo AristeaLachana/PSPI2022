@@ -30,8 +30,8 @@
       </div><br>
 
         <?php
-          if(isset($_POST['submit-search'])) {
-             $search = mysqli_real_escape_string($conn,$_POST['search']);
+          if(isset($_GET['submit-search'])) {
+             $search = mysqli_real_escape_string($conn,$_GET['search']);
              $sql = "SELECT * FROM posts WHERE body LIKE '%$search%'OR created_at LIKE '%$search%'OR slug LIKE '%$search%'OR title LIKE '%$search%'OR categorie LIKE '%$search%'OR description LIKE '%$search%' ";
              $result = mysqli_query($conn,$sql);
 
