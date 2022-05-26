@@ -259,7 +259,7 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-var myInput1 = document.getElementById("password");
+var myInput1 = document.getElementById("id_password");
 var letter1 = document.getElementById("letter1");
 var capital1 = document.getElementById("capital1");
 var number1 = document.getElementById("number1");
