@@ -38,6 +38,9 @@
       </a>
   </div>
 
+  <?php include('admin\errors.php'); ?>
+  <br><br>
+
   <div class="signup-img">
    <div class="signup-container">
        <h2 style="text-align:center">Εγγραφή</h2>
@@ -45,7 +48,6 @@
       <tr>
           <td>
            <form  action="signup.php" method="post" style="margin:auto;max-width:300px">
-            <?php include('admin\errors.php'); ?>
             <div class="name" style="margin:auto;max-width:300px">
               <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username">
             </div>
@@ -108,8 +110,8 @@
        <tr>
          <th>Είσαι ειδικός;</th>
          <th>
-           <label for="rdchoiceyes">Ναι</label> <input type='radio' id="rdchoiceyes" name="choice" value="1">
-           <label for="rdchoiceno"> Όχι</label> <input type='radio' id="rdchoiceno" name="choice" value="0">
+           <label for="rdchoiceyes">Ναι</label> <input type='radio' id="rdchoiceyes" name="expert" value="1">
+           <label for="rdchoiceno"> Όχι</label> <input type='radio' id="rdchoiceno" name="expert" value="0">
          </th>
        </tr>
        <br>

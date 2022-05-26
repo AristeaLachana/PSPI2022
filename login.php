@@ -1,4 +1,5 @@
 <?php include ('config.php')?>
+  <?php include('admin\server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +37,8 @@
       </a>
   </div>
 
-  <?php include('admin\server.php') ?>
+
+  <?php include('admin\errors.php'); ?>
 
   <div class="login-img">
    <div class="login-container">
@@ -52,7 +54,6 @@
 
           <td colspan="6">
            <form  action="login.php" method="post" style="margin:auto;max-width:300px">
-             <?php include('admin\errors.php'); ?>
             <div class="name" style="margin:auto;max-width:300px">
              <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>">
            </div>
