@@ -1,4 +1,3 @@
-
 <?php
     if(!isset($_SESSION))
     {
@@ -28,19 +27,22 @@ if (isset($_POST['signup'])) {
   $date1 = mysqli_real_escape_string($db, $_POST['date1']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
   $passwordverification= mysqli_real_escape_string($db, $_POST['passwordverification']);
-  $isExpert = mysqli_real_escape_string($db, $_POST['expert']);
+  if (isset($_POST['expert'])){
+    $isExpert = mysqli_real_escape_string($db, $_POST['expert']);
+  }
   $experttitle = mysqli_real_escape_string($db, $_POST['experttitle']);
   $expertcategories = mysqli_real_escape_string($db, $_POST['expertcategories']);
 
   /* επικύρωση φόρμας: βεβαιωθείτε ότι η φόρμα έχει συμπληρωθεί σωστά ...
    προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors*/
-  if (empty($username)) { array_push($errors,"Username απαιτείται"); }
-  if (empty($email)) { array_push($errors, "Email απαιτείται"); }
-  if (empty($firstname)) { array_push($errors, "Firstname απαιτείται"); }
-  if (empty($surname)) { array_push($errors, "Surname απαιτείται"); }
-  if (empty($date1)) { array_push($errors, "Date απαιτείται"); }
-  if (empty($password)) { array_push($errors, "Password απαιτείται"); }
-  if (empty($passwordverification)) { array_push($errors, "Password Verification απαιτείται"); }
+  if (empty($username)) { array_push($errors,"*username απαιτείται"); }
+  if (empty($email)) { array_push($errors, "*email απαιτείται"); }
+  if (empty($firstname)) { array_push($errors, "*Όνομα απαιτείται"); }
+  if (empty($surname)) { array_push($errors, "*Επώνυμο απαιτείται"); }
+  if (empty($date1)) { array_push($errors, "*Ημερομηνία Γέννησης απαιτείται"); }
+  if (empty($password)) { array_push($errors, "*Password απαιτείται"); }
+  if (empty($isExpert)) { array_push($errors, "*Απαιτείται επιλογή ειδικός 'Ναι - Όχι'"); }
+  if (empty($passwordverification)) { array_push($errors, "*Password απαιτείται"); }
   if ($password != $passwordverification) {
 	array_push($errors, "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν");
   }
@@ -98,7 +100,6 @@ if (isset($_POST['login'])) {
       $isExpert=$currentUser['expert'];
       $_SESSION['expert'] = $isExpert;
   	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	  header('location: mainPage.php');
   	}else {
     ?>
