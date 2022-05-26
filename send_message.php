@@ -2,14 +2,23 @@
 
 require_once('config.php');
 
+//send message to the admin
 if (isset($_POST['send_message_btn'])) {
+  $errors = array();
 
-  $subject = $_POST['subject']; //email subject
-  $msg = $_POST['msg']; //body - email
+  $theme = $_POST['subject']; //email subject
+  $body = $_POST['msg']; //body - email
 
   //user's email
   $email_from = $_SESSION['email'];
 
+  if (empty($theme)) { array_push($errors, "*Συμπληρώστε Θέμα"); }
+  if (empty($body)) { array_push($errors, "*Συμπληρώστε το μήνυμά σας"); }
+
+  if (count($errors) == 0) {
+    $query = "INSERT INTO emails (theme, body, email_from) VALUES ('$theme', '$body', 'email_from')";
+  }
+}
   // Content-Type helps email client to parse file as HTML
   // therefore retaining styles
   //$headers = 'MIME-Version: 1.0' ;

@@ -1,4 +1,5 @@
 <?php include('mustLogin.php')?>
+<?php include('upload.php')?>
 <!DOCTYPE html>
 <html>
   <head>

@@ -1,4 +1,5 @@
 <?php include('mustLogin.php')?>
+<?php include('admin\server.php') ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,7 +49,7 @@
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
     </div>
  <div class="bg-img1">
-   <form action="send_message.php" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
+   <form action="" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
      <br>
      <input class="contact-style-textbox" type="text" style="margin:auto;width:450px"  name="subject"  placeholder="Θέμα">
      <br>
@@ -56,11 +57,16 @@
      <label for="txtComments"> </label>
      <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:450px" name="msg" rows="10" cols="20" placeholder="Γράψτε το μήνυμά σας...."></textarea>
      <br>
-     <a> <button class="btn" type="submit" name="send_message_btn">Αποστολή</button> </a>
+     <a href="#"> <button class="btn" type="submit" name="send_message_btn">Αποστολή</button> </a>
 
     </form>
 
-    <br>
+<br>
+<?php include('admin\errors.php'); ?>
+
+    <?php include('admin\success.php'); ?>
+
+
     <br>
 
 </div>
