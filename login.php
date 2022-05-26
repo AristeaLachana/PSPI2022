@@ -54,7 +54,7 @@
            <form  action="login.php" method="post" style="margin:auto;max-width:300px">
              <?php include('admin\errors.php'); ?>
             <div class="name" style="margin:auto;max-width:300px">
-             <input type="text" name="username" minlength="5" maxlength="15" placeholder="Username" value="<?php echo $username; ?>">
+             <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>">
            </div>
           </td>
 
