@@ -55,7 +55,7 @@
           <td colspan="6">
            <form  action="login.php" method="post" style="margin:auto;max-width:300px">
             <div class="name" style="margin:auto;max-width:300px">
-             <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>">
+             <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>" required>
            </div>
           </td>
 
@@ -64,7 +64,7 @@
 
            <td colspan="6">
                <div class="password" style="margin:auto;max-width:300px">
-                <input type="password" id="password" name="password" maxlength="16" placeholder="Password">
+                <input type="password" id="password" name="password" maxlength="16" placeholder="Password" required>
                </div>
 
            </td>

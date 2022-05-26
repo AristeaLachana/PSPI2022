@@ -49,13 +49,13 @@
           <td>
            <form  action="signup.php" method="post" style="margin:auto;max-width:300px">
             <div class="name" style="margin:auto;max-width:300px">
-              <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username">
+              <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username" required>
             </div>
           </td>
           <td>
 
            <div class="email" style="margin:auto;max-width:300px">
-              <input type="email" name="email" value="<?php echo $email ?>" placeholder="Email">
+              <input type="email" name="email" value="<?php echo $email ?>" placeholder="Email" required>
            </div>
           </td>
        </tr>
@@ -63,13 +63,13 @@
           <td>
 
              <div class="firstname" style="margin:auto;max-width:300px">
-              <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="Όνομα"  value="<?php echo $firstname; ?>">
+              <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="Όνομα"  value="<?php echo $firstname; ?>" required>
              </div>
           </td>
           <td>
 
             <div class="surname" style="margin:auto;max-width:300px">
-             <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Επώνυμο" value="<?php echo $surname; ?>">
+             <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Επώνυμο" value="<?php echo $surname; ?>" required>
             </div>
 
           </td>
@@ -81,7 +81,7 @@
           <td>
 
            <div class="date" style="margin:auto;max-width:300px">
-            <input  class=date type="date" id="date" name=date1 value="<?php echo $date1; ?>">
+            <input  class=date type="date" id="date" name=date1 value="<?php echo $date1; ?>" required>
            </div>
           </td>
        </tr>
@@ -92,7 +92,7 @@
          <td>
 
             <div class="password" style="margin:auto;max-width:300px">
-              <input type="password" name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός">
+              <input type="password" name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
               <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
             </div>
          </td>
@@ -103,7 +103,7 @@
          </th>
           <td>
             <div class="passwordverification" style="margin:auto;max-width:300px">
-             <input type="password" id="passwordverification" name="passwordverification" placeholder="Κωδικός" >
+             <input type="password" id="passwordverification" name="passwordverification" placeholder="Κωδικός" required >
             </div>
          </td>
        </tr>

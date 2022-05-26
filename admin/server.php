@@ -33,7 +33,7 @@ if (isset($_POST['signup'])) {
   $expertcategories = mysqli_real_escape_string($db, $_POST['expertcategories']);
 
   /* επικύρωση φόρμας: βεβαιωθείτε ότι η φόρμα έχει συμπληρωθεί σωστά ...
-   προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors*/
+   προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors
   if (empty($username)) { array_push($errors,"*username απαιτείται"); }
   if (empty($email)) { array_push($errors, "*email απαιτείται"); }
   if (empty($firstname)) { array_push($errors, "*Όνομα απαιτείται"); }
@@ -43,7 +43,7 @@ if (isset($_POST['signup'])) {
   if (empty($passwordverification)) { array_push($errors, "*Επιβεβαίωση κωδικού απαιτείται"); }
   if ($password != $passwordverification) {
 	array_push($errors, "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν");
-  }
+}*/
 
   /*ελέγξτε πρώτα τη βάση δεδομένων για να βεβαιωθείτε
    δεν υπάρχει ήδη χρήστης με το ίδιο όνομα χρήστη και/ή email*/
