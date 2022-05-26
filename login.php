@@ -1,5 +1,4 @@
 <?php include ('config.php')?>
-<?php include('admin\server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,9 +35,8 @@
           <img alt="Improve Your Health" src="logo.png">
       </a>
   </div>
-  <br>
-  <br>
-  <br>
+
+  <?php include('admin\server.php') ?>
 
   <div class="login-img">
    <div class="login-container">

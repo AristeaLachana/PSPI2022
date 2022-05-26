@@ -4,6 +4,7 @@
     {
         session_start();
     }
+
 //συνδεθείτε στη βάση δεδομένων
 $db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
 //αρχικοποίηση μεταβλητών
@@ -17,9 +18,6 @@ $experttitle = "";
 $expertcategories = "";
 $errors = array();
 
-
-
-
 // ΕΓΓΡΑΦΗ ΧΡΗΣΤΗ
 if (isset($_POST['signup'])) {
   // λάβετε όλες τις τιμές εισαγωγής από τη φόρμα
@@ -30,13 +28,13 @@ if (isset($_POST['signup'])) {
   $date1 = mysqli_real_escape_string($db, $_POST['date1']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
   $passwordverification= mysqli_real_escape_string($db, $_POST['passwordverification']);
-  $isExpert = mysqli_real_escape_string($db, $_POST['choice']);
+  $isExpert = mysqli_real_escape_string($db, $_POST['expert']);
   $experttitle = mysqli_real_escape_string($db, $_POST['experttitle']);
   $expertcategories = mysqli_real_escape_string($db, $_POST['expertcategories']);
 
   /* επικύρωση φόρμας: βεβαιωθείτε ότι η φόρμα έχει συμπληρωθεί σωστά ...
    προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors*/
-  if (empty($username)) { array_push($errors, "Username απαιτείται"); }
+  if (empty($username)) { array_push($errors,"Username απαιτείται"); }
   if (empty($email)) { array_push($errors, "Email απαιτείται"); }
   if (empty($firstname)) { array_push($errors, "Firstname απαιτείται"); }
   if (empty($surname)) { array_push($errors, "Surname απαιτείται"); }
@@ -72,7 +70,6 @@ if (count($errors) == 0) {
   	mysqli_query($db, $query);
     $_SESSION['expert']= $isExpert;
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	header('location: mainPage.php');
   }
 }
@@ -81,11 +78,15 @@ if (isset($_POST['login'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
 
-  if (empty($username)) {
-  	array_push($errors, "Username απαιτείται");
+  if (empty($username)) { ?>
+    <div class="containerErrors"><p style="size:30px;"><?php echo
+    "*Username απαιτείται"?> </p> </div>
+    <?php
   }
-  if (empty($password)) {
-  	array_push($errors, "Password απαιτείται");
+  if (empty($password)) { ?>
+    <div class="containerErrors"><p style="size:30px;"><?php echo
+    "*Password απαιτείται"?> </p> </div>
+    <?php
   }
 
   if (count($errors) == 0) {
@@ -100,7 +101,10 @@ if (isset($_POST['login'])) {
   	  $_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	  header('location: mainPage.php');
   	}else {
-  		array_push($errors, "Λανθασμένος συνδυασμός ονόματος χρήστη/κωδικού πρόσβασης");
+    ?>
+      <div class="containerErrors"><p style="size:30px;"><?php echo
+      "*Λανθασμένος συνδυασμός ονόματος χρήστη/κωδικού πρόσβασης"?> </p> </div>
+      <?php
   	}
   }
 }

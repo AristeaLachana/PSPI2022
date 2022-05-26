@@ -37,7 +37,7 @@
 
 
     <!-- container - image - description paragraph -->
-      <img src="img2.jpeg" style="width:80%;border-radius:7px;">
+      <img src="uploads\img2.jpeg" style="width:80%;border-radius:7px;">
       <div class="text-block">
       <p class="container" style="font-size:17px;color:white;"><strong>Καλώς Ήρθες στην Improve Your Health!</strong><br><br>
 Η επιδίωξή μας είναι να βοηθήσουμε στην προσπάθειά σου για ένα υγιεινό τρόπο ζωής.<br> Ως «υγεία», ορίζεται η κατάσταση πλήρους σωματικής, ψυχικής και κοινωνικής ευεξίας.

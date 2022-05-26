@@ -474,7 +474,7 @@ h3{
 
 .login-img {
   /* The image used */
-  background-image: url("img2.jpeg");
+  background-image: url("uploads/img2.jpeg");
 
   min-height: 420px;
   left: 18%;
@@ -922,6 +922,32 @@ h3{
   background: #f1f1f1;
 }
 
+/*containers for errors and success*/
+.containerErrors{
+  float: left;
+  background: rgb(237, 105, 100); /* Fallback color */
+  background: rgba(237, 105, 100, 0.5); /* Black background with 0.5 opacity */
+  color: #ed5651;
+  text-align: center;
+  position: relative;
+  top: 0; right: 0; left: 0; margin: 0 auto; width: 50%; max-width: 1000;
+  font-family: Arial;
+  overflow: hidden;
+}
+
+.containerSuccess{
+  background: rgb(144, 238, 144); /* Fallback color */
+  background: rgba(144, 238, 144, 0.5); /* Black background with 0.5 opacity */
+  color: #4af04a;
+  text-align: center;
+  position: relative;
+  top: 0; right: 0; left: 0; margin: 0 auto; width: 50%; max-width: 1000;
+  font-family: Arial;
+  overflow: hidden;
+}
+
+/*signup*/
+
 .signupbtn{
   background-color: #6495ED;
   border: none;
@@ -944,7 +970,7 @@ h3{
 
 .signup-img {
   /* The image used */
-  background-image: url("img2.jpeg");
+  background-image: url("uploads/img2.jpeg");
 
   min-height: 750px;
   border-radius:7px;
