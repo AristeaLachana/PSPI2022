@@ -1,18 +1,18 @@
 <?php
 
-require_once('config.php');
+$db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
+
+//initialise variables
+$theme = "";
+$body = "";
+$errors = array();
 
 //send message to the admin
 if (isset($_POST['send_message_btn'])) {
 
-  //initialise variables
-  $errors = array();
-  $theme = "";
-  $body = "";
-
   //get values from form
-  $theme = mysqli_real_escape_string($db, $_POST['subject']); //message subject
-  $body = mysqli_real_escape_string($db, $_POST['msg']); //body - message
+  $theme = $_POST['theme']; //message subject
+  $body = $_POST['body']; //body - message
 
   //user's email
   $email_from = $_SESSION['email'];
@@ -21,8 +21,10 @@ if (isset($_POST['send_message_btn'])) {
   if (empty($body)) { array_push($errors, "*Συμπληρώστε το μήνυμά σας"); }
 
   if (count($errors) == 0) {
-    $query = "INSERT INTO emails (theme, body, email_from) VALUES ('$theme', '$body', 'email_from')";
-    
+    $query = "INSERT INTO emails (theme, body, email_from) VALUES ('$theme', '$body', '$email_from')";
+    mysqli_query($db, $query);
+    include('admin\success.php');
+    header('location: contactpage.php');
   }
 }
   // Content-Type helps email client to parse file as HTML

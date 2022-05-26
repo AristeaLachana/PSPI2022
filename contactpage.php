@@ -1,5 +1,6 @@
 <?php include('mustLogin.php')?>
-<?php include('admin\server.php') ?>
+<?php require_once('config.php')?>
+<?php include('send_message.php')?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -42,22 +43,25 @@
   <body>
 
     <?php
-  include 'includes\header.php';
+      include 'includes\header.php';
      ?>
   <br>
     <div class="center">
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
     </div>
 
-    <?php include('admin\errors.php'); ?>
+  <?php include('admin\errors.php'); ?> 
+
  <div class="bg-img1">
+
    <form action="" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
+
      <br>
-     <input class="contact-style-textbox" type="text" style="margin:auto;width:450px"  name="subject"  placeholder="Θέμα">
+     <input class="contact-style-textbox" id="theme" type="text" style="margin:auto;width:450px"  name="theme" value="<?php echo $theme; ?>" placeholder="Θέμα">
      <br>
      <br>
      <label for="txtComments"> </label>
-     <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:450px" name="msg" rows="10" cols="20" placeholder="Γράψτε το μήνυμά σας...."></textarea>
+     <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:450px" name="body" rows="10" cols="20" value="<?php echo $body; ?>" placeholder="Γράψτε το μήνυμά σας...."></textarea>
      <br>
      <button class="btn" type="submit" name="send_message_btn">Αποστολή</button>
 
@@ -87,6 +91,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 
 function showSlides(n) {
   let i;
