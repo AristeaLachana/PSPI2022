@@ -53,11 +53,11 @@
      <input class="contact-style-textbox" type="email" style="margin:auto;max-width:400px" name="email"  placeholder="Email">
      <br>
      <br>
-     <input class="contact-style-textbox" type="text" style="margin:auto;max-width:400px"  name="subject"  placeholder="Θέμα">
+     <input class="contact-style-textbox" type="text" style="margin:auto;width:450px"  name="subject"  placeholder="Θέμα">
      <br>
      <br>
      <label for="txtComments"> </label>
-     <textarea  class="contact-style-textbox" id="txtComments" style="margin:auto;max-width:400px" name="msg" rows="10" cols="20" placeholder="Γράψτε το μήνυμά σας...."></textarea>
+     <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:450px" name="msg" rows="10" cols="20" placeholder="Γράψτε το μήνυμά σας...."></textarea>
      <br>
      <a> <button class="btn" type="submit" name="send_message_btn">Αποστολή</button> </a>
 
