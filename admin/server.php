@@ -4,7 +4,7 @@
     {
         session_start();
     }
-
+//συνδεθείτε στη βάση δεδομένων
 $db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
 //αρχικοποίηση μεταβλητών
 $username = "";
@@ -17,7 +17,7 @@ $experttitle = "";
 $expertcategories = "";
 $errors = array();
 
-//συνδεθείτε στη βάση δεδομένων
+
 
 
 // ΕΓΓΡΑΦΗ ΧΡΗΣΤΗ
@@ -70,6 +70,7 @@ if (count($errors) == 0) {
   	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password, expert, expert_title, expert_category)
   			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password', '$isExpert', '$experttitle', '$expertcategories')";
   	mysqli_query($db, $query);
+    $_SESSION['expert']= $isExpert;
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	header('location: mainPage.php');
@@ -91,7 +92,10 @@ if (isset($_POST['login'])) {
   //	$password = md5($password);
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
+    $currentUser = mysqli_fetch_assoc($results);
   	if (mysqli_num_rows($results) == 1) {
+      $isExpert=$currentUser['expert'];
+      $_SESSION['expert'] = $isExpert;
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	  header('location: mainPage.php');

@@ -12,8 +12,6 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.png">
 
-  <?php require_once('config.php') ?>
-
   <style>
 
   body {
@@ -41,9 +39,15 @@
 
 </div>
 <?php endif; ?>
+<<<<<<< HEAD
   <form class="search" style="margin:auto;max-width:400px;" action="search.php" method="get">
     <input type="text"  placeholder="Search.." name="search">
     <button type="submit" name="submit-search" value="search"> <i class="fa fa-search"></i></button>
+=======
+  <form class="search" style="margin:auto;max-width:400px;">
+    <input type="text"  placeholder="Search.." name="search">
+    <button type="submit"> <i class="fa fa-search"></i></button>
+>>>>>>> a27028a58f39311a5680feddd3a7508d3af1e061
   </form>
 </div>
 
@@ -55,10 +59,10 @@
         <li class="menu__group"><a href="categories.php" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
         <li class="menu__group"><a href="eidikoi.php" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
         <li class="menu__group"><a href="contactpage.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-
+<?php if ($_SESSION['expert']==1) : ?>
         <li class="menu__group"><a href="addpage.php" class="menu__link r-link text-underlined">ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</a></li>
 
-
+<?php endif; ?>
       </ul>
 
       <ul class="smallScreenMenu">

@@ -45,7 +45,7 @@ a{
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <div class="header">
-    <a href="allArticlesExercise.php"><img src="workout.jpg" style="width:100%"></a>
+    <a href="allArticlesExercise.php"><img src="uploads/workout.jpg" style="width:100%"></a>
     <div class="overlay"><a href="allArticlesExercise.php">ΣΩΜΑΤΙΚΗ ΑΣΚΗΣΗ</a></div>
   </div>
   </div>
@@ -53,7 +53,7 @@ a{
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <div class="header">
-    <a href="allArticlesNutrition.php"><img src="nutrition.jpg" style="width:100%"></a>
+    <a href="allArticlesNutrition.php"><img src="uploads/nutrition.jpg" style="width:100%"></a>
     <div class="overlay"><a href="allArticlesNutrition.php">ΔΙΑΤΡΟΦΗ</a></div>
   </div>
   </div>
@@ -61,7 +61,7 @@ a{
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <div class="header">
-    <a href="allArticlesPsychology.php"><img src="psychology.jpg" style="width:100%"></a>
+    <a href="allArticlesPsychology.php"><img src="uploads/psychology.jpg" style="width:100%"></a>
     <div class="overlay"><a href="allArticlesPsychology.php">ΨΥΧΟΛΟΓΙΑ</a></div>
   </div>
   </div>
