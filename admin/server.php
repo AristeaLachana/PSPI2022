@@ -6,6 +6,7 @@
 
 //συνδεθείτε στη βάση δεδομένων
 $db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
+
 //αρχικοποίηση μεταβλητών
 $username = "";
 $email    = "";
@@ -68,6 +69,7 @@ if (count($errors) == 0) {
   			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password', '$isExpert', '$experttitle', '$expertcategories')";
   	mysqli_query($db, $query);
     $_SESSION['expert']= $isExpert;
+    $_SESSION['email'] = $email;
   	$_SESSION['username'] = $username;
   	header('location: mainPage.php');
   }
@@ -95,7 +97,9 @@ if (isset($_POST['login'])) {
     $currentUser = mysqli_fetch_assoc($results);
   	if (mysqli_num_rows($results) == 1) {
       $isExpert=$currentUser['expert'];
+      $email = $currentUser['email'];
       $_SESSION['expert'] = $isExpert;
+      $_SESSION['email'] = $email;
   	  $_SESSION['username'] = $username;
   	  header('location: mainPage.php');
   	}else {

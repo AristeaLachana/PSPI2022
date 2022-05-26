@@ -46,12 +46,9 @@
   <br>
     <div class="center">
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
-
-</div>
+    </div>
  <div class="bg-img1">
-   <form action="admin\send_message.php" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
-     <input class="contact-style-textbox" type="email" style="margin:auto;max-width:400px" name="email"  placeholder="Email">
-     <br>
+   <form action="send_message.php" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
      <br>
      <input class="contact-style-textbox" type="text" style="margin:auto;width:450px"  name="subject"  placeholder="Θέμα">
      <br>
