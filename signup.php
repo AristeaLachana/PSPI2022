@@ -92,7 +92,7 @@
          <td>
 
             <div class="password" style="margin:auto;max-width:300px">
-              <input type="password" name="password" autocomplete="current-password" required="" id="id_password" placeholder="Κωδικός">
+              <input type="password" name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός">
               <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
             </div>
          </td>
@@ -110,8 +110,7 @@
        <tr>
          <th>Είσαι ειδικός;</th>
          <th>
-           <label for="rdchoiceyes">Ναι</label> <input type='radio' id="rdchoiceyes" name="expert" value="1">
-           <label for="rdchoiceno"> Όχι</label> <input type='radio' id="rdchoiceno" name="expert" value="0">
+           <label for="rdchoiceyes">Ναι</label> <input type='checkbox' id="rdchoiceyes" name="expert" value="1">
          </th>
        </tr>
        <br>
