@@ -49,7 +49,7 @@
         <div class="row-eidikoi">
           <div class="column-eidikoi">
             <div class="card">
-                 <img src="eidikos.jpg" alt="<?php echo $expert['name']?>" style="width:100%;cursor:auto">
+                 <img src="uploads/eidikos.jpg" alt="<?php echo $expert['name']?>" style="width:100%;cursor:auto">
                  <h1><?php echo $expert['name']?> <?php echo $expert['surname']?></h1>
                  <p><?php echo $expert['expert_title']?> </p>
                  <p class="title1"><?php echo $expert['email']?></p>

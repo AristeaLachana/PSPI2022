@@ -94,8 +94,8 @@ if (isset($_POST['login'])) {
   	$results = mysqli_query($db, $query);
     $currentUser = mysqli_fetch_assoc($results);
   	if (mysqli_num_rows($results) == 1) {
-$isExpert=$currentUser['expert'];
- $_SESSION['expert'] = $isExpert;
+      $isExpert=$currentUser['expert'];
+      $_SESSION['expert'] = $isExpert;
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "Είστε πλέον συνδεδεμένοι";
   	  header('location: mainPage.php');

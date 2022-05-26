@@ -587,7 +587,7 @@ h3{
 }
 .bg-img1 {
   /* The image used */
-  background-image: url("image6.jpg");
+  background-image: url("uploads/image6.jpg");
   min-height: 450px;
   border-radius:7px;
   margin: 10px;
@@ -649,8 +649,7 @@ h3{
 
 .add-style {
   /* The image used */
-  background-image: url("image4.jpg");
-
+  background-image: url("uploads/image4.jpg");
   min-height: 700px;
   border-radius:7px;
   margin: 10px;
