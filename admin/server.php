@@ -79,15 +79,11 @@ if (isset($_POST['login'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
 
-  if (empty($username)) { ?>
-    <div class="containerErrors"><p style="size:30px;"><?php echo
-    "*Username απαιτείται"?> </p> </div>
-    <?php
+  if (empty($username)) {
+      array_push($errors, "*Username απαιτείται");
   }
-  if (empty($password)) { ?>
-    <div class="containerErrors"><p style="size:30px;"><?php echo
-    "*Password απαιτείται"?> </p> </div>
-    <?php
+  if (empty($password)) {
+    array_push($errors, "*Password απαιτείται");
   }
 
   if (count($errors) == 0) {
@@ -103,10 +99,7 @@ if (isset($_POST['login'])) {
   	  $_SESSION['username'] = $username;
   	  header('location: mainPage.php');
   	}else {
-    ?>
-      <div class="containerErrors"><p style="size:30px;"><?php echo
-      "*Λανθασμένος συνδυασμός ονόματος χρήστη/κωδικού πρόσβασης"?> </p> </div>
-      <?php
+      array_push($errors, "*Λανθασμένος συνδυασμός ονόματος χρήστη/κωδικού πρόσβασης");
   	}
   }
 }

@@ -48,6 +48,8 @@
     <div class="center">
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
     </div>
+
+    <?php include('admin\errors.php'); ?>
  <div class="bg-img1">
    <form action="" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
      <br>
@@ -57,16 +59,11 @@
      <label for="txtComments"> </label>
      <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:450px" name="msg" rows="10" cols="20" placeholder="Γράψτε το μήνυμά σας...."></textarea>
      <br>
-     <a href="#"> <button class="btn" type="submit" name="send_message_btn">Αποστολή</button> </a>
+     <button class="btn" type="submit" name="send_message_btn">Αποστολή</button>
 
     </form>
 
-<br>
-<?php include('admin\errors.php'); ?>
-
-    <?php include('admin\success.php'); ?>
-
-
+    <br>
     <br>
 
 </div>
