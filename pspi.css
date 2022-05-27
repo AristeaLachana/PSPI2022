@@ -496,7 +496,11 @@ h3{
       position:inherit;
       flex-direction: column;
     }
-
+  @media screen and (max-width:490px){
+        .containerBlog__img {
+          display: none;
+        }
+      }
 /*login page*/
 
 .login-img {

@@ -5,6 +5,14 @@
       h2{
         font-size: 20px;
       }
+      @media screen and (max-width:490px){
+        h2{
+          font-size: 15px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
     }
   </style>
 </head>
