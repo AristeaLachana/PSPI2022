@@ -15,24 +15,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
     img {
-      img {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
+      label {color:white}
       body {background-color:white;}
-      h2 {color:white;}
       h3 {color:white;}
       tr {color:white;}
       th {color:white;}
     </style>
-  </style>
   <?php  include('../config.php'); ?>
     <?php include(ROOT_PATH . '/admin/includes/admin_functions.php'); ?>
     <?php
     	// Get all  users from DB
     	$users = getUsers();
-    	$roles = ['Expert', 'User'];
     ?>
     	<title>Admin | Manage users</title>
   </head>
@@ -41,136 +38,140 @@
   <?php
   include 'includes\headerAdmin.php';
    ?>
-
-<div class="cdu-container">
-		<!-- Left side menu -->
-   <table>
-		<!-- Middle form - to create and edit  -->
-		<div class="action">
-			<h1 class="page-title">Create/Edit Users</h1>
-      <form  action="" method="post" style="margin:auto;max-width:300px">
-       <div class="name" style="margin:auto;max-width:300px">
-         <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username" required>
-       </div>
-      </td>
-      <td>
-
-      <div class="email" style="margin:auto;max-width:300px">
-         <input type="email" name="email" value="<?php echo $email ?>" placeholder="Email" required>
-      </div>
-      </td>
-      </tr>
+<div class="signup-img">
+   <div class="cdu-container">
+       <h2 style="text-align:center; color:white">Δημιουργία/ Επεξεργασία Χρήστη</h2>
+     <table>
       <tr>
-      <td>
+          <td>
+           <form  action="" method="post" style="margin:auto;max-width:300px">
+             <?php include('errors.php') ?>
+            <div class="name" style="margin:auto;max-width:300px">
+              <input  type="text" name="username" value="<?php echo $username; ?>"  placeholder="Username" required>
+            </div>
+          </td>
+          <td>
 
-        <div class="firstname" style="margin:auto;max-width:300px">
-         <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="Όνομα"  value="<?php echo $firstname; ?>" required>
-        </div>
-      </td>
-      <td>
+           <div class="email" style="margin:auto;max-width:300px">
+              <input type="email" name="email" value="<?php echo $email ?>" placeholder="Email" required>
+           </div>
+          </td>
+       </tr>
+       <tr>
+          <td>
 
-       <div class="surname" style="margin:auto;max-width:300px">
-        <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Επώνυμο" value="<?php echo $surname; ?>" required>
-       </div>
+             <div class="firstname" style="margin:auto;max-width:300px">
+              <input type="text" name="firstname" minlength="3" maxlength="30" placeholder="Όνομα"  value="<?php echo $firstname; ?>" required>
+             </div>
+          </td>
+          <td>
 
-      </td>
-      </tr>
-      <tr>
-      <th>
-      <label for="date">Ημερομηνία Γέννησης: </label>
-      </th>
-      <td>
+            <div class="surname" style="margin:auto;max-width:300px">
+             <input type="text" name="surname" minlength="3" maxlength="30" placeholder="Επώνυμο" value="<?php echo $surname; ?>" required>
+            </div>
 
-      <div class="date" style="margin:auto;max-width:300px">
-       <input  class=date type="date" id="date" name=date1 value="<?php echo $date1; ?>" required>
-      </div>
-      </td>
-      </tr>
-      <tr>
-      <th>
-      <label for="password">Κωδικός: </label>
-      </th>
-      <td>
+          </td>
+       </tr>
+       <tr>
+          <th>
+           <label for="date">Ημερομηνία Γέννησης: </label>
+          </th>
+          <td>
 
-       <div class="password" style="margin:auto;max-width:300px">
-         <input type="password" name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
-         <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
-       </div>
-      </td>
-      </tr>
-      <tr>
-      <th>
-      <label for="passwordverification">Επιβεβαίωση Κωδικού: </label>
-      </th>
-      <td>
-       <div class="passwordverification" style="margin:auto;max-width:300px">
-        <input type="password" id="passwordverification" name="passwordverification" placeholder="Κωδικός" required >
-       </div>
-      </td>
-      </tr>
-      <tr>
-      <th>Είσαι ειδικός;</th>
-      <th>
-      <label for="rdchoiceyes">Ναι</label> <input type='checkbox' id="rdchoiceyes" name="expert" value="1">
-      </th>
-      </tr>
-      <br>
-      <br>
-      <tr>
-      <th><label for="categories">Ειδικότητα:</label></th>
-      <td>
-      <div class="expertcategories" style="margin:auto;max-width:300px">
-       <select id="categories" name="expertcategories">
-         <option value="null" selected>* για ειδικούς *</option>
-         <option value="1">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
-         <option value="2">ΓΥΜΝΑΣΤΙΚΗ</option>
-         <option value="3">ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
-       </select>
-      </div>
+           <div class="date" style="margin:auto;max-width:300px">
+            <input  class=date type="date" id="date" name="date1" value="<?php echo $date1; ?>" required>
+           </div>
+          </td>
+       </tr>
+       <tr>
+         <th>
+           <label for="password">Κωδικός: </label>
+         </th>
+         <td>
 
-      </td>
-      </tr>
-      <tr>
-      <th>
-      <label for="experttitle">Τίτλος:</label>
-      </th>
-      <td>
-      <div class="experttitle" style="margin:auto;max-width:300px">
-       <input type="text" id="experttitle" name="experttitle" minlength="5" placeholder="* για ειδικούς *" maxlength="255" value="<?php echo $experttitle; ?>">
-      </div>
-      </td>
-      </tr>
-      <tr>
+            <div class="password" style="margin:auto;max-width:300px">
+              <input type="password" name="password" value="<?php echo $password; ?>" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
+              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
+            </div>
+         </td>
+       </tr>
+       <tr>
+         <th>
+           <label for="passwordverification">Επιβεβαίωση Κωδικού: </label>
+         </th>
+          <td>
+            <div class="passwordverification" style="margin:auto;max-width:300px">
+             <input type="password" id="passwordverification" name="passwordverification" placeholder="Κωδικός" required >
+            </div>
+         </td>
+       </tr>
+       <tr>
+         <th>Είναι ειδικός;</th>
+         <th>
+           <label for="rdchoiceyes">Ναι</label> <input type='checkbox' id="rdchoiceyes" name="expert" value="1">
+         </th>
+       </tr>
+       <br>
+       <br>
+       <tr>
+         <th><label for="categories">Ειδικότητα:</label></th>
+         <td>
+           <div class="expertcategories" style="margin:auto;max-width:300px">
+            <select id="categories" name="expertcategories" >
+              <option value="null" selected>* για ειδικούς *</option>
+              <option value="1" >ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
+              <option value="2">ΓΥΜΝΑΣΤΙΚΗ</option>
+              <option value="3">ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
+            </select>
+           </div>
+
+         </td>
+       </tr>
+       <tr>
+          <th>
+           <label for="experttitle">Τίτλος:</label>
+          </th>
+          <td>
+           <div class="experttitle" style="margin:auto;max-width:300px">
+            <input type="text" id="experttitle" name="experttitle" minlength="5" placeholder="* για ειδικούς *" maxlength="255" value="<?php echo $experttitle; ?>">
+           </div>
+          </td>
+       </tr>
+       <tr>
+        <th colspan="2">
+          	<!-- if editing user, display the update button instead of create button -->
+          <?php if ($isEditingUser === true): ?>
+            <button type="submit" class="btn" name="update_user">UPDATE</button>
+          <?php else: ?>
+            <button type="submit" class="btn" name="create_user" >Save User</button>
+          <?php endif ?>
+
+        </th>
+       </tr>
 				<!-- if editing user, display the update button instead of create button -->
-				<?php if ($isEditingUser === true): ?>
-					<button type="submit" class="btn" name="update_user">UPDATE</button>
-				<?php else: ?>
-					<button type="submit" class="btn" name="create_user">Save User</button>
-				<?php endif ?>
-			</form>
-        </table>
-		</div>
+         </form>
+</table>
+ </div>
+
 		<!-- // Middle form - to create and edit -->
 
 		<!-- Display records from DB-->
 		<div class="table-div">
-			<!-- Display notification message -->
-
 
 			<?php if (empty($users)): ?>
 				<h1>No users in the database.</h1>
 			<?php else: ?>
-				<table class="table">
+				<table >
 					<thead>
-						<th>N</th>
-						<th>User</th>
-						<th>Expert</th>
-						<th colspan="2">Action</th>
+						<th>ID</th>
+						<th>Username , Email</th>
+						<th>Ειδικός(1=ΝΑΙ,0=ΟΧΙ)</th>
+						<th colspan="2">Επιλογή</th>
 					</thead>
 					<tbody>
 					<?php foreach ($users as $key => $user): ?>
 						<tr>
-							<td><?php echo $key + 1; ?></td>
+							<td><?php echo $user['id']; ?></td>
 							<td>
 								<?php echo $user['username']; ?>, &nbsp;
 								<?php echo $user['email']; ?>
@@ -178,12 +179,12 @@
 							<td><?php echo $user['expert']; ?></td>
 							<td>
 								<a class="fa fa-pencil btn edit"
-									href="users.php?edit-admin=<?php echo $user['id'] ?>">
+									href="users.php?edit-user=<?php echo $user['id'] ?>">
 								</a>
 							</td>
 							<td>
 								<a class="fa fa-trash btn delete"
-								    href="users.php?delete-admin=<?php echo $user['id'] ?>">
+								    href="users.php?delete-user=<?php echo $user['id'] ?>">
 								</a>
 							</td>
 						</tr>
@@ -192,8 +193,10 @@
 				</table>
 			<?php endif ?>
 		</div>
+      </div>
 		<!-- // Display records from DB -->
 	</div>
+
 </body>
 
   <?php
@@ -203,15 +206,7 @@
 
 
    var checker = document.getElementById('checkme');
-   var submitbtn = document.getElementById('submit');
-   // when unchecked or checked, run the function
-  checker.onchange = function(){
-      if(this.checked){
-        submitbtn.disabled = false;
-      }else {
-        submitbtn.disabled = true;
-      }
-  }
+
 
 
    const togglePassword = document.querySelector('#togglePassword');
