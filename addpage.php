@@ -19,6 +19,7 @@
     <link rel="icon" type="image/x-icon" href="uploads\favicon.png">
     <style>
       img {
+        
         display: block;
         margin-left: auto;
         margin-right: auto;
