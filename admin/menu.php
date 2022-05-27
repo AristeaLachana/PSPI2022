@@ -1,6 +1,6 @@
 <head>
 <?php  include('../config.php'); ?>
-
+<?php  include('includes/admin_functions.php'); ?>
   <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,10 +41,6 @@
 			<a href="posts.php">
 				<span>43</span> <br>
 				<span>Published posts</span>
-			</a>
-			<a>
-				<span>43</span> <br>
-				<span>Published comments</span>
 			</a>
 		</div>
 		<br><br><br>

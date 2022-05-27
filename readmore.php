@@ -14,7 +14,7 @@
 	}
 ?>
     <title><?php echo $post['title']; ?></title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="uploads\favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Link to your stylesheet -->
     <link rel="stylesheet" href="./styles.css">

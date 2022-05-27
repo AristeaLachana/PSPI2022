@@ -13,7 +13,7 @@
    <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
    <?php include('admin\server.php') ?>
     <title>Improve Your Health</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="uploads\favicon.png">
     <style>
       img {
         display: block;
