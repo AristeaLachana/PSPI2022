@@ -678,6 +678,7 @@ h3{
     outline: none;
     border: 1px solid grey;
     font-size: 15px;
+    width: auto;
 }
 
 /*addpage*/

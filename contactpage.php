@@ -35,8 +35,6 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
      }
-
-
     </style>
   </head>
 
@@ -57,11 +55,11 @@
    <form action="" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
 
      <br>
-     <input class="contact-style-textbox" id="theme" type="text" style="margin:auto;width:450px"  name="theme" value="<?php echo $theme; ?>" placeholder="Θέμα">
+     <input class="contact-style-textbox" id="theme" type="text" style="margin:auto;"  name="theme" value="<?php echo $theme; ?>" placeholder="Θέμα">
      <br>
      <br>
      <label for="txtComments"> </label>
-     <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:450px" name="body" rows="10" cols="20" value="<?php echo $body; ?>" placeholder="Γράψτε το μήνυμά σας...."></textarea>
+     <textarea class="contact-style-textbox" id="txtComments" style="margin:auto;width:auto" name="body" rows="10" cols="20" value="<?php echo $body; ?>" placeholder="Γράψτε το μήνυμά σας...."></textarea>
      <br>
      <button class="btn" type="submit" name="send_message_btn">Αποστολή</button>
 
