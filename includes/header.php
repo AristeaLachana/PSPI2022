@@ -64,6 +64,10 @@
         <li class="menu__group"><a href="categories.php" class="">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
         <li class="menu__group"><a href="eidikoi.php" class="">Η ΟΜΑΔΑ ΜΑΣ</a></li>
         <li class="menu__group"><a href="contactpage.php" class="">TEST123</a></li>
+        <?php if ($_SESSION['expert']==1) : ?>
+                <li class="menu__group"><a href="addpage.php" class="">ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</a></li>
+
+        <?php endif; ?>
       </ul>
     </nav>
   </div>
