@@ -30,7 +30,7 @@ if (isset($_GET['edit-user'])) {
 }
 // if user clicks the update admin button
 if (isset($_POST['update_user'])) {
-	updateUser($_POST);
+	updateUser($_POST,$user_id);
 }
 // if user clicks the Delete admin button
 if (isset($_GET['delete-user'])) {
@@ -121,7 +121,7 @@ if (count($errors) == 0) {
 				VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password', '$isExpert', '$experttitle', '$expertcategories')";
 	mysqli_query($conn, $query);
 
-	$_SESSION['message'] = "Success";
+	$_SESSION['message'] = "User successfully created";
 	header('location: users.php');
 	exit(0);
 }
@@ -154,7 +154,7 @@ function editUser($user_id)
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * - Receives admin request from form and updates in database
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-function updateUser($request_values){
+function updateUser($request_values,$user_id){
 	global $conn;
 	// set edit state to false
 	$isEditingUser = false;
@@ -172,12 +172,12 @@ function updateUser($request_values){
 	if (count($errors) == 0) {
 		//encrypt the password (security purposes)
 		//$password = md5($password);
-echo $user_id;
-		$query = "UPDATE users SET username='$username',name=$firstname, surname=$surname, email='$email', expert='$isExpert', password='$password', expert_title=$experttitle, dateOfBirth=$date1,
-		 expert_category=$expertcategories,  WHERE id=$user_id";
-		mysqli_query($conn, $query);
 
-		$_SESSION['message'] = "Admin user updated successfully";
+		$query = "UPDATE users SET username='$username',name='$firstname', surname='$surname', email='$email', expert='$isExpert', password='$password', expert_title='$experttitle', dateOfBirth='$date1',
+		 expert_category='$expertcategories'  WHERE id='$user_id'";
+		 mysqli_query($conn, $query);
+
+		$_SESSION['message'] = "User successfully updated";
 		header('location: users.php');
 		exit(0);
 	}
