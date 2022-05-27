@@ -39,7 +39,7 @@
     <?php $posts = getPublishedPostsNutrition(); ?>
 <br>
 <?php foreach ($posts as $post): ?>
-  <?php if($post['recipe']==null)  continue ?>
+  <?php if($post['recipe']==null || $post['recipe']=='0' )  continue ?>
     <div class="containerBlog">
       <br>
 

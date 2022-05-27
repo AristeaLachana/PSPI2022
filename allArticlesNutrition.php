@@ -30,8 +30,8 @@
   </div><br>
 
   <div class="pagination" style="margin-left:10%;align-items:center;">
-    <a href="allArticlesNutrition.php">Άρθρα</a>
-    <a href="AllRecipesNutrition.php" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Συνταγές</a>
+    <a href="allArticlesNutrition" style="text-decoration:underline; text-decoration-color:#6495ED; color:#6495ED">Άρθρα</a>
+    <a href="AllRecipesNutrition.php">Συνταγές</a>
   </div>
 
   <body>
@@ -39,7 +39,7 @@
     <?php $posts = getPublishedPostsNutrition(); ?>
 <br>
 <?php foreach ($posts as $post): ?>
-  <?php if($post['recipe']==null || $post['recipe']=='0' )  continue ?>
+    <?php if($post['recipe']!=null)  continue ?>
     <div class="containerBlog">
       <br>
 
