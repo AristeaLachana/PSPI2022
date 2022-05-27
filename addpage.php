@@ -1,4 +1,5 @@
 <?php include('mustLogin.php')?>
+<?php require_once('config.php')?>
 <?php include('upload.php')?>
 <!DOCTYPE html>
 <html>
@@ -42,28 +43,31 @@
         <h2><strong>ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</strong></h2>
      </div>
      <div class="add-style">
-    <form action="" method="post"  class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
+
+    <form action="" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
      <div class="container">
-       <input class="contact-style-textbox" type="text" style="margin:auto;width:400px" name="article_title"  placeholder="Τίτλος Άρθρου">
-       <div class="expertcategories" style="margin:auto;width:300px">
-        <select id="article-category" name="article_category" style="background-color:#f1f1f1">
-          <option value="null" selected>Κατηγορία Άρθρου</option>
-          <option value="1">Διατροφή - Άρθρο</option>
-          <option value="2">Διατροφή - Συνταγές</option>
-          <option value="3">Σωματική Άσκηση</option>
-          <option value="4">Ψυχολογία</option>
-        </select>
-       </div>
-      <h5 style="color:white;"><label for='fc'> Εικόνα</label>
-      <input type='file' id='fc' name="file" ></h5>
+       <h5 style="color:white;"><label for='fc'>Επιλογή Εικόνας </label><br>
+       <input type='file' id='fc' name="file" value="<?php echo $fileName?>"></h5>
+       <input class="contact-style-textbox" type="text" style="margin:auto;width:400px" name="article_title"  placeholder="Τίτλος  Άρθρου" value="<?php echo $article_title?>" required>
+       <br><br>
       <label for="txtComments"> </label>
-      <textarea class="add-style-textbox" id="article_body" style="margin:auto;width:500px" name="article_body" rows="15" cols="40" placeholder="Γράψτε το άρθρο σας..."></textarea>
-      <br><br>
-      <input class="contact-style-textbox" type="text" style="margin:auto;max-width:400px;" name="author"  placeholder="Ποιος γράφει το άρθρο;">
-      <br><br>
+      <textarea class="add-style-textbox" id="article_body" style="margin:auto;width:500px" name="article_body" rows="15" cols="40" placeholder="Γράψτε το άρθρο σας..." value="<?php echo $article_body?>" required></textarea>
+      <br>
+      <div class="expertcategories" style="margin:auto;width:300px">
+       <select id="article-category" name="article_category" style="background-color:#f1f1f1" required>
+         <option value="null" selected>Κατηγορία Άρθρου</option>
+         <option value="nuttrition">Διατροφή</option>
+         <option value="exercise">Σωματική Άσκηση</option>
+         <option value="psychology">Ψυχολογία</option>
+       </select>
+      </div>
+      <h5 style="color:white;">Αν ανήκει στη κατηγορία "Διατροφή",<br> είναι συνταγή;<br>
+        <label for="recipe">Ναι</label> <input type='checkbox' id="recipe" name="recipe" value="1">
+      </h5>
       <button type="submit" name="submit" class="btn">Υποβολή</button>
      </div>
    </form>
+
   </br>
   </div>
 <?php
