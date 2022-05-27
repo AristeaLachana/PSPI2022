@@ -32,7 +32,7 @@
 <button class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
 
-  <a href="#" style="cursor:default;"><?php echo $_SESSION['username']?></a>
+  <a href="myProfile.php"><?php echo $_SESSION['username']?></a>
   <a href="logout.php">Αποσύνδεση</a>
 
 </div>

@@ -922,6 +922,14 @@ h3{
   background: #f1f1f1;
 }
 
+/*Background for myProfile.php*/
+.content-myprofile {
+  list-style-position: inside;
+  background: #f7cbcb;
+  text-align: center;
+  padding: 25px;
+}
+
 /*containers for errors and success*/
 .containerErrors{
   background: rgb(237, 105, 100); /* Fallback color */
