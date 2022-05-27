@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<head>
+  <style>
+    @media screen and (max-width:780px){
+      h2{
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
 <html>
 <footer class="footerCSS">
   <div class="footerRow">
