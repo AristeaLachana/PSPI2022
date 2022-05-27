@@ -1,6 +1,6 @@
 <?php include('mustLogin.php')?>
 <?php require_once('config.php')?>
-<?php include('upload.php')?>
+<?php include('uploads\upload.php')?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +19,6 @@
     <link rel="icon" type="image/x-icon" href="uploads\favicon.png">
     <style>
       img {
-        
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -45,10 +44,10 @@
      </div>
      <div class="add-style">
 
-    <form action="" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;">
+    <form action="addpage.php" method="post" class="containercontact" style="text-align:center; position:relative; margin: auto; float: center;" enctype="multipart/form-data">
      <div class="container">
        <h5 style="color:white;"><label for='fc'>Επιλογή Εικόνας </label><br>
-       <input type='file' id='fc' name="file" value="<?php echo $fileName?>"></h5>
+       <input type="file" id='fc' name="file" value="<?php echo $fileName?>"></h5>
        <input class="contact-style-textbox" type="text" style="margin:auto;width:400px" name="article_title"  placeholder="Τίτλος  Άρθρου" value="<?php echo $article_title?>" required>
        <br><br>
       <label for="txtComments"> </label>
@@ -57,7 +56,7 @@
       <div class="expertcategories" style="margin:auto;width:300px">
        <select id="article-category" name="article_category" style="background-color:#f1f1f1" required>
          <option value="null" selected>Κατηγορία Άρθρου</option>
-         <option value="nuttrition">Διατροφή</option>
+         <option value="nutrition">Διατροφή</option>
          <option value="exercise">Σωματική Άσκηση</option>
          <option value="psychology">Ψυχολογία</option>
        </select>
@@ -105,3 +104,4 @@ function showSlides(n) {
 }
 </script>
 </html>
+
