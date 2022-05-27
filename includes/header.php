@@ -61,7 +61,9 @@
     <div class="smallScreenMenu">
       <input type="checkbox" id="check">
       <label for="check" class="hamBtn"> <i class="fas fa-bars"> </i> </label></input>
+      <br>
       <ul class="smallScreenList">
+        <br>
         <li class="menu__group"><a href="mainPage.php" class="smallMenuLink">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
         <li class="menu__group"><a href="categories.php" class="smallMenuLink">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
         <li class="menu__group"><a href="eidikoi.php" class="smallMenuLink">Η ΟΜΑΔΑ ΜΑΣ</a></li>

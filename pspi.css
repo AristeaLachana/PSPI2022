@@ -82,12 +82,14 @@
 .smallScreenList {
   margin: auto;
   padding: 10px;
+  margin:10px;
   text-align: center;
   list-style-type:none;
   display:block;
 }
 .hamBtn{
   font-size: 25px;
+  padding: 10px;
   color:white;
   float:left;
   cursor: pointer;
@@ -97,7 +99,7 @@
 }
 .smallMenuLink{
   font-size: 15px;
-  color:black;
+  color:white;
   text-decoration: none;
 }
 @media screen and (max-width:785px) {
