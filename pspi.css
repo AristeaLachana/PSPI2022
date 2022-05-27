@@ -924,7 +924,6 @@ h3{
 
 /*containers for errors and success*/
 .containerErrors{
-  float: left;
   background: rgb(237, 105, 100); /* Fallback color */
   background: rgba(237, 105, 100, 0.5); /* Black background with 0.5 opacity */
   color: #ed5651;

@@ -50,7 +50,7 @@
             <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
     </div>
 
-  <?php include('admin\errors.php'); ?> 
+  <div class="containerErrors" style="width:100%"> <?php include('admin\errors.php'); ?> </div>
 
  <div class="bg-img1">
 

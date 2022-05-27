@@ -4,6 +4,8 @@
         session_start();
     }
 
+    error_reporting(0); 
+
 //συνδεθείτε στη βάση δεδομένων
 $db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
 
@@ -41,9 +43,10 @@ if (isset($_POST['signup'])) {
   if (empty($date1)) { array_push($errors, "*Ημερομηνία Γέννησης απαιτείται"); }
   if (empty($password)) { array_push($errors, "*Password απαιτείται"); }
   if (empty($passwordverification)) { array_push($errors, "*Επιβεβαίωση κωδικού απαιτείται"); }
+  */
   if ($password != $passwordverification) {
 	array_push($errors, "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν");
-}*/
+}
 
   /*ελέγξτε πρώτα τη βάση δεδομένων για να βεβαιωθείτε
    δεν υπάρχει ήδη χρήστης με το ίδιο όνομα χρήστη και/ή email*/

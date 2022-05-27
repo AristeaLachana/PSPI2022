@@ -38,7 +38,7 @@
       </a>
   </div>
 
-  <?php include('admin\errors.php'); ?>
+  <div class="containerErrors" style="float:left"> <?php include('admin\errors.php'); ?> </div>
   <br><br>
 
   <div class="signup-img">
