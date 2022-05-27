@@ -79,7 +79,29 @@
   display:none;
 }
 
-
+.smallScreenList {
+  margin: auto;
+  padding: 10px;
+  margin:10px;
+  text-align: center;
+  list-style-type:none;
+  display:block;
+}
+.hamBtn{
+  font-size: 25px;
+  padding: 10px;
+  color:white;
+  float:left;
+  cursor: pointer;
+}
+#check{
+  display:none;
+}
+.smallMenuLink{
+  font-size: 15px;
+  color:white;
+  text-decoration: none;
+}
 @media screen and (max-width:785px) {
   .menu__list
   {
@@ -87,12 +109,17 @@
   }
   .smallScreenMenu
   {
-    display: flex;
+    display: block;
     box-shadow: var(--menuBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
     background-color: #yellow;
+    list-style-type: none;
   }
-
-
+ .smallScreenMenu ul li {
+    display: none;
+  }
+  #check:checked ~  ul li {
+    display: block;
+  }
 }
 
 /* TEXT UNDERLINED */
@@ -469,7 +496,11 @@ h3{
       position:inherit;
       flex-direction: column;
     }
-
+  @media screen and (max-width:490px){
+        .containerBlog__img {
+          display: none;
+        }
+      }
 /*login page*/
 
 .login-img {
@@ -920,6 +951,14 @@ h3{
   float: center;
   width: 80%;
   background: #f1f1f1;
+}
+
+/*Background for myProfile.php*/
+.content-myprofile {
+  list-style-position: inside;
+  background: #f7cbcb;
+  text-align: center;
+  padding: 25px;
 }
 
 /*containers for errors and success*/

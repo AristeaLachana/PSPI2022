@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="pspi.css">
   <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
  <!-- Link to your stylesheet -->
  <link rel="stylesheet" href="./styles.css">
  <!-- -->
@@ -32,7 +33,7 @@
 <button class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
 
-  <a href="#" style="cursor:default;"><?php echo $_SESSION['username']?></a>
+  <a href="myProfile.php"><?php echo $_SESSION['username']?></a>
   <a href="logout.php">Αποσύνδεση</a>
 
 </div>
@@ -55,16 +56,23 @@
         <li class="menu__group"><a href="contactpage.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
 <?php if ($_SESSION['expert']==1) : ?>
         <li class="menu__group"><a href="addpage.php" class="menu__link r-link text-underlined">ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</a></li>
-
 <?php endif; ?>
       </ul>
-
-      <ul class="smallScreenMenu">
-        <li class="menu__group"><a href="mainPage.php" class="">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
-        <li class="menu__group"><a href="categories.php" class="">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-        <li class="menu__group"><a href="eidikoi.php" class="">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-        <li class="menu__group"><a href="contactpage.php" class="">TEST123</a></li>
+    <div class="smallScreenMenu">
+      <input type="checkbox" id="check">
+      <label for="check" class="hamBtn"> <i class="fas fa-bars"> </i> </label></input>
+      <br>
+      <ul class="smallScreenList">
+        <br>
+        <li class="menu__group"><a href="mainPage.php" class="smallMenuLink">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="categories.php" class="smallMenuLink">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
+        <li class="menu__group"><a href="eidikoi.php" class="smallMenuLink">Η ΟΜΑΔΑ ΜΑΣ</a></li>
+        <li class="menu__group"><a href="contactpage.php" class="smallMenuLink">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        <?php if ($_SESSION['expert']==1) : ?>
+              <li class="menu__group"><a href="addpage.php" class="smallMenuLink">ΠΡΟΣΘΗΚΗ ΠΕΡΙΕΧΟΜΕΝΟΥ</a></li>
+        <?php endif; ?>
       </ul>
+    </div>
     </nav>
   </div>
 

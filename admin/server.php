@@ -4,7 +4,7 @@
         session_start();
     }
 
-    error_reporting(0); 
+    error_reporting(0);
 
 //συνδεθείτε στη βάση δεδομένων
 $db = mysqli_connect('localhost', 'root', '', 'improveyourhealth');
@@ -34,19 +34,9 @@ if (isset($_POST['signup'])) {
   $experttitle = mysqli_real_escape_string($db, $_POST['experttitle']);
   $expertcategories = mysqli_real_escape_string($db, $_POST['expertcategories']);
 
-  /* επικύρωση φόρμας: βεβαιωθείτε ότι η φόρμα έχει συμπληρωθεί σωστά ...
-   προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors
-  if (empty($username)) { array_push($errors,"*username απαιτείται"); }
-  if (empty($email)) { array_push($errors, "*email απαιτείται"); }
-  if (empty($firstname)) { array_push($errors, "*Όνομα απαιτείται"); }
-  if (empty($surname)) { array_push($errors, "*Επώνυμο απαιτείται"); }
-  if (empty($date1)) { array_push($errors, "*Ημερομηνία Γέννησης απαιτείται"); }
-  if (empty($password)) { array_push($errors, "*Password απαιτείται"); }
-  if (empty($passwordverification)) { array_push($errors, "*Επιβεβαίωση κωδικού απαιτείται"); }
-  */
   if ($password != $passwordverification) {
-	array_push($errors, "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν");
-}
+	   array_push($errors, "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν");
+  }
 
   /*ελέγξτε πρώτα τη βάση δεδομένων για να βεβαιωθείτε
    δεν υπάρχει ήδη χρήστης με το ίδιο όνομα χρήστη και/ή email*/
@@ -65,8 +55,7 @@ if (isset($_POST['signup'])) {
   }
 
 // Τέλος, εγγραφείτε χρήστη εάν δεν υπάρχουν σφάλματα στη φόρμα
-  /*if (count($errors) == 0) {
-  	$password = md5($password); *///κρυπτογραφήστε τον κωδικό πρόσβασης πριν τον αποθηκεύσετε στη βάση δεδομένων
+//κρυπτογραφήστε τον κωδικό πρόσβασης πριν τον αποθηκεύσετε στη βάση δεδομένων
 if (count($errors) == 0) {
   	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password, expert, expert_title, expert_category)
   			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password', '$isExpert', '$experttitle', '$expertcategories')";
@@ -106,12 +95,4 @@ if (isset($_POST['login'])) {
   	}
   }
 }
-
-// upload post - experts
-$post_title = "";
-$post_text = "";
-$uploaded_by = "";
-$image_path = "";
-
-
 ?>
