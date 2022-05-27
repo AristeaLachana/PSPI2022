@@ -287,6 +287,9 @@ form.search::after {
 .container image1{
   height: auto;
 }
+.smallScreenContainer{
+  .display: none;
+}
 
 .text-block {
   overflow: auto;
@@ -301,6 +304,25 @@ form.search::after {
   margin-right: 25%;
   margin-bottom: 15%;
   margin-top: 15%;
+}
+
+@media screen and (max-width:1210px){
+  .container{
+    .position:absolute;
+  }
+  .text-block{
+    position: relative;
+    max-width: 100%;
+  }
+  .text-block p{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:680px){
+  .text-block{
+    padding: 3px;
+    max-width:50%;
+  }
 }
 
 .container .btn:hover {

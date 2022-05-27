@@ -22,12 +22,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   body {
     background-color:white;
     font-family: Arial, Helvetica, sans-serif;
   }
   p {color:black;}
-
+  @media screen and (max-width:1210px){
+    .container img{
+      display:none;
+    }
+  }
 </style>
 </head>
 <body>
