@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
           move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath);
 
           // Insert values into database
-          $insert = $db->query("INSERT into posts (title, categorie, body, image, created_at, published, recipe, description, slug, author)
+          $insert = $db->query("INSERT into posts (title, category, body, image, created_at, published, recipe, description, slug, author)
                                     VALUES ('$article_title', '$article_category', '$article_body', '$targetFilePath', NOW(), '0', '$recipe', '$description', '$slug', '$author')");
 
           if($insert){
