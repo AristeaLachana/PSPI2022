@@ -145,7 +145,6 @@
           <?php else: ?>
             <button type="submit" class="btn" name="create_user" >Save User</button>
           <?php endif ?>
-
         </th>
        </tr>
 				<!-- if editing user, display the update button instead of create button -->
