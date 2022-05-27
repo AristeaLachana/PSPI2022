@@ -23,7 +23,7 @@ if (isset($_POST['send_message_btn'])) {
   if (count($errors) == 0) {
     $query = "INSERT INTO emails (theme, body, email_from) VALUES ('$theme', '$body', '$email_from')";
     mysqli_query($db, $query);
-    header('location: contactpage.php');
+    header('location: contactpagesuccess.php');
     include('admin\success.php');
   }
 }
