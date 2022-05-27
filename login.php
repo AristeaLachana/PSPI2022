@@ -33,7 +33,7 @@
 
   <div class="logo">
       <a href="index.php">
-          <img alt="Improve Your Health" src="logo.png">
+          <img alt="Improve Your Health" src="uploads/logo.png">
       </a>
   </div>
 
