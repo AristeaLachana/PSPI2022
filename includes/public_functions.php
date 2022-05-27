@@ -5,7 +5,7 @@
 function getPublishedPostsPsychology() {
 	// use global $conn object in function
 	global $conn;
-	$sql = "SELECT * FROM posts WHERE (published=1 AND categorie='psychology')";
+	$sql = "SELECT * FROM posts WHERE (published=1 AND category='psychology')";
 	$result = mysqli_query($conn, $sql);
 
 	// fetch all posts as an associative array called $posts
@@ -17,7 +17,7 @@ function getPublishedPostsPsychology() {
 function getPublishedPostsNutrition() {
 	// use global $conn object in function
 	global $conn;
-	$sql = "SELECT * FROM posts WHERE (published=1 AND categorie='nutrition')";
+	$sql = "SELECT * FROM posts WHERE (published=1 AND category='nutrition')";
 	$result = mysqli_query($conn, $sql);
 
 	// fetch all posts as an associative array called $posts
@@ -29,7 +29,7 @@ function getPublishedPostsNutrition() {
 function getPublishedPostsExercise() {
 	// use global $conn object in function
 	global $conn;
-	$sql = "SELECT * FROM posts WHERE (published=1 AND categorie='exercise')";
+	$sql = "SELECT * FROM posts WHERE (published=1 AND category='exercise')";
 	$result = mysqli_query($conn, $sql);
 
 	// fetch all posts as an associative array called $posts
