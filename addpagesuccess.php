@@ -1,6 +1,5 @@
 <?php include('mustLogin.php')?>
 <?php require_once('config.php')?>
-<?php include('upload.php')?>
 <!DOCTYPE html>
 <html>
   <head>
