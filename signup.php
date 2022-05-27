@@ -27,6 +27,11 @@
     h3 {color:white;}
     tr {color:white;}
     th {color:white;}
+    @media screen and (max-width:410px){
+      tr td {
+        margin:2px;
+      }
+    }
   </style>
 </head>
 

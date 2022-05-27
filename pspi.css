@@ -561,6 +561,16 @@ h3{
   font-size: 5px;
 }
 
+@media screen and (max-width:785px){
+  .login-container{
+    margin-left: auto;
+    position:static;
+  }
+
+}
+
+
+
 /*contactpage*/
 
 .sumbit-and-send {
@@ -678,7 +688,7 @@ h3{
     outline: none;
     border: 1px solid grey;
     font-size: 15px;
-    width: auto;
+
 }
 
 /*addpage*/
@@ -1061,6 +1071,27 @@ h3{
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   border-radius:5px
+}
+@media screen and (max-width:1210px){
+  .signup-container {
+    position: static;
+  }
+}
+@media screen and (max-width:495px){
+  .signup-container {
+    margin:4px;
+  }
+  .signup-img{
+    margin:3px;
+  }
+}
+@media screen and (max-width:410px){
+  .signup-container {
+    margin:0.02px;
+  }
+  .signup-img{
+    margin:0.01px;
+  }
 }
 .cdu-container {
   position: absolute;
