@@ -50,7 +50,9 @@
 <a href="readmore.php?post-slug=<?php echo $post['slug']; ?>"><strong><?php echo $post['title'] ?></strong></a><br><br><?php echo $post['description']?><a href="readmore.php?post-slug=<?php echo $post['slug']; ?>" style="color:grey;">...Διαβάστε περισσότερα</a>
 </div>
 <?php endforeach ?>
-
+<div class="center">
+  <br><button class="btn"  onclick="history.back()">&laquo;</button>
+</div><br>
         <?php
         include 'includes\footer.php';
          ?>

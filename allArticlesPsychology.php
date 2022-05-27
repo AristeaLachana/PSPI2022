@@ -50,7 +50,9 @@
 
 </div>
 <?php endforeach ?>
-
+<div class="center">
+  <br><button class="btn"  onclick="history.back()">&laquo;</button>
+</div><br>
         <?php
         include 'includes\footer.php';
          ?>

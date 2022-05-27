@@ -13,6 +13,7 @@
 		$post = getPost($_GET['post-slug']);
 	}
 ?>
+
     <title><?php echo $post['title']; ?></title>
     <link rel="icon" type="image/x-icon" href="uploads\favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -41,7 +42,7 @@
   <?php
   include 'includes\header.php';
    ?>
-
+<div class="content" style="text-align:center">
     <br>
     <div class="center">
             <h2><strong><?php echo $post['title']; ?></strong></h2>
@@ -53,14 +54,15 @@
         <br>
         <img alt="image_readmore" src="<?php echo $post['image']; ?>" width="30%" height="50%">
 
-<p class="readmore_text">
-        <?php echo html_entity_decode($post['body']); ?>
+<p class="readmore">
+        <?php echo html_entity_decode($post['body']); ?> </p>
         <br>
         <br>
-        <button class="btn"  onclick="history.back()">&laquo;
+        <button class="btn"  onclick="history.back()">&laquo;</button>
 
     </div>
     <br>
+</div>
 </body>
 <?php
 include 'includes\footer.php';
