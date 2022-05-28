@@ -50,6 +50,19 @@ function getUsers(){
 
 	return $users;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* - Returns all messages
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+function getMessages(){
+	global $conn;
+	$sql = "SELECT * FROM emails";
+	$result = mysqli_query($conn, $sql);
+	$messages = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $messages;
+}
+
 /* * * * * * * * * * * * * * * * * * * * *
 * - Escapes form submitted value, hence, preventing SQL injection
 * * * * * * * * * * * * * * * * * * * * * */

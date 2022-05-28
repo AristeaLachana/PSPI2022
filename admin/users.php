@@ -11,7 +11,7 @@
   <!-- -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Admin| Menu</title>
+  <title>Admin | Menu</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <style>
     img {
@@ -164,7 +164,7 @@
 					<thead>
 						<th>ID</th>
 						<th>Username , Email</th>
-						<th>Ειδικός(1=ΝΑΙ,0=ΟΧΙ)</th>
+						<th>Ειδικός<br>(1=ΝΑΙ,0=ΟΧΙ)</th>
 						<th colspan="2">Επιλογή</th>
 					</thead>
 					<tbody>
