@@ -19,6 +19,10 @@
       margin-left: auto;
       margin-right: auto;
     }
+    a{
+      color:white;
+    }
+
     body {
       background-color:white;
       font-family: Arial, Helvetica, sans-serif;
@@ -31,24 +35,26 @@
   <?php
   include 'includes\headerAdmin.php';
    ?>
-	<div class="container dashboard">
-		<h1>Welcome</h1>
-		<div class="stats">
-			<a href="users.php" class="first">
-				<span>43</span> <br>
-				<span>Newly registered users</span>
-			</a>
-			<a href="posts.php">
-				<span>43</span> <br>
-				<span>Published posts</span>
-			</a>
-		</div>
+   <br>
+   <div class="center">
+           <h2><strong>ΔΙΑΧΕΙΡΙΣΗ</strong></h2>
+   </div>
+
+   <br>
+   <div class="container">
+	<img src="..\uploads\img2.jpeg" style="width:80%;border-radius:7px;"><br><br><br>
+  <div class="text-block">
+    <div class="container" style="font-size:17px;color:white;text-align:center">
+      <h3 style="color:white;">Χρήστες</h3>
+			<a href="users.php">Νέοι χρήστες</a>
+      <h3 style="color:white;">Αναρτήσεις</h3>
+			<a href="posts.php">posts</a>
+      <h3 style="color:white;">Μηνύματα</h3>
+			<a href="messages.php">emails</a>
 		<br><br><br>
-		<div class="buttons">
-			<a href="users.php">Add Users</a>
-			<a href="posts.php">Add Posts</a>
-		</div>
+  </div>
 	</div>
+</div>
 </body>
 <?php
 include 'includes\footerAdmin.php';

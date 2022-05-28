@@ -18,21 +18,21 @@ $errors = array();
 /* - - - - - - - - - -
 -  Admin users actions
 - - - - - - - - - - -*/
-// if user clicks the create admin button
+// if user clicks the create user button
 if (isset($_POST['create_user'])) {
 	createUser($_POST);
 }
-// if user clicks the Edit admin button
+// if user clicks the Edit user button
 if (isset($_GET['edit-user'])) {
 	$isEditingUser = true;
 	$user_id = $_GET['edit-user'];
 	editUser($user_id);
 }
-// if user clicks the update admin button
+// if user clicks the update user button
 if (isset($_POST['update_user'])) {
 	updateUser($_POST,$user_id);
 }
-// if user clicks the Delete admin button
+// if user clicks the Delete user button
 if (isset($_GET['delete-user'])) {
 	$user_id = $_GET['delete-user'];
 	deleteUser($user_id);
@@ -49,6 +49,20 @@ function getUsers(){
 	$users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 	return $users;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * *
+* - Returns all posts that aren't published yet
+* * * * * * * * * * * * * * * * * * * * * * * */
+function getUnpublishedPosts(){
+	global $conn;
+	$sql = "SELECT * FROM posts WHERE (published=0)";
+	$result = mysqli_query($conn, $sql);
+
+	// fetch all posts as an associative array called $posts
+	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $posts;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * *

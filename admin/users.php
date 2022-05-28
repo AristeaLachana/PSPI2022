@@ -196,6 +196,10 @@
 		<!-- // Display records from DB -->
 	</div>
 
+  <br><div class="center">
+    <br><button class="btn"  onclick="history.back()">&laquo;</button>
+  </div><br>
+
 </body>
 
   <?php

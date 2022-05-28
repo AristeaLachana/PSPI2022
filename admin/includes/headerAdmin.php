@@ -49,22 +49,16 @@
     <nav class="page__menu page__custom-settings menu">
 
       <ul class="menu__list r-list">
-        <li class="menu__group"><a href="menu.php" class="menu__link r-link text-underlined">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="menu.php" class="menu__link r-link text-underlined">ΔΙΑΧΕΙΡΙΣΗ</a></li>
         <li class="menu__group"><a href="../categories.php" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
         <li class="menu__group"><a href="../eidikoi.php" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-        <li class="menu__group"><a href="users.php" class="menu__link r-link text-underlined">ΧΡΗΣΤΕΣ</a></li>
-        <li class="menu__group"><a href="messages.php" class="menu__link r-link text-underlined">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-        <li class="menu__group"><a href="posts.php" class="menu__link r-link text-underlined">ΑΝΑΡΤΗΣΕΙΣ</a></li>
 
       </ul>
 
       <ul class="smallScreenMenu">
-        <li class="menu__group"><a href="menu.php" class="">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a></li>
+        <li class="menu__group"><a href="menu.php" class="">ΔΙΑΧΕΙΡΙΣΗ</a></li>
         <li class="menu__group"><a href="../categories.php" class="">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
         <li class="menu__group"><a href="../eidikoi.php" class="">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-        <li class="menu__group"><a href="users.php" class="">ΧΡΗΣΤΕΣ</a></li>
-        <li class="menu__group"><a href="messages.php" class="">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-        <li class="menu__group"><a href="posts.php" class="">ΑΝΑΡΤΗΣΕΙΣ</a></li>
       </ul>
     </nav>
   </div>

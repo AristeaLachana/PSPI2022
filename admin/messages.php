@@ -92,6 +92,10 @@
          </div>
 
 </div>
+
+<br><div class="center">
+  <br><button class="btn"  onclick="history.back()">&laquo;</button>
+</div><br>
 </body>
 <br>
 </br>
