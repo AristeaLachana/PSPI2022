@@ -1095,7 +1095,7 @@ h3{
 }
 .cdu-container {
   position: absolute;
-  left: 35%;
+  left: -2%;
   top: 0%;
   margin: 40px;
   max-width: 500px;
@@ -1118,6 +1118,24 @@ h3{
   color: #f1f1f1;
   border-radius:5px;
 }
+
+/*admin  open message */
+#open_message {
+ display:none;
+ background: rgb(0, 0, 0); /* Fallback color */
+ background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+ color: #f1f1f1;
+ color: #000;
+ position: absolute;
+ padding: 20px;
+ margin-top: 10px;
+}
+
+#open_message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
 /* The message box is shown when the user clicks on the password field */
 #message {
   display:  none;

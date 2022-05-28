@@ -38,9 +38,15 @@
   <?php
   include 'includes\headerAdmin.php';
    ?>
-<div class="signup-img">
-   <div class="cdu-container">
-       <h2 style="text-align:center; color:white">Δημιουργία/ Επεξεργασία Χρήστη</h2>
+  <div class="content-experts">
+
+    <div class="center">
+      <h2><strong>ΧΡΗΣΤΕΣ</strong></h2>
+    </div><br>
+
+<div class="container center">
+   <div class="cdu-container" style="text-align:center; position:relative; margin:auto ">
+       <h2 style="text-align:center; color:white">Δημιουργία/ Επεξεργασία</h2>
      <table>
       <tr>
           <td>
@@ -91,7 +97,6 @@
 
             <div class="password" style="margin:auto;max-width:300px">
               <input type="password" name="password" value="<?php echo $password; ?>" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
-              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
             </div>
          </td>
        </tr>
@@ -151,11 +156,11 @@
          </form>
 </table>
  </div>
-
+<br><br>
 		<!-- // Middle form - to create and edit -->
 
 		<!-- Display records from DB-->
-		<div class="table-div">
+		<div class="table-div" style="position:relative; margin:auto ">
 
 			<?php if (empty($users)): ?>
 				<h1>No users in the database.</h1>
@@ -194,17 +199,17 @@
 		</div>
       </div>
 		<!-- // Display records from DB -->
-	</div>
 
   <br><div class="center">
     <br><button class="btn"  onclick="history.back()">&laquo;</button>
   </div><br>
-
+</div>
 </body>
 
   <?php
   include 'includes\footerAdmin.php';
    ?>
+
    <script>
 
 

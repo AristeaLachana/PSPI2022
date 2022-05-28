@@ -68,9 +68,6 @@
                </div>
 
            </td>
-           <td>
-             <input type="checkbox" onclick="myFunction()">
-           </td>
        </tr>
        <tr>
         <th>
@@ -94,19 +91,6 @@
 <?php
 include 'includes\footer2.php';
  ?>
- <script>
-function myFunction() {
-
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-</script>
-
-
 
 
 </body>

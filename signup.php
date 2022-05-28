@@ -98,7 +98,6 @@
 
             <div class="password" style="margin:auto;max-width:300px">
               <input type="password" name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
-              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:black;"></i>
             </div>
          </td>
        </tr>
