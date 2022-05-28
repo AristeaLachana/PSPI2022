@@ -43,20 +43,39 @@
     <?php
       include 'includes\headerAdmin.php';
      ?>
+     <div class="content-experts">
   <br>
     <div class="center">
-      <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
-    </div>
+      <h2><strong>ΜΗΝΥΜΑΤΑ</strong></h2>
+    </div><br>
 
+ <div class="container center">
+   <form action="" method="post" class="containercontact" style="text-align:center; position:relative;   margin: auto;">
 
- <div class="bg-img1" style="font-family: Arial, Helvetica, sans-serif;">
+     <br>
+     <input class="contact-style-textbox" type="text" style="margin:auto;"  name="email_theme" value="<?php echo $email_theme; ?>" placeholder="Θέμα" readonly>
+     <br>
+     <br>
+     <label for="txtComments"> </label>
+     <textarea class="contact-style-textbox" id="body" style="resize: both; margin:auto;width:auto" name="email_body" rows="10" cols="20" placeholder="Μήνυμα" readonly></textarea>
+     <br>
+     <br>
+     <input class="contact-style-textbox" type="text" style="margin:auto;"  name="email_from" value="<?php echo $email_from; ?>" placeholder="Από:" readonly>
+     <br>
+     <br>
 
+    </form>
+
+<br><br><br>
 
    		<!-- Display records from DB-->
-   		<div class="table-div">
+   		<div class="table-div " style="position:relative; margin:auto ">
 
    			<?php if (empty($messages)): ?>
    				<h1 style="color:white">No messages in the database.</h1>
+        </div>
+          <button class="btn" style="margin:auto"><a href="menu.php" style="color:white;text-decoration: none;">Επιστροφή στη Διαχείριση</a></button>
+
    			<?php else: ?>
    				<table >
    					<thead>
@@ -76,6 +95,7 @@
    							<td>
    								<a class="fa fa-envelope-open-o btn edit"
    									href="messages.php?open-message=<?php echo $message['id'] ?>">
+
    								</a>
    							</td>
    							<td>
@@ -89,22 +109,26 @@
    				</table>
    			<?php endif ?>
    		</div>
-         </div>
+    </div>
 
-</div>
 
 <br><div class="center">
-  <br><button class="btn"  onclick="history.back()">&laquo;</button>
+  <br><button class="btn" onclick="history.back()">&laquo;</button>
 </div><br>
 </body>
 <br>
 </br>
+</div>
+</div>
 <?php
 include 'includes\footerAdmin.php';
  ?>
 
 
 <script>
+
+document.getElementById("body").value += '<?php echo $email_body; ?>';
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

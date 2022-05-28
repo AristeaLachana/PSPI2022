@@ -112,16 +112,6 @@ $isExpert = mysqli_real_escape_string($conn, $_POST['expert']);
 $experttitle = mysqli_real_escape_string($conn, $_POST['experttitle']);
 $expertcategories = mysqli_real_escape_string($conn, $_POST['expertcategories']);
 
-/* επικύρωση φόρμας: βεβαιωθείτε ότι η φόρμα έχει συμπληρωθεί σωστά ...
- προσθέτοντας το αντίστοιχο σφάλμα (array_push()) στον πίνακα $errors
-if (empty($username)) { array_push($errors,"*username απαιτείται"); }
-if (empty($email)) { array_push($errors, "*email απαιτείται"); }
-if (empty($firstname)) { array_push($errors, "*Όνομα απαιτείται"); }
-if (empty($surname)) { array_push($errors, "*Επώνυμο απαιτείται"); }
-if (empty($date1)) { array_push($errors, "*Ημερομηνία Γέννησης απαιτείται"); }
-if (empty($password)) { array_push($errors, "*Password απαιτείται"); }
-if (empty($passwordverification)) { array_push($errors, "*Επιβεβαίωση κωδικού απαιτείται"); }
-*/
 if ($password != $passwordverification) {
 array_push($errors, "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν");
 }
@@ -157,9 +147,9 @@ if (count($errors) == 0) {
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
-* - Takes admin id as parameter
-* - Fetches the admin from database
-* - sets admin fields on form for editing
+* - Takes user id as parameter
+* - Fetches the user from database
+* - sets user fields on form for editing
 * * * * * * * * * * * * * * * * * * * * * */
 function editUser($user_id)
 {
@@ -229,11 +219,31 @@ $email_from = "";
 $email_theme = "";
 $email_body = "";
 
-// if user clicks the Delete user button
+//if admin clicks the open message button
+if (isset($_GET['open-message'])) {
+	$email_id = $_GET['open-message'];
+	openMessage($email_id);
+}
+
+// if admin clicks the Delete message button
 if (isset($_GET['delete-message'])) {
 	$email_id = $_GET['delete-message'];
 	deleteMessage($email_id);
 }
+
+//open message
+function openMessage($email_id) {
+	global $conn, $email, $email_from, $email_theme, $email_body;
+	$sql = "SELECT * FROM emails WHERE id=$email_id";
+	if (mysqli_query($conn, $sql)) {
+		$result = mysqli_query($conn, $sql);
+		$email = mysqli_fetch_assoc($result);
+		$email_from = $email['email_from'];
+		$email_theme = $email['theme'];
+		$email_body = $email['body'];
+	}
+}
+
 
 // delete message
 function deleteMessage($email_id) {

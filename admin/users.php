@@ -119,7 +119,7 @@
            <div class="expertcategories" style="margin:auto;max-width:300px">
             <select id="categories" name="expertcategories" >
               <option value="null" selected>* για ειδικούς *</option>
-              <option value="1" >ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
+              <option value="1">ΔΙΑΤΡΟΦΟΛΟΓΙΑ</option>
               <option value="2">ΓΥΜΝΑΣΤΙΚΗ</option>
               <option value="3">ΨΥΧΙΚΗ ΥΓΕΙΑ</option>
             </select>
