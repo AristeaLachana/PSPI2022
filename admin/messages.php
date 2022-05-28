@@ -45,18 +45,18 @@
      ?>
   <br>
     <div class="center">
-            <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
+      <h2><strong>ΕΠΙΚΟΙΝΩΝΙΑ</strong></h2>
     </div>
 
 
- <div class="bg-img1">
+ <div class="bg-img1" style="font-family: Arial, Helvetica, sans-serif;">
 
 
    		<!-- Display records from DB-->
-   		<div class="table-div" style="width:100%; position:relative">
+   		<div class="table-div">
 
    			<?php if (empty($messages)): ?>
-   				<h1>No messages in the database.</h1>
+   				<h1 style="color:white">No messages in the database.</h1>
    			<?php else: ?>
    				<table >
    					<thead>

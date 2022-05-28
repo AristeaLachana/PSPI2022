@@ -15,6 +15,8 @@ $isExpert = "";
 $experttitle = "";
 $expertcategories = "";
 $errors = array();
+
+
 /* - - - - - - - - - -
 -  Admin users actions
 - - - - - - - - - - -*/
@@ -216,6 +218,30 @@ function deleteUser($user_id) {
 	if (mysqli_query($conn, $sql)) {
 		$_SESSION['message'] = "User successfully deleted";
 		header("location: users.php");
+		exit(0);
+	}
+}
+
+
+//email variables
+$email_id = 0;
+$email_from = "";
+$email_theme = "";
+$email_body = "";
+
+// if user clicks the Delete user button
+if (isset($_GET['delete-message'])) {
+	$email_id = $_GET['delete-message'];
+	deleteMessage($email_id);
+}
+
+// delete message
+function deleteMessage($email_id) {
+	global $conn;
+	$sql = "DELETE FROM emails WHERE id=$email_id";
+	if (mysqli_query($conn, $sql)) {
+		$_SESSION['message'] = "email successfully deleted";
+		header("location: messages.php");
 		exit(0);
 	}
 }
