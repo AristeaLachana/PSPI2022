@@ -54,10 +54,12 @@
         <br>
         <img alt="image_readmore" src="<?php echo $post['image']; ?>" width="30%" height="50%">
 
-<p class="readmore">
+        <p class="readmore">
         <?php echo html_entity_decode($post['body']); ?> </p>
         <br>
         <br>
+        Από: <strong><?php echo $post['author']; ?></strong>
+        <br><br>
         <button class="btn"  onclick="history.back()">&laquo;</button>
 
     </div>

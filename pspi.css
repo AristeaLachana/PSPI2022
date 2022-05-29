@@ -679,6 +679,15 @@ h3{
   border-radius:5px;
 }
 
+.containerCrPosts {
+  margin: 40px;
+  max-width: 1000px;
+  padding: 6px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius:5px;
+}
 .contact-style-textbox {
     background-color: #f1f1f1;
     border: none;

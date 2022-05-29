@@ -38,48 +38,103 @@
             <h2><strong>ΕΓΚΡΙΣΗ - ΑΝΑΡΤΗΣΕΙΣ</strong></h2>
     </div>
     <body>
+    </form>
+    <div class="container center">
+      <form action="" method="post" class="containerCrPosts" style="text-align:center; position:relative;   margin: auto;">
 
+        <br><br>
+        <input class="contact-style-textbox" type="text" style="margin:auto;"  name="title" value="<?php echo $title; ?>" placeholder="Τίτλος" >
+
+        <input class="contact-style-textbox" type="text" style="margin:auto;"  name="author" value="<?php echo $author; ?>" placeholder="Συγγραφέας:" >
+        <br>
+        <br>
+        <label for="postBody"> </label>
+        <textarea class="contact-style-textbox" id="post_body" style="resize: both; margin:auto;width:auto" name="body" rows="10" cols="20" placeholder="Κείμενο" ></textarea>
+
+        <textarea class="contact-style-textbox" id="description" style="resize: both; margin:auto;width:auto" name="description" rows="10" cols="20" placeholder="Περιγραφή"></textarea>
+        <br>
+        <br>
+
+        <label for="date">Δημιουργήθηκε: </label>
+       </th>
+       <td>
+
+        <div class="date" style="margin:auto;max-width:300px">
+        <input  class="date" type="date" id="date" name="created_at" value="<?php echo $date1; ?>" required>
+         <input class="contact-style-textbox" type="text" style="margin:auto;"  name="category" value="<?php echo $category; ?>" placeholder="Κατηγορία" >
+        <!-- display checkbox according to whether post has been published or not -->
+        <br>
+        <br>
+          <?php if ($recipe==1): ?>
+          <label for="recipe">
+            Recipe
+            <input type="checkbox" value="<?php echo $recipe; ?>" name="recipe" checked="checked">&nbsp;
+          </label>
+        <?php else: ?>
+          <label for="recipe">
+            Recipe
+            <input type="checkbox" value="<?php echo $recipe; ?>" name="recipe">&nbsp;
+          </label>
+        <?php endif ?>
+        <br>
+        <?php if ($published == 1): ?>
+          <label for="publish">
+            Publish
+            <input type="checkbox" value="<?php echo $published; ?>" name="publish" checked="checked">&nbsp;
+          </label>
+        <?php else: ?>
+          <label for="publish">
+            Publish
+            <input type="checkbox" value="<?php echo $published; ?>" name="publish">&nbsp;
+          </label>
+        <?php endif ?>
+        <button type="submit" class="btn" name="update_post">UPDATE</button>
+
+       </form>
+  </div>
+  <!-- // Middle form - to create and edit -->
       <?php $posts = getPosts(); ?>
   <br>
 
 			<?php if (empty($posts)): ?>
 				<h1 style="text-align: center; margin-top: 20px;">No posts in the database.</h1>
 			<?php else: ?>
-        <table class="table-div">
+        <table style="margin:auto;">
 						<thead>
 						<th>ID</th>
-						<th>Title</th>
 						<th>Author</th>
+            <th>Title</th>
+            <th>Created at</th>
 						<th>Category</th>
-						 <th><small>Publish</small></th>
 						<th><small>Edit</small></th>
 						<th><small>Delete</small></th>
 					</thead>
 					<tbody>
-  <?php foreach ($posts as $post): ?>
-    <tr>
+					<?php foreach ($posts as  $post): ?>
+						<tr>
+							<td><?php echo $post['id']; ?></td>
+							<td><?php echo $post['author']; ?></td>
+							<td><?php echo $post['title']; ?></td>
+              <td><?php echo $post['created_at']; ?></td>
+							<td><?php echo $post['category']; ?></td>
+								<td>
 
-    							<td><?php echo $post['author']; ?></td>
-    							<td>
-    								<a 	target="_blank"
-    								href="<?php echo BASE_URL . 'readmore.php?post-slug=' . $post['slug'] ?>">
-    									<?php echo $post['title']; ?>
-    								</a>
-    							</td>
-    							<td><?php echo $post['category']; ?></td>
-    								<td>
-    								<?php if ($post['published'] == 1): ?>
-    									<a class="fa fa-check btn unpublish"
-    										href="posts.php?unpublish=<?php echo $post['id'] ?>">
-    									</a>
-    								<?php else: ?>
-    									<a class="fa fa-times btn publish"
-    										href="posts.php?publish=<?php echo $post['id'] ?>">
-    									</a>
-    								</td>
-    							<?php endif ?>
-  <?php endforeach ?>
-<?php endif ?>
+
+								<a class="fa fa-pencil btn edit"
+									href="posts.php?edit_post=<?php echo $post['id'] ?>">
+								</a>
+							</td>
+							<td>
+								<a  class="fa fa-trash btn delete"
+									href="posts.php?delete-post=<?php echo $post['id'] ?>">
+								</a>
+							</td>
+						</tr>
+					<?php endforeach ?>
+					</tbody>
+				</table>
+			<?php endif ?>
+		</div>
   <div class="center">
     <br><button class="btn"  onclick="history.back()">&laquo;</button>
   </div><br>
@@ -90,4 +145,12 @@
            ?>
 
     <br>
+
 </html>
+
+<script>
+
+document.getElementById("post_body").value += '<?php echo $body; ?>';
+document.getElementById("description").value += '<?php echo $description; ?>';
+
+</script>

@@ -43,7 +43,7 @@
      </div>
      <div class="add-style">
 
-    <div class="containerSuccess">
+    <div class="containerSuccess" style="background: rgba(144, 238, 144, 1);  ">
        <br>
       <p style="color:black; size:30px">Το άρθρο σας καταχωρήθηκε! Αναμένεται έγκριση από τον διαχειριστή.</p>
        <br>
