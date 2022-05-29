@@ -97,7 +97,7 @@
          <td>
 
             <div class="password" style="margin:auto;max-width:300px">
-              <input type="password" name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
+              <input type="password"  name="password" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
             </div>
          </td>
        </tr>
@@ -174,6 +174,7 @@
 </div>
 <br>
 <br>
+</body>
 
 
 <?php
@@ -181,9 +182,8 @@ include 'includes\footer2.php';
  ?>
  <script>
 
-
- var checker = document.getElementById('checkme');
- var submitbtn = document.getElementById('submit');
+var checker = document.getElementById('checkme');
+var submitbtn = document.getElementById('submit');
  // when unchecked or checked, run the function
 checker.onchange = function(){
     if(this.checked){
@@ -194,16 +194,6 @@ checker.onchange = function(){
 }
 
 
-const togglePassword = document.querySelector('#togglePassword');
-  const password = document.querySelector('#id_password');
-
-  togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye slash icon
-    this.classList.toggle('fa-eye-slash');
-});
 
 var myInput = document.getElementById("passwordverification");
 var letter = document.getElementById("letter");

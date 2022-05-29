@@ -60,6 +60,7 @@ if (count($errors) == 0) {
   	$query = "INSERT INTO users (username, email, name, surname, dateOfBirth , password, expert, expert_title, expert_category)
   			  VALUES('$username', '$email', '$firstname', '$surname', '$date1' ,'$password', '$isExpert', '$experttitle', '$expertcategories')";
   	mysqli_query($db, $query);
+    $_SESSION['admin']=0;
     $_SESSION['expert']= $isExpert;
     $_SESSION['email'] = $email;
   	$_SESSION['username'] = $username;

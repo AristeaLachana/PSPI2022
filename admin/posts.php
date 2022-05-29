@@ -74,30 +74,31 @@
             Recipe
             <input type="checkbox" value="<?php echo $recipe; ?>" name="recipe" checked="checked">&nbsp;
           </label>
-        <?php else: ?>
-          <label for="recipe">
-            Recipe
-            <input type="checkbox" value="<?php echo $recipe; ?>" name="recipe">&nbsp;
-          </label>
         <?php endif ?>
         <br>
+        <select id="article-category" name="published" style="background-color:#f1f1f1" required>
+          <option value="null" selected>Συνταγή</option>
+          <option value="1">Ναι</option>
+          <option value="0">Όχι</option>
+        </select>
         <!-- display checkbox according to whether post has been published or not -->
         <?php if ($published == 1): ?>
           <label for="publish">
             Publish
-            <input type="checkbox" value="<?php echo $published; ?>" name="publish" checked="checked">&nbsp;
-          </label>
-        <?php else: ?>
-          <label for="publish">
-            Publish
-            <input type="checkbox" value="<?php echo $published; ?>" name="publish">&nbsp;
+            <input type="checkbox" value="1" name="published" checked="checked">&nbsp;
           </label>
         <?php endif ?>
+        <select id="article-category" name="published" style="background-color:#f1f1f1" required>
+          <option value="null" selected>Κατάσταση Άρθρου</option>
+          <option value="1">Δημόσιο</option>
+          <option value="0">Ιδιωτικό</option>
+        </select>
         <button type="submit" class="btn" name="update_post">UPDATE</button>
 
        </form>
   </div>
   <!-- // Middle form - to edit -->
+  <!-- Get all  posts from DB -->
       <?php $posts = getPosts(); ?>
   <br>
 
