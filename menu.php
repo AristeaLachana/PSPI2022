@@ -35,7 +35,10 @@
   <?php
   include 'includes\headerAdmin.php';
    ?>
-   <br>
+<br>
+   <div class="center">
+           <h2><strong>ΔΙΑΧΕΙΡΙΣΗ</strong></h2>
+   </div>
 
    <br>
    <div class="container">

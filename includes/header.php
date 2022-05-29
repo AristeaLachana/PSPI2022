@@ -28,12 +28,14 @@
          width="400" height="100"></a>
   </div>
 <br><br>
-  <?php if (isset($_SESSION['username'])) : ?>
+<?php if (isset($_SESSION['username'])) :?>
 <div class="dropdown" style="float:right;margin-right:5%">
 <button class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
-
-  <a href="myProfile.php"><?php echo $_SESSION['username']?></a>
+  <a href="myProfile.php">Τα στοιχεία μου</a>
+  <?php if ($_SESSION['admin']=1): ?>
+    <a href="admin/menu.php">Μετάβαση: Διαχειριστής</a>
+  <?php endif; ?>
   <a href="logout.php">Αποσύνδεση</a>
 
 </div>

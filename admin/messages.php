@@ -12,7 +12,7 @@
    <!-- -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <?php  include('../config.php'); ?>
-    <?php include(ROOT_PATH . '/admin/includes/admin_functions.php'); ?>
+    <?php include(ROOT_PATH . '/admin/includes/users_functions.php'); ?>
     <?php
       // Get all  messages from DB
       $messages = getMessages();

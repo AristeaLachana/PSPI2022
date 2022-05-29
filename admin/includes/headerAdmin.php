@@ -10,7 +10,7 @@
  <!-- -->
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="icon" type="image/x-icon" href="uploads\favicon.png">
+  <link rel="icon" type="image/x-icon" href="../uploads\favicon.png">
 
   <style>
 
@@ -31,9 +31,8 @@
 <div class="dropdown" style="float:right;margin-right:5%">
 <button class="dropbtn" style="border-radius: 100px 10px / 120px;">Ο λογαριασμός μου</button>
 <div  class="dropdown-content">
-
-  <a href="#" style="cursor:default;"><?php echo $_SESSION['username']?></a>
-  <a href="../logout.php">Αποσύνδεση</a>
+<a href="../mainPage.php">Μετάβαση: Χρήστης</a>
+<a href="../logout.php">Αποσύνδεση</a>
 
 </div>
 
@@ -50,15 +49,10 @@
 
       <ul class="menu__list r-list">
         <li class="menu__group"><a href="menu.php" class="menu__link r-link text-underlined">ΔΙΑΧΕΙΡΙΣΗ</a></li>
-        <li class="menu__group"><a href="../categories.php" class="menu__link r-link text-underlined">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-        <li class="menu__group"><a href="../eidikoi.php" class="menu__link r-link text-underlined">Η ΟΜΑΔΑ ΜΑΣ</a></li>
-
       </ul>
 
       <ul class="smallScreenMenu">
         <li class="menu__group"><a href="menu.php" class="">ΔΙΑΧΕΙΡΙΣΗ</a></li>
-        <li class="menu__group"><a href="../categories.php" class="">ΠΕΡΙΕΧΟΜΕΝΟ</a></li>
-        <li class="menu__group"><a href="../eidikoi.php" class="">Η ΟΜΑΔΑ ΜΑΣ</a></li>
       </ul>
     </nav>
   </div>
