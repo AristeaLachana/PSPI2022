@@ -58,7 +58,7 @@
         <?php echo html_entity_decode($post['body']); ?> </p>
         <br>
         <br>
-        Από: <strong><?php echo $post['author']; ?></strong>
+        Από: <strong><?php echo $post['author']; ?></strong> -  "<?php echo $post['created_at'];?>"
         <br><br>
         <button class="btn"  onclick="history.back()">&laquo;</button>
 
