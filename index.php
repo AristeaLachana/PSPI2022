@@ -28,9 +28,7 @@
         .container img{
           display: none;
         }
-
       }
-
     </style>
   </head>
 
