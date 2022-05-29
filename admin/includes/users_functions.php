@@ -53,20 +53,6 @@ function getUsers(){
 	return $users;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * *
-* - Returns all posts that aren't published yet
-* * * * * * * * * * * * * * * * * * * * * * * */
-function getUnpublishedPosts(){
-	global $conn;
-	$sql = "SELECT * FROM posts WHERE (published=0)";
-	$result = mysqli_query($conn, $sql);
-
-	// fetch all posts as an associative array called $posts
-	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-	return $posts;
-}
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * - Returns all messages
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
