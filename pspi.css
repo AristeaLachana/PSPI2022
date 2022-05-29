@@ -305,26 +305,40 @@ form.search::after {
   margin-bottom: 15%;
   margin-top: 15%;
 }
-
-@media screen and (max-width:1210px){
+@media screen and (max-width:1310px){
   .container{
-    .position:absolute;
+    padding:1px
   }
   .text-block{
-    position: relative;
-    max-width: 100%;
+    padding:2px;
+
   }
   .text-block p{
     font-size: 10px;
   }
 }
-@media screen and (max-width:680px){
+
+@media screen and (max-width:1070px){
+  .container{
+    padding:1px;
+  }
+
   .text-block{
+    position:sticky;
     padding: 3px;
     max-width:50%;
+    border-radius: 6px;
   }
 }
+@media screen and (max-width:580px){
+  .container{
+    position:relative;
+  }
 
+  .text-block{
+    padding:0.1;
+  }
+}
 .container .btn:hover {
   background-color: black;
 }

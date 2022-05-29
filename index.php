@@ -38,6 +38,7 @@
 
 
     <!-- container - image - description paragraph -->
+      <div class="container">
       <img src="uploads\img2.jpeg" style="width:80%;border-radius:7px;">
       <div class="text-block">
       <p class="container" style="font-size:17px;color:white;"><strong>Καλώς Ήρθες στην Improve Your Health!</strong><br><br>
@@ -46,6 +47,7 @@
 Γι αυτό και εμείς παρέχουμε πληροφορίες για τα παραπάνω.<br><br>
 Γίνε μέλος της ομάδας μας για να πετύχεις τους στόχους σου!
 </p>
+</div>
 </div>
 
     <br>
