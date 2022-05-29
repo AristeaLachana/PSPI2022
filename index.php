@@ -24,7 +24,12 @@
       h1 {color:#125688;}
       h2 {color:#125688;}
       p {color:black;}
+      @media screen and (max-width:1070px){
+        .container img{
+          display: none;
+        }
 
+      }
 
     </style>
   </head>

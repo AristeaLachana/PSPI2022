@@ -27,6 +27,11 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   p {color:black;}
+  @media screen and (max-width:1070px){
+    .container img{
+      display: none;
+    }
+  }
 </style>
 </head>
 <body>
