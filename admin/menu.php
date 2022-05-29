@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include('../mustLogin.php')?>
+<?php include('includes/onlyAdmin.php')?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">

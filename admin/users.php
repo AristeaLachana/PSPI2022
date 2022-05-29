@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include('../mustLogin.php')?>
+<?php include('includes/onlyAdmin.php')?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,8 +96,8 @@
          </th>
          <td>
 
-            <div class="password" style="margin:auto;max-width:300px">
-              <input type="password" name="password" value="<?php echo $password; ?>" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
+            <div class="experttitle" style="margin:auto;max-width:300px">
+              <input type="text" name="password" value="<?php echo $password; ?>" autocomplete="current-password" id="id_password" placeholder="Κωδικός" required>
             </div>
          </td>
        </tr>

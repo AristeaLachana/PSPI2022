@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<?php include('../mustLogin.php')?>
+<?php include('includes/onlyAdmin.php')?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../pspi.css">
-    <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+  <!-- Font icons pulled from remix icon CDN (Content delivery network) -->
    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
    <!-- Link to your stylesheet -->
    <link rel="stylesheet" href="./styles.css">
@@ -43,15 +45,16 @@
       <form action="" method="post" class="containerCrPosts" style="text-align:center; position:relative;   margin: auto;">
 
         <br><br>
-        <input class="contact-style-textbox" type="text" style="margin:auto;"  name="title" value="<?php echo $title; ?>" placeholder="Τίτλος" >
+        <input class="contact-style-textbox" type="text" style="margin:auto;width:300px"  name="title" value="<?php echo $title; ?>" placeholder="Τίτλος" >
 
-        <input class="contact-style-textbox" type="text" style="margin:auto;"  name="author" value="<?php echo $author; ?>" placeholder="Συγγραφέας:" >
+        <input class="contact-style-textbox" type="text" style="margin:auto;width:300px"  name="author" value="<?php echo $author; ?>" placeholder="Συγγραφέας:" >
         <br>
         <br>
         <label for="postBody"> </label>
-        <textarea class="contact-style-textbox" id="post_body" style="resize: both; margin:auto;width:auto" name="body" rows="10" cols="20" placeholder="Κείμενο" ></textarea>
-
-        <textarea class="contact-style-textbox" id="description" style="resize: both; margin:auto;width:auto" name="description" rows="10" cols="20" placeholder="Περιγραφή"></textarea>
+        <br><p style="color:white">Άρθρο: </p><br>
+        <textarea class="contact-style-textbox" id="body" style="resize: both; margin:auto;width:500px;" name="body" rows="10" cols="20" placeholder="Κείμενο"><?php echo $body?></textarea>
+        <br><p style="color:white">Περιγραφή: </p><br>
+        <textarea class="contact-style-textbox" id="description" style="resize: both; margin:auto;width:500px" name="description" rows="10" cols="20" placeholder="Περιγραφή"><?php echo $description?></textarea>
         <br>
         <br>
 
@@ -62,9 +65,10 @@
         <div class="date" style="margin:auto;max-width:300px">
         <input  class="date" type="date" id="date" name="created_at" value="<?php echo $date1; ?>" required>
          <input class="contact-style-textbox" type="text" style="margin:auto;"  name="category" value="<?php echo $category; ?>" placeholder="Κατηγορία" >
-        <!-- display checkbox according to whether post has been published or not -->
+
         <br>
         <br>
+        <!-- display checkbox according to whether is recipe or not -->
           <?php if ($recipe==1): ?>
           <label for="recipe">
             Recipe
@@ -77,6 +81,7 @@
           </label>
         <?php endif ?>
         <br>
+        <!-- display checkbox according to whether post has been published or not -->
         <?php if ($published == 1): ?>
           <label for="publish">
             Publish
@@ -92,7 +97,7 @@
 
        </form>
   </div>
-  <!-- // Middle form - to create and edit -->
+  <!-- // Middle form - to edit -->
       <?php $posts = getPosts(); ?>
   <br>
 
@@ -149,8 +154,7 @@
 </html>
 
 <script>
+document.getElementById(`body`).innerHTML='<?php echo $body?>';
 
-document.getElementById("post_body").value += '<?php echo $body; ?>';
-document.getElementById("description").value += '<?php echo $description; ?>';
 
 </script>

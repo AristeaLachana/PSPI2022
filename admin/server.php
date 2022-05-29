@@ -79,13 +79,15 @@ if (isset($_POST['login'])) {
   }
 
   if (count($errors) == 0) {
-  //	$password = md5($password);
+  // to make more secure, but in this project we dont want to	$password = md5($password);
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
     $currentUser = mysqli_fetch_assoc($results);
   	if (mysqli_num_rows($results) == 1) {
       $isExpert=$currentUser['expert'];
       $email = $currentUser['email'];
+      $admin=$currentUser['admin'];
+      $_SESSION['admin']=$admin;
       $_SESSION['expert'] = $isExpert;
       $_SESSION['email'] = $email;
   	  $_SESSION['username'] = $username;
